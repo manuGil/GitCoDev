@@ -1,4 +1,4 @@
-# [Repository Title]
+# GitCoDev
 
 *Delete the text in this section after reding it when using this template. Text between `[]` provides short descriptions of what is expected in each section, and should be deleted after after you write your own.*
 
