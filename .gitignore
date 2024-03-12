@@ -4,3 +4,7 @@ venv/*
 
 # Builds
 */_build/
+
+
+# Mac OS X
+.DS_Store
