@@ -1,31 +1,5 @@
 # GitCoDev
 
-*Delete the text in this section after reding it when using this template. Text between `[]` provides short descriptions of what is expected in each section, and should be deleted after after you write your own.*
-
-**Purpose**
-
-This repository provides a template to make your software project more compliant with the [FAIR principles.](https://fair-software.nl/) It adopts the recommendations made by the [TU Delft Guidelines on Research Software](https://d2k0ddhflgrk1i.cloudfront.net/TUDelft/Over_TU_Delft/Strategie/TU%20Delft%20Research%20Software%20Guidelines.pdf).
-
-**How to use this template**
-
-1. Create a new repository using this template.
-2. Clone your repository.
-3. Edit the text between [ ] in the README and CONTRIBUTING file. Explanations of the expected content for each section appear between [ ], and they should be removed. Leave text outside [ ] unchanged.
-4. Start coding
-
-**How to organize source code**
-
-[The organization of your source code depends on the progamming language and the purpose of the code. However, here are some general recommendations:
-
-1. Organize your source code in directories. Create a root-directory for the coder with the same name as repository. 
-2. In the root directory include a tests directory for writing test for the source code. For example, in this template, source code should go in the `repo-template` directory.
-3. As the source code grows, keep scripts organized in sub-directories, the rule of thrumb here is to keep related scripts together.
-4. Use meaningful names for directories and scripts, and choose file names carefully.
-5. Separate data from source code.]
-
-> Important: when using this template, keep the stucture suggested in `repo-template`, but change the name to match you repository's name. 
-
-*Delete this text above when using this template in your repository*
 
 [Repository Description: In two or three sentences, describe the purpose of the repository: **what is this repository for?**]
 
@@ -59,7 +33,7 @@ Read the [contributing guidelines](CONTRIBUTING.md) to know how can you take par
 
 [Under the current [guidelines on research software](https://d2k0ddhflgrk1i.cloudfront.net/TUDelft/Over_TU_Delft/Strategie/TU%20Delft%20Research%20Software%20Guidelines.pdf), TU Delft encourages the use of open source licenses for research software. Use the decision three below to determine if the software you intend to develop can be published as Open Source Software (OSS). You can also ask for help to the [Data Steward in your Faculty](https://www.tudelft.nl/library/research-data-management/r/support/data-stewardship/contact)]
 
-![Open Source Software decision tree](img/decision-oss.png "Open source software decision tree")
+
 
 [If using an open source license, select one of the followings **pre-approved** licences:]
 
