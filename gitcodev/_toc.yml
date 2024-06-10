@@ -4,6 +4,11 @@
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: curriculum
+- file: teaching
+- file: timetables
+- file: session1
+- file: session2
+- file: session3
+- file: session4
+
