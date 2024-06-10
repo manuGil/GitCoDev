@@ -1,3 +1,3 @@
-# Collaborative Workflows and Good Practices
+# Best Practices
 
  workflows, and good practices.
