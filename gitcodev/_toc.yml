@@ -7,8 +7,8 @@ chapters:
 - file: curriculum
 - file: teaching
 - file: timetables
-- file: session1
-- file: session2
-- file: session3
-- file: session4
+- file: lesson1
+- file: lesson2
+- file: lesson3
+- file: lesson4
 
