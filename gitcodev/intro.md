@@ -1,3 +1,15 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<style>
+h3.dancing {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+</style>
+
 # Introduction
 
 This website describes a curriculum for a short course on *Version Control and collaboratie Development for Research Software*. 
@@ -37,10 +49,10 @@ If  that could be achived, research software will be of better quality, software
 
 In summary, there are two situations that motived the development of this course. Firts, the need to increase the level of confidence and independece in applying version control to research sofware among researcher attending similar courses. And second, our enthusiasm to help researchers to adopt best practices in collaborative development to foster their productivity and improve the quality of research software. 
 
-***Manuel. G. Garcia*** <br>
+<h3 class="dancing">Manuel. G. García</h3>
+
 *Research Software Engineer* <br>
 *Delft University of Technology*
-
 
 ## Content
 
