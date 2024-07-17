@@ -24,14 +24,3 @@ the participants is reduced. We recommend to delive each lesson following the fo
 | 00:00  | 01:00 | 01:10 | 02:00 | 02:20 | 03:10 | 03:20 | 04:10 | 04:30 |
 |:-------|:------|:------|:------|:------|:------|:------|:------|:------|
 | Lesson 60' | **Break 10'** | Lesson 50' | **Break 20'** | Lesson 60' | **Break 10'** | Lesson  50'| **Wrap-up 10'** | Closure |
-
-## Sessions
-
-Each lesson has been designed to be delivered in sessions of four and a half hours. 
-The content of each lesson has been optimized to be delivered in a way that the congnitive overload on
-the participants is reduced. We recommend to delive each lesson following the following timetable.
-
-
-| 00:00  | 01:00 | 01:10 | 02:00 | 02:20 | 03:10 | 03:20 | 04:10 | 04:30 |
-|:-------|:------|:------|:------|:------|:------|:------|:------|:------|
-| Lesson 60' | **Break 10'** | Lesson 50' | **Break 20'** | Lesson 60' | **Break 10'** | Lesson  50'| **Wrap-up 10'** | Closure |
