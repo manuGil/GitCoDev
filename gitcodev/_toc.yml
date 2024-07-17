@@ -3,12 +3,16 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: curriculum
-- file: teaching
-- file: timetables
-- file: lesson1
-- file: lesson2
-- file: lesson3
-- file: lesson4
+parts:
+  - caption: Course Description
+    chapters:
+      - file: curriculum
+      - file: teaching
+      - file: timetables
+  - caption: Lessons
+    chapters:
+    - file: lesson1
+    - file: lesson2
+    - file: lesson3
+    - file: lesson4
 
