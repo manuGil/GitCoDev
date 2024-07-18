@@ -1,11 +1,10 @@
 # Schedule
 
+The course consist of four lessons, and in our experience a lesson per day seems a good way to deliver the content. Our experience has shown that four consecutive days seems to be prefered by participants. However, adaptig the schedule to different audiences is a very reasonable approach. 
 
 ## Lessons
 
-The course consist of four lessons, and in our experience a lesson per day seems a good way to deliver the content. Our experience has shown that four consecutive days seems to be prefered by participants. However, adaptig the schedule to different audiences is a very reasonable approach. 
-
-Lessons are organized in such a way that participants are gradually introduced to the content. The conent of subsequent lessons depend on the content of previous lessons; therefore we discourage to change of the lesson. Refer to the teachign appoacht to understand why this is important. 
+Lessons are organized in such a way that participants are gradually introduced to the content. The conent of subsequent lessons depend on the content of previous lessons; therefore we discourage to change of the lesson. Refere to [our teaching approach](teaching.md) to know why the order of the lessons matter in this course.
 
 | Lessons | Day |
 |:--------------|:---------|
