@@ -5,7 +5,7 @@ comply with the [schedules.](schedule.md)
 
 The following presentations contains illustrations for supporing the explanations of some of the concepts, and general information about the lesson.
 
-**Presentation:** *[Branching and remote operations | remote operations](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
+**Presentation:** *[Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
 
 <!-- The text labled as **instructor's note** contain explanations or reminders for the instructor. For example:
 
