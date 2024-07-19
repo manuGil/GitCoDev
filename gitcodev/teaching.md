@@ -22,8 +22,7 @@ We have condensed the teaching approach in two principles.
 
 ### Self-reliance Principle
 
-*Self-relience is built by gradully reducing the dependency of instruction's guidence when engaining in learning activities.*    
-Learning activities in this course are designed to gradually build self-reliance on the participants. Therefore, content and exercises are designed so that participants work gradually more independently from instructor's guidence, and plan and execute assignments by themselves.
+*Self-relience is built by gradully reducing the dependency of instruction's guidence when engaining in learning activities.* Learning activities in this course are designed to gradually build self-reliance on the participants. Therefore, content and exercises are designed so that participants work gradually more independently from instructor's guidence, and plan and execute assignments by themselves.
 
 ### Team-experience Principle
 
