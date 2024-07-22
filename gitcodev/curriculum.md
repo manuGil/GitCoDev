@@ -7,11 +7,30 @@ Researchers involved or experting to get invovled in the developing of research 
 
 https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2310-gitcodev-fixes
 
+
+## Prerequisites
+
+Knowledge and experience in using the command-line interface (CLI) with Unix Shell to perform the following tasks:
+
+* to navigate and visualise content of directories (folders);
+* to create, copy, move and delete files and directories;
+* to edit files with terminal-based text editors (such as nano, vim, emacs, etc);
+* to visualise hidden files and directories;
+* to redirect and append a command output to a file.
+
+## Tools and Materials
+
+* Unix Shell.
+* Git.
+* GitHub account, or account on similar platform.
+* A laptop with administrative privileges  running Mac, Linux or Windows operating system.
+
+
 ## Course Units
 
 This course is organized into lessons, episodos and topic. The course consist of **Lessons**. Each Lesson is further divided into **Episodes**, and then into **Topics**. The order in which lessons, episodes and topic is organized is the result of extensive descussions on the best way to develiver the course to an audience with little to intermediate previous experience and knowldege, and the experience gather from delivering the course to two groups of mostly PhD cantidates. 
 
-## Lesson 1: Fundamental Operations with Git 
+### Lesson 1: Fundamental Operations with Git 
 
 **Learning Objectives:**
 - Understand the basics of version control.
@@ -42,7 +61,7 @@ This course is organized into lessons, episodos and topic. The course consist of
 
 </details>
 
-## Lesson 2: Branching and Remote Operations
+### Lesson 2: Branching and Remote Operations
 
 **Learning Objectives:**
 - Understand the concept of branches in Git repositories.
@@ -72,7 +91,7 @@ This course is organized into lessons, episodos and topic. The course consist of
 
 </details>
 
-## Lesson 3: Collaborative Software Development
+### Lesson 3: Collaborative Software Development
 
 **Learning Objectives:**
 - Collaborate in software project using one of the Git repository platforms such as GitHub.
@@ -104,7 +123,7 @@ This course is organized into lessons, episodos and topic. The course consist of
 
 </details>
 
-## Lesson 4: Managing Collaboration and Best Practices
+### Lesson 4: Managing Collaboration and Best Practices
 
 **Learning Objectives:**
 
