@@ -5,8 +5,6 @@ Version control is an esential tool in software development. It enables the trac
 Collaborative development is a software development approach that can help researchers to organize their software project, foster collaboration among their peers and create a community around open source research software.
 Researchers involved or experting to get invovled in the developing of research software can benefit greatly of mastering the basics of collaborative development.
 
-https://github.com/4TUResearchData-Carpentries/workshop_notes/tree/2310-gitcodev-fixes
-
 
 ## Prerequisites
 
