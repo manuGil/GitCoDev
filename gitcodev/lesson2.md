@@ -1,6 +1,6 @@
 # LESSON 2: Branching and remote operations
 
-The original list of commands has been edited and decorated with headings corresponding to the [lesson plan](../README.md#1-workshop-program) more clearly. 
+The original list of commands has been edited and decorated with headings corresponding to the [lessons in the curriculum](curriculum.md#course-units) more clearly. 
 Some commands have been either removed or relocated or added for clarity and help self-study after the class. 
 Accidental errors have been removed, but intended errors have been kept.
 
