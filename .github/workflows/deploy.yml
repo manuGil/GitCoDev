@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  BASE_URL: {% raw %}/${{ github.event.repository.name }}{% endraw %}
+  BASE_URL: /${{ github.event.repository.name }}
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -36,6 +36,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pwd
           pip install -r ./gitcodev/requirements.txt
 
       # Build the book
