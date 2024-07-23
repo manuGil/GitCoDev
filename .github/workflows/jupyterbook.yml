@@ -34,8 +34,6 @@ jobs:
 
     - name: Install dependencies
       run: |
-        echo 'working directory'
-        pwd
         pip install -r ./gitcodev/requirements.txt
 
     # (optional) Cache your executed notebooks between runs
