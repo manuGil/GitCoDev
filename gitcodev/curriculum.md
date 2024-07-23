@@ -58,6 +58,7 @@ This course is organized into lessons, episodos and topic. The course consist of
 |  | Committing changes with a configured identity and a message | 
 |  | Inspecting changes using the history | 
 |  | Undoing changes with the history | 
+|  | Marking the history using tags | 
 
 </details>
 
@@ -86,8 +87,7 @@ This course is organized into lessons, episodos and topic. The course consist of
 | --- | Create a bare repositories |
 | --- | Cloning and pushing to upstreams |
 | --- | Syncing changes between repositories |
-| --- | ~Multiple branches, multiple remotes~ |
-| --- | ~Comparing repositories~ |
+
 
 </details>
 
