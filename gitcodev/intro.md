@@ -21,13 +21,14 @@ The content has been designed specifically for the instructors ('train the train
 To any educator reading this, it will be evident that having new topics to teach is not the only reason for designing new teaching materials. 
 Changes in learning objectives, the target audience, or the teaching approaches are also valid reasons to 
 design and develop new teaching materials.  
-Therefore, we could answer the question: *why do we need a new course  about version control with Git?* by simple stating: *this course has different learning objective and teaching approaches*. 
+Therefore, we could answer the question: *why do we need a new course  about version control with Git?* by simple stating: 
+*this course has different learning objective and teaching approaches*. 
 
 However, more curious readers would like to know in which ways it is different. Which objectives  and teaching approaches are different? 
 How does these materials compared to the ones by author 'A' or organisation 'O'? 
 Which topics are different? and How different are they? 
 Are these materials better those in course 'C'?
-Proving scientific evidence of the differences in this course will require to spend a considerable amount of time in disecting, analysing and comparing any these course with other courses covering simialr topics out there. 
+Proving scientific evidence of the differences in this course will require to spend a considerable amount of time in disecting, analysing and comparing with courses covering simialr topics.
 We have deliverly chosen to not engage in that endevour; instead, we have chosen to put our efforts to better use and focus on improving the way version control and collaborative development is thaught to researchers in technical univesities.
 
 Therefore, we do not provide anwers to the questions listed above. Though, we do not mean to discourage anyone, 
