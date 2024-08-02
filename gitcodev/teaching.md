@@ -5,6 +5,7 @@ The content, activities and delivery approach of this course have been designed 
 
 We have organized the content in four lessons to fulfil such a goal. The first lesson is an introduction to the fundamentals of Git. The second lesson builds on the knowledge and skills of the first lesson and focuses on the use of branches and remote repositories. The third lesson introduces the topic of collaborative software development, where the skills and knowledge from the first and second lessons are used to collaborate effectively via platforms such as GitHub and GitLab. Finally, the fourth lesson focuses on best practices for managing collaboration, licensing, and releasing software. 
 
+(teaching-approach)=
 ## Teaching Approach
 
 This course adopts a unique teaching approach to build self-reliance and independence among participants. Self-reliance is built by gradually increasing the expertise required to complete exercises as participants move from one lesson to another. At the same time, the detail in the instructions of the exercises is reduced withouth compromising clarity. The [teaching approach graph](approach-fig) illustrates this.
