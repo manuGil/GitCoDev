@@ -16,6 +16,11 @@ h3.dancing {
 This website describes a curriculum for a short course on *Version Control and collaboratie Development for Research Software*. 
 The content has been designed specifically for the instructors ('train the trainers') and not for the learners. A derivative document suited to learners would require adapted design, format and distribution.
 
+`````{admonition} Work in progress
+:class: important
+Parts of this curriculum are work in progress. A revised version will be available by September 2024.
+`````
+
 ## Why do we need a new course on version control?
 To any educator reading this, it will be evident that having new topics to teach is not the only reason for designing new teaching materials. 
 Changes in learning objectives, the target audience, or the teaching approaches are also valid reasons to 
