@@ -1,18 +1,18 @@
 # Curriculum
 
-Version control is an esential tool in software development. It enables the tracking of changes in the code source, and the management of multiple versions. Git is version control system that allows asyncronous development, and currently, the most popular version control system. 
+Version control is an essential tool in software development. It enables the tracking of changes in the code source and the management of multiple versions. Git is a version control system that allows asynchronous development and is currently the most popular version control system. 
 
-Collaborative development is a software development approach that can help researchers to organize their software project, foster collaboration among their peers and create a community around open source research software.
-Researchers involved or experting to get invovled in the developing of research software can benefit greatly of mastering the basics of collaborative development.
+Collaborative development is a software development approach that can help researchers organise their software projects, foster collaboration among their peers and create a community around open-source research software.
+Researchers involved or expecting to be involved in developing research software can benefit greatly from mastering the basics of collaborative development.
 
 
 ## Prerequisites
 
 Knowledge and experience in using the command-line interface (CLI) with Unix Shell to perform the following tasks:
 
-* to navigate and visualise content of directories (folders);
+* to navigate and visualise the content of directories (folders);
 * to create, copy, move and delete files and directories;
-* to edit files with terminal-based text editors (such as nano, vim, emacs, etc);
+* to edit files with terminal-based text editors (such as Nano, vim, emacs, etc);
 * to visualise hidden files and directories;
 * to redirect and append a command output to a file.
 
@@ -20,21 +20,21 @@ Knowledge and experience in using the command-line interface (CLI) with Unix She
 
 * Unix Shell.
 * Git.
-* GitHub account, or account on similar platform.
-* A laptop with administrative privileges  running Mac, Linux or Windows operating system.
+* GitHub account or account on a similar platform.
+* A laptop with administrative privileges running MacOS, Linux or Windows.
 
-
+(course-units)=
 ## Course Units
 
-This course is organized into lessons, episodos and topic. The course consist of **Lessons**. Each Lesson is further divided into **Episodes**, and then into **Topics**. The order in which lessons, episodes and topic is organized is the result of extensive descussions on the best way to develiver the course to an audience with little to intermediate previous experience and knowldege, and the experience gather from delivering the course to two groups of mostly PhD cantidates. 
+This course is organised into lessons, episodes and topics. The course consists of **Lessons**. Each Lesson is divided into **Episodes** and then into **Topics**. The order in which lessons, episodes and topic is organised is the result of extensive discussions on the best way to deliver the course to an audience with little to intermediate previous experience and knowledge and the experience gathered from providing the course to two groups of mostly PhD candidates. 
 
 ### Lesson 1: Fundamental Operations with Git 
 
 **Learning Objectives:**
 - Understand the basics of version control.
-- Use Git for creatig repositories and commit changes.
+- Use Git to create repositories and commit changes.
 - Apply Git operations to track, reverse and delete changes in working documents.
-- Organize tracked changes in the Git history.
+- Organise tracked changes in the Git history.
 
 <details>
 <summary>
@@ -64,10 +64,10 @@ This course is organized into lessons, episodos and topic. The course consist of
 
 **Learning Objectives:**
 - Understand the concept of branches in Git repositories.
-- Apply Git operations for creating and merging branches in a local Git repository.
+- Apply Git operations to create and merge branches in a local Git repository.
 - Understand the concepts of bare and remote Git repositories. 
 - Clone and push changes to remote Gir repositories.
-- Syncronize changes between local and remote Git repositories.
+- Synchronise changes between local and remote Git repositories.
 
 
 <details>
@@ -80,7 +80,7 @@ This course is organized into lessons, episodos and topic. The course consist of
 | **2.1** | **Branching** | 
 | --- | Create, rename, change, and delete branches | 
 | --- | Develop and compare branches | 
-| --- | Visualise and merge branches, and resolve conflicts | 
+| --- | Visualise and merge branches and resolve conflicts | 
 | **2.2** | **Operations with remotes** | 
 | --- | Create a bare repositories |
 | --- | Cloning and pushing to upstreams |
@@ -92,11 +92,11 @@ This course is organized into lessons, episodos and topic. The course consist of
 ### Lesson 3: Collaborative Software Development
 
 **Learning Objectives:**
-- Collaborate in software project using one of the Git repository platforms such as GitHub.
-- Undestand the principles of managing research software projects.
-- Orgaize a sofware development team by defining roles and resposibilties.
+- Collaborate on software projects using one of the Git repository platforms such as GitHub.
+- Understand the principles of managing research software projects.
+- Organise a software development team by assigning roles and responsibilities.
 - Contribute to the development of research software using a collaborative approach.
-- Undestand the difference between centrilized and shared collaborative workflow and when to use them.
+- Understand the difference between centralised and shared collaborative workflow and when to use them.
 - Contribute to open or close software projects using features such as issues, code changes, and pull/merge requests.
 
 <details>
@@ -111,11 +111,11 @@ This course is organized into lessons, episodos and topic. The course consist of
 | --- | Exploring the GitHub GUI |
 | --- | Collaborating |
 | **3.2** | **Collaborative Development for Research Software** |
-| --- | When to aim for a collaborative approach? |
+| --- | When should we aim for a collaborative approach? |
 | --- | Management strategies |
 | --- | Roles and responsibilities |
 | --- | Documenting issues |
-| --- | Centralize workflow: branching
+| --- | Centralise workflow: branching
 | --- | Pull requests
 | --- | Shared workflow: forking
 
@@ -125,12 +125,12 @@ This course is organized into lessons, episodos and topic. The course consist of
 
 **Learning Objectives:**
 
-- Understand the important of contribution guidelines and best practices to manage collaboration in a research software projects.
-- Organize a sofware team independently around activities related to collaborative software development.
-- Understand the impact coder reviews and best practices on the quality of software.
-- Conduct code reviews as part of a research software team.
+- Understand the importance of contribution guidelines and best practices to manage collaboration in research software projects.
+- Organise a software team independently to work on activities related to collaborative software development.
+- Understand the impact of code reviews and best practices on software quality.
+- Perform code reviews as part of a research software team.
 - Apply best practices when conducting code reviews. 
-- Describe what are best practices related to sofware licensing, citation, semantic versioning, and software releases.
+- Describe best practices related to licensing, citation, semantic versioning, and releases or software.
 
 <details>
 <summary>
