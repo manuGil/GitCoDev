@@ -1,57 +1,91 @@
 # LESSON 2: Branching and remote operations
 
-The original list of commands has been edited and decorated with headings corresponding to the [lessons in the curriculum](curriculum.md#course-units) more clearly. 
-Some commands have been either removed or relocated or added for clarity and help self-study after the class. 
+This is a summary of the lecture notes for this lesson
+The original list of commands has been edited and decorated with headings corresponding to the [lessons in the curriculum](course-units) more clearly. 
+Some commands have been either removed or relocated or added for clarity and help self-study after the lesson.
 Accidental errors have been removed, but intended errors have been kept.
 
 The comments after each line are annotations on whether a command/option appears for the first time (**new**) or is a **known action**. 
 Else, the annotation recalls why we typed that certain command, for example to **observe** the state of the play (typically before a certain change) or to **verify** the results of a change.
-**routine** commands are the typical commit ssequence learned in Lesson 1.
+**routine** commands are the typical commit sequence learned in Lesson 1.
 
 The original list of commands is available at this commit [as displayed by GitHub](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/056617efa8abb7d79ffb3e85b3ac8dbbcaed50e6/Lesson2.md).
     
+
+
+````{note}
+The list of commands below has been grouped arbitrarily for readability's sake.
+````
+
 ## Episode 1: Branching
 
 ### 2.1.1 Create, rename, change and delete branches
 
-    git branch                                                          # new command
-    git branch B1                                                       # new argument
-    git branch                                                          # verify
-    git status                                                          # verify
-    cat Lines.txt                                                       # verify
-    git branch -m B1 B2                                                 # new short option
-    git log --oneline                                                   # verify
-    git branch -d B2                                                    # new short option
-    git log --oneline                                                   # verify
-    git branch -m master foo                                            # known action
-    git log --oneline                                                   # verify
-    git branch -d foo                                                   # known action (fails)
-    git branch -m foo main                                              # known action
-    git branch                                                          # verify
-    git status                                                          # verify
-    git log --oneline                                                   # verify
-    git branch B1                                                       # known action
-    git branch                                                          # verify
-    git log --oneline                                                   # verify
-    git switch                                                          # new commmand (fails)
-    git switch B1                                                       # new argument: on branch B1
-    git log --oneline                                                   # verify
-    git branch B2                                                       # known action
-    git log --oneline                                                   # verify
-    git switch B2                                                       # known action: on branch B2
-    git log --oneline                                                   # verify
-    git switch main                                                     # known action: on branch main
-    git log --oneline                                                   # verify
+```shell
+git branch                                     # new command
+git branch B1                                  # new argument
+git branch                                     # verify
+git status                                     # verify
+cat Lines.txt                                  # verify
+```
+```shell
+git branch -m B1 B2                            # new short option
+git log --oneline                              # verify
+git branch -d B2                               # new short option
+git log --oneline                              # verify
+git branch -m master foo                       # known action
+```
+```shell
+git log --oneline                              # verify
+git branch -d foo                              # known action (fails)
+git branch -m foo main                         # known action
+git branch                                     # verify
+```
+```shell
+git status                                     # verify
+git log --oneline                              # verify
+git branch B1                                  # known action
+git branch                                     # verify
+git log --oneline                              # verify
+```
+```shell
+git switch                                     # new commmand (fails)
+git switch B1                                  # new argument: on branch B1
+git log --oneline                              # verify
+git branch B2                                  # known action
+git log --oneline                              # verify
+```
+```shell
+git switch B2                                  # known action: on branch B2
+git log --oneline                              # verify
+git switch main                                # known action: on branch main
+git log --oneline                              # verify
+```
 
-**[exercise 1](./exercises/L2-ex01) begins**
-    
+
+````{card} 
+Exercise --- Get familiar with branches
+^^^    
+
+```{include} exercises/L2-ex01.md
+```
+
+```{dropdown} Answers
+
+    [Need to be completed]
+
+    ```shell
     (your work)
     git branch                                                          # verify
     git branch -d B1 B2                                                 # known action
     git branch                                                          # verify
     git log --oneline                                                   # verify
     cat Lines.txt                                                       # verify
-**exercise 1 ends**
+    ```
+
+```
+````
+
 
 ### 2.1.2 Develop and compare branches
 

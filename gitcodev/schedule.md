@@ -1,10 +1,8 @@
 # Schedule
-
-The course consist of four lessons, and in our experience a lesson per day seems a good way to deliver the content. Our experience has shown that four consecutive days seems to be prefered by participants. However, adaptig the schedule to different audiences is a very reasonable approach. 
+The course consists of four lessons, and a lesson per day is a good way to deliver the content. Our experience has shown that participants prefer four consecutive days. However, adapting the schedule to different audiences is a very reasonable approach. 
 
 ## Lessons
-
-Lessons are organized in such a way that participants are gradually introduced to the content. The conent of subsequent lessons depend on the content of previous lessons; therefore we discourage to change of the lesson. Refere to [our teaching approach](teaching.md) to know why the order of the lessons matter in this course.
+Lessons are organized so that participants are gradually introduced to the content. The content of subsequent lessons depends on previous lessons; therefore, we discourage the change of the lesson. Refer to [our teaching approach](teaching-approach) to learn why the order of the lessons matters in this course.
 
 | Lessons | Day |
 |:--------------|:---------|
@@ -14,10 +12,9 @@ Lessons are organized in such a way that participants are gradually introduced t
 | Lesson 4      | Day 4   |
 
 ## Sessions
-
-Each lesson has been designed to be delivered in sessions of four and a half hours. 
-The content of each lesson has been optimized to be delivered in a way that the congnitive overload on
-the participants is reduced. We recommend to delive each lesson following the following timetable.
+Each lesson has been designed to be delivered in four and a half-hour sessions. 
+The content of each lesson has been optimized to provide the lesson in a way that reduces the cognitive overload of
+the participants. We recommend delivering each lesson following the following timetable.
 
 
 | 00:00  | 01:00 | 01:10 | 02:00 | 02:20 | 03:10 | 03:20 | 04:10 | 04:30 |
