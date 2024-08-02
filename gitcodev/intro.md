@@ -10,16 +10,13 @@ h3.dancing {
 }
 </style>
 
-# Introduction
 
 # Introduction
 
 This website describes a curriculum for a short course on *Version Control and collaboratie Development for Research Software*. 
 The content has been designed specifically for the instructors ('train the trainers') and not for the learners. A derivative document suited to learners would require adapted design, format and distribution.
 
-
 ## Why do we need a new course on version control?
-
 To any educator reading this, it will be evident that having new topics to teach is not the only reason for designing new teaching materials. 
 Changes in learning objectives, the target audience, or the teaching approaches are also valid reasons to 
 design and develop new teaching materials.  
@@ -38,7 +35,6 @@ who wishes to put the effort into finding answers from pursuing so.
 Instead, we explain our motivation for developing this course and hope it will satisfy readers who share our motivation. We encourage them to adopt, adapt and reuse the contents of this course.
 
 ## Motivation
-
 After teaching introductory courses on version control using Git at the [Delft University of Technology](https://www.tudelft.nl/), 
 recurring feedback provided by participants, mainly early-career researchers such as PhD candidates and post-docs, made evident that such courses were highly appreciated and interesting. However, participants also often mentioned that after the courses, they did not feel confident applying what was learned to their research.
 They did not know how they could apply the recently acquired skills to their research projects, 
