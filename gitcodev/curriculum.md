@@ -28,19 +28,16 @@ Knowledge and experience in using the command-line interface (CLI) with Unix She
 
 This course is organised into lessons, episodes and topics. The course consists of **Lessons**. Each Lesson is divided into **Episodes** and then into **Topics**. The order in which lessons, episodes and topic is organised is the result of extensive discussions on the best way to deliver the course to an audience with little to intermediate previous experience and knowledge and the experience gathered from providing the course to two groups of mostly PhD candidates. 
 
-### Lesson 1: Fundamental Operations with Git 
+````{card} Lesson 1: Fundamental Operations with Git 
 
 **Learning Objectives:**
+
 - Understand the basics of version control.
 - Use Git to create repositories and commit changes.
 - Apply Git operations to track, reverse and delete changes in working documents.
 - Organise tracked changes in the Git history.
 
-<details>
-<summary>
-<b>Topics:</b>
-</summary>
-
+```{dropdown} Topics
 | Episode | Topic |
 |:----|:----|
 | **1.1** | **Git repositories for version control** | 
@@ -58,9 +55,10 @@ This course is organised into lessons, episodes and topics. The course consists 
 |  | Undoing changes with the history | 
 |  | Marking the history using tags | 
 
-</details>
+```
+````
 
-### Lesson 2: Branching and Remote Operations
+````{card} Lesson 2: Branching and Remote Operations
 
 **Learning Objectives:**
 - Understand the concept of branches in Git repositories.
@@ -69,12 +67,7 @@ This course is organised into lessons, episodes and topics. The course consists 
 - Clone and push changes to remote Gir repositories.
 - Synchronise changes between local and remote Git repositories.
 
-
-<details>
-<summary>
-<b>Topics:</b>
-</summary>
-
+```{dropdown} Topics
 | Episode | Topic |
 |:----|:----|
 | **2.1** | **Branching** | 
@@ -86,10 +79,10 @@ This course is organised into lessons, episodes and topics. The course consists 
 | --- | Cloning and pushing to upstreams |
 | --- | Syncing changes between repositories |
 
+```
+````
 
-</details>
-
-### Lesson 3: Collaborative Software Development
+````{card} Lesson 3: Collaborative Software Development
 
 **Learning Objectives:**
 - Collaborate on software projects using one of the Git repository platforms such as GitHub.
@@ -99,11 +92,7 @@ This course is organised into lessons, episodes and topics. The course consists 
 - Understand the difference between centralised and shared collaborative workflow and when to use them.
 - Contribute to open or close software projects using features such as issues, code changes, and pull/merge requests.
 
-<details>
-<summary>
-<b>Topics:</b>
-</summary>
-  
+```{dropdown} Topics
 | Episode | Topic |
 |:----|:----|
 | **3.1** | **Collaborative Platforms** |
@@ -119,9 +108,11 @@ This course is organised into lessons, episodes and topics. The course consists 
 | --- | Pull requests
 | --- | Shared workflow: forking
 
-</details>
+```
+````
 
-### Lesson 4: Managing Collaboration and Best Practices
+
+````{card} Lesson 4: Managing Collaboration and Best Practices
 
 **Learning Objectives:**
 
@@ -132,11 +123,7 @@ This course is organised into lessons, episodes and topics. The course consists 
 - Apply best practices when conducting code reviews. 
 - Describe best practices related to licensing, citation, semantic versioning, and releases or software.
 
-<details>
-<summary>
-<b>Topics:</b>
-</summary>
-  
+```{dropdown} Topics
 | Episode | Topic |
 |:----|:----|
 | **4.1** |  **Managing collaboration** |
@@ -149,4 +136,5 @@ This course is organised into lessons, episodes and topics. The course consists 
 | --- | Semantic versioning |
 | --- | Softare Releases |
 
-</details>
+```
+````
