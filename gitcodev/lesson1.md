@@ -86,7 +86,7 @@ The list of commands below has been grouped arbitrarily for readability's sake.
     ls
 ```
 
-## Episode 2: Tracking Changes in working documents
+## Episode 2: Tracking Changes in Working Documents
 
 ### 1.2.1 Tracking Changes with the Index
 ```shell
@@ -145,7 +145,8 @@ Exercise 1 --- Tracking changes with the Index
     git add directory
     git status
 ```
-### 1.2.2 Not Tracking and Stop tracking
+
+### 1.2.2 Not Tracking and Stop Tracking
 
 ```shell
     history
@@ -172,7 +173,7 @@ Exercise 1 --- Tracking changes with the Index
     git add .gitignore 
     git status 
 ```
-#### Ignore Untracked directories
+#### Ignore Untracked Directories
 
 ```shell
     touch directory/trackme.txt
@@ -256,6 +257,7 @@ Exercise 2 --- Stop tracking Changes in a File
     git add .gitignore 
     git status 
 ```
+
 ### 1.2.4  Deleting and renaming tracked files and directories
 
 ```shell
@@ -310,7 +312,7 @@ Exercise 3 --- Renaming Tracked Files
 ```
 ````
 
-## Episode 3: Organizing tracked changes in a history
+## Episode 3: Organizing Tracked Changes in a History
 
 ### 1.3.1 Commiting Changes with a Configured Identify and a Message
 
@@ -374,9 +376,7 @@ Exercise 5 --- Follow the state of the repository in the commit routine
 ````
 `````
 
-
-
-### 1.3.2 Inspecting Changes using the History
+### 1.3.2 Inspecting Changes Using the History
 
 
 `````{card} 
@@ -479,7 +479,7 @@ Exercise 7 --- Explore the changes recorded in the history
 This topic involves using `git restore`. Actual commands are missing.
 ````
 
-### 1.3.4 Marking the History using Tags
+### 1.3.4 Marking the History Using Tags
 
 * Lightweight tags
 
