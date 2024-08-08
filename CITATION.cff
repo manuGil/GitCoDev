@@ -3,13 +3,13 @@
 authors: 
   -
     family-names: Garcia Alvarez
-    given-names: Manuel
+    given-names: Manuels
     orcid: "https://orcid.org/0000-0000-0000-0000 "
 cff-version: "1.1.0"
 keywords: 
   - git
   - collaborative development
-message: "If you use this software, please cite it using these metadata."
-title: "Awesome Code"
+message: "If you use this materils, please cite it using these metadata."
+title: "Version Control and Collaborative Development for Research Software"
 version: "1.0"
 ...
