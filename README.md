@@ -1,5 +1,5 @@
 # GitCoDev
-a curriculum for a short course on *Version Control and collaboratie Development for Research Software*. 
+A curriculum for a short course on **Version Control and collaboratie Development for Research Software**. 
 
 ## Installation
 
@@ -17,20 +17,24 @@ pip install -r requirements.txt
 jupyter book build gitcodev/
 ```
 
-### Contributing
+## Contributing
 
 Read the [contributing guidelines](CONTRIBUTING.md) to know how can you take part in this project. 
 
-## License
-
-1. [Always decide on a license for your code. If no licensing is stated, the default of "no license" is "no one can make copies or derivative works of your code".]
-
-## Copyright
-
-&copy; 2023 Manuel G. Garcia & Giordano Lipari, Delft, The Netherlands. 
 
 ## Citation
 
 This course has been designed, developed and delivered by Manuel Garcia Alvarez and Giordano Lipari.
 Please cite these materials as follows.
 
+Garcia Alvarez, M., & Lipari, G. Version Control and Collaborative Development for Research Software. https://github.com/manuGil/GitCoDev
+
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+
+
+## Copyright
+
+&copy; 2023 Manuel G. Garcia & Giordano Lipari, Delft, The Netherlands.
