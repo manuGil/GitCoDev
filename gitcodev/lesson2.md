@@ -10,8 +10,6 @@ Else, the annotation recalls why we typed that certain command, for example to *
 **routine** commands are the typical commit sequence learned in Lesson 1.
 
 The original list of commands is available at this commit [as displayed by GitHub](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/056617efa8abb7d79ffb3e85b3ac8dbbcaed50e6/Lesson2.md).
-    
-
 
 ````{note}
 The list of commands below has been grouped arbitrarily for readability's sake.

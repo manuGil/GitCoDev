@@ -5,7 +5,7 @@
 Lecture notes for the lesson on collaborative software development.
 Most of the content in this lesson uses the presentation. We present best-practices and lead an open discussion.
 
-### Code Reviews
+## Code Reviews
 
 > This lesson will be completed later.
 

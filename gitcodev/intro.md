@@ -11,7 +11,7 @@ h3.dancing {
 </style>
 
 
-# Introduction
+# Foreword
 
 This website describes a curriculum for a short course on *Version Control and collaboratie Development for Research Software*. 
 The content has been designed specifically for the instructors ('train the trainers') and not for the learners. A derivative document suited to learners would require adapted design, format and distribution.
