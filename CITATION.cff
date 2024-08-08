@@ -1,15 +1,42 @@
-# YAML 1.2
----
-authors: 
-  -
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Version Control and Collaborative Development for Research
+  Software
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Manuel
     family-names: Garcia Alvarez
-    given-names: Manuel
-    orcid: "https://orcid.org/0000-0000-0000-0000 "
-cff-version: "1.1.0"
-keywords: 
-  - git
+    email: m.g.garciaalvarez@tudelft.nl
+    affiliation: Technische Universiteit Delft
+    orcid: 'https://orcid.org/0000-0003-1579-9989'
+  - given-names: Giordano
+    family-names: Lipari
+    affiliation: Waterveweging
+repository-code: 'https://github.com/manuGil/GitCoDev'
+url: 'https://manugil.github.io/GitCoDev'
+abstract: >-
+  Version control is an essential tool in software
+  development. It enables the tracking of changes in the
+  code source and the management of multiple versions. Git
+  is a version control system that allows asynchronous
+  development and is currently the most popular version
+  control system. Collaborative development is a software
+  development approach that can help researchers organise
+  their software projects, foster collaboration among their
+  peers and create a community around open-source research
+  software. Researchers involved or expecting to be involved
+  in developing research software can benefit greatly from
+  mastering the basics of collaborative development.
+keywords:
+  - version control
   - collaborative development
-message: "If you use this software, please cite it using these metadata."
-title: "Awesome Code"
-version: "1.0"
-...
+  - research software
+  - git
+  - curriculum
+license: CC-BY-4.0
