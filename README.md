@@ -25,9 +25,9 @@ Read the [contributing guidelines](CONTRIBUTING.md) to know how can you take par
 ## Citation
 
 This course has been designed, developed and delivered by Manuel Garcia Alvarez and Giordano Lipari.
-Please cite these materials as follows.
+Please cite these materials as follows:
 
-Garcia Alvarez, M., & Lipari, G. Version Control and Collaborative Development for Research Software. https://github.com/manuGil/GitCoDev
+*Garcia Alvarez, M., & Lipari, G. Version Control and Collaborative Development for Research Software. https://github.com/manuGil/GitCoDev*
 
 
 ## License
