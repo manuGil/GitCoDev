@@ -100,8 +100,9 @@ This course is organised into lessons, episodes and topics. The course consists 
 | --- | Exploring the GitHub GUI |
 | --- | Collaborating |
 | **3.2** | **Collaborative Development for Research Software** |
-| --- | When should we aim for a collaborative approach? |
-| --- | Management strategies |
+| --- | When should to aim for a collaborative approach? |
+| --- | Introduction to Collaboration |
+| --- | Management Strategies |
 | --- | Roles and responsibilities |
 | --- | Documenting issues |
 | --- | Centralise workflow: branching
