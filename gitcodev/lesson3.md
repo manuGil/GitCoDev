@@ -23,7 +23,7 @@ This contains general information about the lesson and illustrations for suppori
 ````{admonition} Instructor's Note 
 The instructor must collect particiapant's user names for GitHub/Gitlab the day before, so that they can be invited to collaborative repositories.
 We recommend a [Google form](https://forms.gle/asj6dAhTh6vcyUhV9), or similar solution.
-
+````
 
 The following helps the instructor to set up a terminal that will show the history of command from one terminal in another. This helps participant to keep track of what commands have been typed by the instructor.  
 
@@ -57,22 +57,18 @@ Shortcuts for the terminal in MacOS
 |Close a pane            | Shift + Cmd + `d`   |
 ------
 
-CONTINUE HERE
-
-## PART 1
-
-### i. Recapitulation Operations with Remotes [5 min]
+## i. Recapitulation Operations with Remotes [5 min]
 
 Common operations with remotes
 
-> Recap figure on how local repostories and remotes are connected and how to work with remotes (Slides).
+````{adminition}
+* Recap slide on how local repostories and remotes are connected and how to work with remotes (Slides).
+* Recap what `clone, fetch, merge, pull` and `push` commands do.
+````
 
-> Recap what `clone, fetch, merge, pull` and `push` commands do.
+## Episode 1: Collaborative Platforms
 
-### A. Collaborative Platforms
-
-#### 1. Connect to GitHub via SSH [ 10 min]
-
+### 3.1.1. Connecting to Code Repositories  [ 10 min]
 
 * Ask participants using Windows not to start Git Bash clicking on the desktop icon, as they did in Lesson 1. Instead,
     * use the app menu (the Windows logo)
@@ -81,136 +77,165 @@ Common operations with remotes
     The participants need to type in their credentials as local administrators.
 This gain authority to have SSH installing its own features in their laptop next.
 
-    Take note: at their first `git push`, Git might complain about a mismatch between the credentials of local and global administrator.
+```{admonition} Instructor's Note
+At their very first `git push`, Git might complain about a mismatch between the credentials of local and global administrator.
 The warning itself suggests another Git command as the remedy to this impasse.
+```
 
+#### Setting up SSH connection for GitHub
+
+````{admonition} Instructor's Note
+GitHub requires authentication via SSH to do pulls and pushes, but not for cloning. **Use slides** to explain what a SSH connection entitles.
+````
 
 * Ask participants to test the connection with:
-
+    ```shell
         ssh -T git@github.com
+    ```
 
-    The message for a successful outcome is friendly and plain.
-    Ask participants whether git@github.com has welcomed them.
-
-* GitHub requires authentication via SSH to do pulls and pushes, but not for cloning. **Use illustrations** to explain what a SSH connection entitles.
-
-    To connect via SSH do the following [skip if connections have been successfuly set]:
+* To connect via SSH do the following:
 
     1. Create a Key-pair inside the `.ssh`  in the Home directory
-
+        ```shell
             # move to Home directory
             cd ~
             # create key
             ssh-keygen -t ed25519 -C "your_email@example.com"
             # save to the default location and file name: ~/.ssh/id_ed25519
+        ```
 
     2. Check the keys have been created
-
+        ```shell
             ls ~/.ssh/
+        ```
 
     3. Start the `ssh-agent` and add private key to agent:
-
+        ```shell
             # start agent
             eval "$(ssh-agent -s)"
 
             # add private key
             ssh-add ~/.ssh/id_ed25519
-
+        ```
     4. Instruct SSH to use key files in different locations:
-
+        ```shell
             ssh -i <path/private/keyfile>
+        ```
 
-    5. Info on how to [start the ssh-agent automatically](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows)
+    ````{admonition} Instructor's Note
+    Window's user would need to set up the *ssh-agent** to [start the automatically](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows)
     Mac and Linux user don't have to worry about this.
-
-* Copy public key to GitHub:
-
+    ````
+5. Copy public key to GitHub:
+    ```shell
         clip < .ssh/id_ed25519.pub
+    ```
 
-* Go to GitHub, explain the basics of the interface and add the SSH key.
+````{admonition} Instructor's Note
+Go to GitHub, explain the basics of the interface and
+````
 
+6. add the SSH key.
+    ```shell
         Profile > Settings > SSH and GPG keys > New SSH key > Add SSH key
+    ```
 
-* Test SSH connection
-
+7. Test SSH connection
+    ```shell
         ssh -T git@github.com
+    ```
 
-> More information on working with [SSH keys and GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+````{admonition} Instructor's Note
+The message for a successful outcome is friendly and plain.Ask participants whether git@github.com has welcomed them.
 
-> Check the info on [Troubleshooting SSH for GitHub](https://docs.github.com/en/authentication/troubleshooting-ssh]).
+* More information on working with [SSH keys and GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+* Check the info on [Troubleshooting SSH for GitHub](https://docs.github.com/en/authentication/troubleshooting-ssh).
+````
 
-#### 2. Publish local repository to GitHub [5 min]
+#### 2. Publishing Local Repository to GitHub [5 min]
 
-**a. Create GitHub Repo**
+1. Create GitHub Repo: Go to Github and create an public empty repository called `workshop`. Repo description: *workshop on collaborative development*
 
-> Go to Github and create an empty and public repository called `patients-analysis`.
+2. Add Remote to Local Repo: before this remove any existing remotes in the repository with: `git remote remove <name>`
 
-- Repo description: *analysis of treatments for inflammation*
-
-**Add Remote to Local Repo**
-
-> before this remove any existing remotes in the repository with: `git remote remove <name>`
-
-Move back to the repo directory: `~/Desktop/
-> In your local repository (on the terminal), add the remote repository and push the content.
+Move back to the repo directory: `~/Desktop/`
+In your local repository (on the terminal), add the remote repository and push the content.
 
 * Connect to remote
     ```shell
-    $ git remote add origin git@github.com:<user-name>/<repo-name>.git
+        git remote add origin git@github.com:<user-name>/<repo-name>.git
     ```
 
 * Check that remote was added
     ```shell
-    $ git remote -v
-    $ git branch -M main # [Optional if config was changed. This will change the name of the main branch of the repo to make it more friendly]
-    $ git push -u origin main
+        git remote -v
+        git branch -M main # [Optional if config was changed. This will change the name of the main branch of the repo to make it more friendly]
+        git push -u origin main
     ```
 
 #### 3. Check the Content's Repositoy is in GitHub
-* Go back to your repo page and refresh the browser.
+Go back to your repo page and refresh the browser.
 
+````{admonition} Instructor's Note
+Questions?
+````
 
-> **Questions?**
-
-
-#### 4. Exploring the GitHub GUI [ 5 min]
+### 3.1.2. Exploring the GitHub GUI [5 min]
 
 Collaborative platform host and manage remote repositories to enable collaborative development.
 
-> Ask participants if they are familiar with GitHub. If not, give a short explanation of what it is for how to explore the GUI.
+````{admonition} Instructor's Notes
+Ask participants if they are familiar with GitHub. If not, give a short explanation of what it is for how to explore the GUI.
 
 Mention GitLab at TU Delft as an alternative for a collaborative platform: https://gitlab.tudelft.nl/
+````
 
-#### 5. Collaborating [ 5 min ]
+### 3.1.3. Collaborating [ 5 min ]
 
-> Participants are invited as collaborators to the check-in repository. Participants must have permission to merge pull requets.
+Participants are invited as collaborators to the **check-in** repository. Participants must have permission to merge pull requets.
 
-a. Demo on how to invite collaborators using the [check-in repository.](https://github.com/manuGil/check-in)
+1. Demo on how to invite collaborators using the [check-in repository.](https://github.com/manuGil/check-in)
 
-b. Paticipant accept inviation via email or GitHub GUI.
+2. Paticipant accept inviation via email or GitHub GUI.
 
-#### EXERCISE 1: Startig with Collaboration [10 mins]
+````{card} 
+Exercise 1 --- Startig with Collaboration [10 mins]
+^^^    
 
-- Clone the Check-in repository via SSH: https://github.com/manuGil/check-in
-- Make a copy of the file `check-in/template.md` in the same directory; give it an anonymous name, ex. `<name-initials><3-last-digits-phone>.md`
-- Open your copy of `template.md` and add something to the lists in the file.
-- Commit your changes, and push them to the remote repository. You might experience difficulties doing that, follow the suggestions given by Git.
-- Reflect on the difficulties you faced, and how we might avoid them.
+```{include} exercises/L3-ex01.md
+```
 
+```{admonition} Instructor's Note
+While completing this exercise, many participants will be warned by Git that they have to pull changes before pushing their contribution. 
+This situation should be used as a pre-amble to [branching](#centralise-workflow-branching)
+```
 
-### B. Collaborative Development for Research Software
+```{dropdown} Answers
 
-> Refer to slides
+    No answer are provided for this exercise.
 
-Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
+```
+````
 
-#### 1. Collaborative Development [ 3 mins]
+## Episode 2: Collaborative Development for Research Software
 
-> An Quick introduction to collaborative development. Definitions  (Slides)
+### 3.2.1.  Introduction to Collaboration [3 min]
 
-#### 2. When to Aim for a Collaborative Approach? [2 min]
+```{admonition} Instructor's Note
 
-> Explain the difference between private and close collaboration
+* An Quick introduction to collaborative development. Definitions  (Slides).
+
+* Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
+
+```
+
+### 3.2.2. When to Aim for a Collaborative Approach? [2 min]
+
+```{admonition} Instructor's Note
+Explain the difference between private and close collaboration
+```
+
+CONTINUE HERE
 
 #### 3. Management Strategies [5 min]
 
