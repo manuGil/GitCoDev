@@ -1,6 +1,6 @@
 # LESSON 2: Branching and remote operations
 
-This is a summary of the lecture notes for this lesson
+This is a summary of the lecture notes for this lesson.
 The original list of commands has been edited and decorated with headings corresponding to the [lessons in the curriculum](course-units) more clearly. 
 Some commands have been either removed or relocated or added for clarity and help self-study after the lesson.
 Accidental errors have been removed, but intended errors have been kept.
@@ -20,44 +20,44 @@ The list of commands below has been grouped arbitrarily for readability's sake.
 ### 2.1.1 Create, rename, change and delete branches
 
 ```shell
-git branch                                     # new command
-git branch B1                                  # new argument
-git branch                                     # verify
-git status                                     # verify
-cat Lines.txt                                  # verify
+git branch                     # new command
+git branch B1                  # new argument
+git branch                     # verify
+git status                     # verify
+cat Lines.txt                  # verify
 ```
 ```shell
-git branch -m B1 B2                            # new short option
-git log --oneline                              # verify
-git branch -d B2                               # new short option
-git log --oneline                              # verify
-git branch -m master foo                       # known action
+git branch -m B1 B2            # new short option
+git log --oneline              # verify
+git branch -d B2               # new short option
+git log --oneline              # verify
+git branch -m master foo       # known action
 ```
 ```shell
-git log --oneline                              # verify
-git branch -d foo                              # known action (fails)
-git branch -m foo main                         # known action
-git branch                                     # verify
+git log --oneline              # verify
+git branch -d foo              # known action (fails)
+git branch -m foo main         # known action
+git branch                     # verify
 ```
 ```shell
-git status                                     # verify
-git log --oneline                              # verify
-git branch B1                                  # known action
-git branch                                     # verify
-git log --oneline                              # verify
+git status                     # verify
+git log --oneline              # verify
+git branch B1                  # known action
+git branch                     # verify
+git log --oneline              # verify
 ```
 ```shell
-git switch                                     # new commmand (fails)
-git switch B1                                  # new argument: on branch B1
-git log --oneline                              # verify
-git branch B2                                  # known action
-git log --oneline                              # verify
+git switch                     # new commmand (fails)
+git switch B1                  # new argument: on branch B1
+git log --oneline              # verify
+git branch B2                  # known action
+git log --oneline              # verify
 ```
 ```shell
-git switch B2                                  # known action: on branch B2
-git log --oneline                              # verify
-git switch main                                # known action: on branch main
-git log --oneline                              # verify
+git switch B2                  # known action: on branch B2
+git log --oneline              # verify
+git switch main                # known action: on branch main
+git log --oneline              # verify
 ```
 
 
