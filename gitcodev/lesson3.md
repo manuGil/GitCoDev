@@ -1,23 +1,31 @@
 # LESSON 3: Collaborative Software Development
-Lecture notes for the lesson on introduction to collaborative software development.
-Times between `[]` are indicative of how much time should be spend in each topic or exercise to
-comply with the [schedules.](schedule.md)
+Lecture notes for the lesson on introduction to collaborative software development. These notes contains the following pointers for the instructor:
 
-The following presentations contains illustrations for supporing the explanations of some of the concepts, and general information about the lesson.
+* Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
+* The text in  **Instructor note** contain explanations or reminders for the instructor. For example:
+    `````{admonition} Instructor's Note
 
-**Presentation:** *[Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
+    An SSH key must be set to push changes to a remote repository in GitHub.
+    ````` 
 
-<!-- The text labled as **instructor's note** contain explanations or reminders for the instructor. For example:
+````{card} 
+Presentation 
+^^^    
 
-`````{admonition} Instructor's Note
-:class: tip
-An SSH key must be set to push changes to a remote repository in GitHub.
-````` -->
+This contains general information about the lesson and illustrations for supporing the explanations of some of the concepts, and 
 
-<!-- **Exercises:** *[Exercises remote operations]()* -->
+*[Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
+
+````
 
 ## Preparation
-The instructor sets up the command history on two terminals do the following:
+
+````{admonition} Instructor's Note 
+The instructor must collect particiapant's user names for GitHub/Gitlab the day before, so that they can be invited to collaborative repositories.
+We recommend a [Google form](https://forms.gle/asj6dAhTh6vcyUhV9), or similar solution.
+
+
+The following helps the instructor to set up a terminal that will show the history of command from one terminal in another. This helps participant to keep track of what commands have been typed by the instructor.  
 
 1. On main terminal:
 ```bash
@@ -29,7 +37,7 @@ The instructor sets up the command history on two terminals do the following:
 ```
 
 ### Windows Terminal (Preview) 
-Useful shortcuts for the Windows Terminal (Preview) App on Windows 11.
+Shortcuts for the Windows Terminal (Preview) App on Windows 11.
 
 | Action             | Shortcut                |
 |--------------------|--------------------------|
@@ -39,11 +47,17 @@ Useful shortcuts for the Windows Terminal (Preview) App on Windows 11.
 |Move pane focus         | Alt + `Arrow keys`   |
 |Resize the focused pane | Alt+Shift + `Arrow keys` |
 
+
+### MacOS Terminal
+Shortcuts for the terminal in MacOS
+
+| Action             | Shortcut                |
+|--------------------|--------------------------|
+|Split pane horizontally | Cmd + `d`   | 
+|Close a pane            | Shift + Cmd + `d`   |
 ------
 
-> Participants provide GitHub user names to be invited to collaborative repositories [Google form](https://forms.gle/asj6dAhTh6vcyUhV9), the day before.
-
-------
+CONTINUE HERE
 
 ## PART 1
 
