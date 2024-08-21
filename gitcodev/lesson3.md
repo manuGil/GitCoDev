@@ -219,37 +219,38 @@ This situation should be used as a pre-amble to [branching](#centralise-workflow
 
 ## Episode 2: Collaborative Development for Research Software
 
-### 3.2.1.  Introduction to Collaboration [3 min]
+### 3.2.1.   Introduction to collaboration in software projects [5 min]
 
 ```{admonition} Instructor's Note
 
 * An Quick introduction to collaborative development. Definitions  (Slides).
 
-* Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
+> Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
+
+* Explain the difference between private and close collaboration.
+
+* When to Aim for a Collaborative Approach?
 
 ```
 
-### 3.2.2. When to Aim for a Collaborative Approach? [2 min]
+### 3.2.2 Managing Research Software Projects [2 min]
 
 ```{admonition} Instructor's Note
-Explain the difference between private and close collaboration
-```
-
-CONTINUE HERE
-
-#### 3. Management Strategies [5 min]
-
-> Explain why management is important for developing software, the key factors to consider, and recommend a management strategy.
+ Explain why management is important for developing software, the key factors to consider, and recommend a management strategy (slides)
 
 **Key Factors:**
 - Purpose
 - People
 - Time
 - Maintenance
+```
 
-*ROLES AND RESPONSIBILITIES*
+### 3.2.3 Organising Research Team for Collaborative Development [3 mins]
 
-> Describe the responsibilities for each role and why they are important for a research-software development project.
+```{admonition} Instructor's Note
+**Rores and Responsibilities**
+
+Describe the responsibilities for each role and why they are important for a research-software development project.
 
 **Roles:**
 - Project owner
@@ -258,25 +259,28 @@ CONTINUE HERE
 - Collaborator
 
 > Questions? [10 min]
+```
 
-#### EXERCISE 2: Roles and Responsibilities [6 min]
+````{card} 
+Exercise 2 --- Roles and Responsibilities [6 mins]
+^^^    
 
-> Participant make teams, decide on roles and name their teams.
+```{include} exercises/L3-ex02.md
+```
 
-1. Make teams of 3 or 4 people. They will work together during group exercises.
-2. Assign roles and responsibilities to each member; you should and up with:
-    - One project owner
-    - One administrator
-    - One or more collaborators
-    - Zero or more reviewers
-3. Choose a name for the team.
 
------------------
+```{dropdown} Answers
 
-## PART 2
+    No answer are provided for this exercise.
 
-### A. Collaborative Workflows [8 min]
+```
+````
 
+
+
+### 3.3. Collaborative Workflows [8 min]
+
+CONTINUE HERE
 #### 1. Issues
 
 Document and track ideas and tasks in a development project. They’re facilitate planning, discussing  and tracking the progress of a software project.
