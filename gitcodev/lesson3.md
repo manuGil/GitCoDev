@@ -276,12 +276,10 @@ Exercise 2 --- Roles and Responsibilities [6 mins]
 ```
 ````
 
-
-
 ### 3.3. Collaborative Workflows [8 min]
 
 CONTINUE HERE
-#### 1. Issues
+#### 3.3.1. Documenting Issues
 
 Document and track ideas and tasks in a development project. They’re facilitate planning, discussing  and tracking the progress of a software project.
 
