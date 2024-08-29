@@ -102,7 +102,7 @@ This course is organised into lessons, episodes and topics. The course consists 
 | **3.2** | **Collaborative Development for Research Software** |
 | --- | Introduction to collaboration in software projects |
 | --- | Managing research software projects |
-| --- | Organising research teams for collaborative decelopment  |
+| --- | Organising research teams for collaborative development  |
 | **3.3** | Collaborative Workflows |
 | --- | Documenting issues |
 | --- | Centralise workflow: branching
