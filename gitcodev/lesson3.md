@@ -276,47 +276,64 @@ Exercise 2 --- Roles and Responsibilities [6 mins]
 ```
 ````
 
-### 3.3. Collaborative Workflows [8 min]
+## Episode 3: Collaborative Workflows [8 min]
 
-CONTINUE HERE
-#### 3.3.1. Documenting Issues
+### 3.3.1. Documenting Issues
 
-Document and track ideas and tasks in a development project. They’re facilitate planning, discussing  and tracking the progress of a software project.
+Document and track ideas and tasks in a development project. They facilitate planning, discussing  and tracking the progress of a software project.
 
-> Do-along on how to crate issues in a repository. Use the recently pushed repository.
+```{admonition} Instructor's Note
+Do-along. Instruct participant on how to crate issues in a repository. Participants create issue in their recently pushed repository.
+```
 
-Collaborative workflows are estrategies to organise the work of a developer team so that many developers can contribute to a software project. Two common estrategies that use version control and collaborative platforms as leverage are:
+Collaborative workflows are estrategies to organise the work of a development team so that many developers can contribute to a software project. Two common estrategies that use version control and collaborative platforms as leverage are:
 
 - The **branching workflow** and
 - The **forking workflow**
 
->  A short explanation on branching workflow (slides)
+```{admonition} Instructor's Note
+A short explanation on the branching workflow (slides)
+```
 
-#### EXERCISE 3: Branching workflow [15 min]
+````{card} 
+Exercise 3 --- Branching workflow [15 min]
+^^^    
 
-Teams work on coding taks using the branch worflow model.
+```{include} exercises/L3-ex03.md
+```
 
-1. [Administrator] Creates a repository using [this template](https://github.com/the-magnificents/collab-branching)
-2. [Administrator] Invites all team members to the team's repository as collaborators.
-3. [Team] Read the `TODO.md` file and each member choses a tasks for the next step.
-4. [Collaborator] each member opens an issue  for the chosen  task.
-5. [Collaborator] Apply the branching model to complete the chosen task.
-6. [Collaborator] Commit and push changes to the team's repository.
+```{dropdown} Answers
 
-#### 2. Pull requests [ 5 min]
+    No answer are provided for this exercise.
 
-> ask if they already have experience with making pull request.
+```
+````
 
-Explain what they are and teams follow the steps to create a pull request from their branch to the main branch.
+### 3.3.2 Pull requests [5 min]
 
-#### EXERCISE 4: Pull requests [6 min]
+```{admonition} Instructor's Note
+Ask participant if they already have experience with making pull request.
+```
 
-Working as a team merge the changes made in the previous exercise into the main branch of the team’s repository.
-1. [Collaborators] create a pull request for their own branch.
-    - Give your pull request a meaning name, and a short description.
-2. Are there any conflicts? Resolve them using the GitHuB GUI. Ask for help if you need to.
-3. [Collaborators] Merge the pull request to the main branch using the method of their choice.
-4. Check the main branch to confirm that your changes have been merged.
+Explain what pull request are, and give a demo.
+Then teams follow the steps in the exercise below to create and merge pull requests.
+
+
+````{card} 
+Exercise 3 --- Pull requests [6 min]
+^^^    
+
+```{include} exercises/L3-ex04.md
+```
+
+```{dropdown} Answers
+
+    No answer are provided for this exercise.
+
+```
+````
+
+CONTINUE HERE
 
 #### 3. Forking workflow [5 min]
 
