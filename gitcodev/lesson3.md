@@ -61,7 +61,7 @@ Shortcuts for the terminal in MacOS
 
 Common operations with remotes
 
-````{adminition}
+````{admonition} Instructor's Note
 * Recap slide on how local repostories and remotes are connected and how to work with remotes (Slides).
 * Recap what `clone, fetch, merge, pull` and `push` commands do.
 ````
@@ -207,7 +207,7 @@ Exercise 1 --- Startig with Collaboration [10 mins]
 
 ```{admonition} Instructor's Note
 While completing this exercise, many participants will be warned by Git that they have to pull changes before pushing their contribution. 
-This situation should be used as a pre-amble to [branching](#centralise-workflow-branching)
+This situation should be used as a pre-amble to *centralised workflow: branching*.
 ```
 
 ```{dropdown} Answers
@@ -291,6 +291,8 @@ Collaborative workflows are estrategies to organise the work of a development te
 - The **branching workflow** and
 - The **forking workflow**
 
+### 3.3.2. Centralised workflow: branching
+
 ```{admonition} Instructor's Note
 A short explanation on the branching workflow (slides)
 ```
@@ -309,7 +311,7 @@ Exercise 3 --- Branching workflow [15 min]
 ```
 ````
 
-### 3.3.2 Pull requests [5 min]
+### 3.3.3. Pull requests [5 min]
 
 ```{admonition} Instructor's Note
 Ask participant if they already have experience with making pull request.
@@ -333,26 +335,31 @@ Exercise 3 --- Pull requests [6 min]
 ```
 ````
 
-CONTINUE HERE
+### 3.3.4. Shared workflow: forking [5 min]
 
-#### 3. Forking workflow [5 min]
+```{admonition} Instructor's Note
+A short explanation on the fork workflow (slides)
+```
 
->  A short explanation on fork workflow (slides)
+````{card} 
+Exercise 3 --- Forking Workflow [6 min]
+^^^    
 
-#### EXERCISE 5: Forking workflow [15 min]
+```{include} exercises/L3-ex05.md
+```
 
-working in teams, apply FAIR principle to a Git repository using a [FAIR software checklist.](https://tu-delft-dcc.github.io/software/checklist.html)
+```{dropdown} Answers
 
-1. [Administrator] creates a repository for the team using the [collab-faircode template repository](https://github.com/the-magnificents/collab-faircode). As name for the reposotory use <team-name>-faircode
-3. [Team] Go thru the Fair software checklist and assign one item from the list to each member.
-3. [Collaborator] open an issue about the item you chose.
-2. [Collaborator] fork the team's repository to their accounts.
-4. [Collaborator] Clone their fork to their local machine, make changes to address ther issue and push changes to their forks.
-5. [Collaborator] Make a pull request from your fork to the base repository.
+    No answer are provided for this exercise.
 
-> Questions?
+```
+````
 
-## LESSON SUMMARY 
+```{admonition} Instructor's Note
+Ask participants if they have Questions.
+```
+
+## Lesson Summary
 **[5 min]**
 
 - SHH is a secure way to connect to Code repositories.
