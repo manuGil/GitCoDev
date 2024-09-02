@@ -1,9 +1,12 @@
 # LESSON 1: Fundamental Operations with Git
 
-A hands-on lesson for introducing version control, tracking changes, and the tracking history. At the moment, there are no detail explanations for each of the topics. But we expect the experienced instructor will be able to provide explanations using the topics and code snippets  below.
-Accidental errors have been removed, but intended errors have been kept.
+Lecture notes on the fundamental operation with Git. A hands-on lesson for introducing version control, tracking changes, and the tracking history. 
 
-After each excercise the instructor should demostrates the solutions. Some of the solutions a missing from this lecture notes.
+```{attention}
+At the moment, there are no detail explanations for each of the topics. But we expect the experienced instructor will be able to provide explanations using the topics and code snippets  below.
+Accidental errors have been removed, but intended errors have been kept.
+After each excercise the instructor should demostrate the solutions. Some of the solutions a missing from this lecture notes.
+```
 
 ````{note}
 The list of commands below has been grouped arbitrarily for readability's sake.
