@@ -57,7 +57,8 @@ Shortcuts for the terminal in MacOS
 |Close a pane            | Shift + Cmd + `d`   |
 ------
 
-## i. Recapitulation Operations with Remotes [5 min]
+## i. Recapitulation Operations with Remotes 
+**[5 min]**
 
 Common operations with remotes
 
@@ -68,7 +69,8 @@ Common operations with remotes
 
 ## Episode 1: Collaborative Platforms
 
-### 3.1.1. Connecting to Code Repositories  [ 10 min]
+### 3.1.1. Connecting to Code Repositories  
+**[10 min]**
 
 * Ask participants using Windows not to start Git Bash clicking on the desktop icon, as they did in Lesson 1. Instead,
     * use the app menu (the Windows logo)
@@ -152,7 +154,8 @@ The message for a successful outcome is friendly and plain.Ask participants whet
 * Check the info on [Troubleshooting SSH for GitHub](https://docs.github.com/en/authentication/troubleshooting-ssh).
 ````
 
-#### 2. Publishing Local Repository to GitHub [5 min]
+#### 2. Publishing Local Repository to GitHub 
+**[5 min]**
 
 1. Create GitHub Repo: Go to Github and create an public empty repository called `workshop`. Repo description: *workshop on collaborative development*
 
@@ -180,7 +183,8 @@ Go back to your repo page and refresh the browser.
 Questions?
 ````
 
-### 3.1.2. Exploring the GitHub GUI [5 min]
+### 3.1.2. Exploring the GitHub GUI 
+**[5 min]**
 
 Collaborative platform host and manage remote repositories to enable collaborative development.
 
@@ -190,7 +194,8 @@ Ask participants if they are familiar with GitHub. If not, give a short explanat
 Mention GitLab at TU Delft as an alternative for a collaborative platform: https://gitlab.tudelft.nl/
 ````
 
-### 3.1.3. Collaborating [ 5 min ]
+### 3.1.3. Collaborating 
+**[5 min]**
 
 Participants are invited as collaborators to the **check-in** repository. Participants must have permission to merge pull requets.
 
@@ -207,7 +212,7 @@ Exercise 1 --- Startig with Collaboration [10 mins]
 
 ```{admonition} Instructor's Note
 While completing this exercise, many participants will be warned by Git that they have to pull changes before pushing their contribution. 
-This situation should be used as a pre-amble to *centralised workflow: branching*.
+This situation should be used as a pre-amble to [branching](branching).
 ```
 
 ```{dropdown} Answers
@@ -219,7 +224,8 @@ This situation should be used as a pre-amble to *centralised workflow: branching
 
 ## Episode 2: Collaborative Development for Research Software
 
-### 3.2.1.   Introduction to collaboration in software projects [5 min]
+### 3.2.1.   Introduction to collaboration in software projects 
+**[5 min]**
 
 ```{admonition} Instructor's Note
 
@@ -233,7 +239,8 @@ This situation should be used as a pre-amble to *centralised workflow: branching
 
 ```
 
-### 3.2.2 Managing Research Software Projects [2 min]
+### 3.2.2 Managing Research Software Projects 
+**[2 min]**
 
 ```{admonition} Instructor's Note
  Explain why management is important for developing software, the key factors to consider, and recommend a management strategy (slides)
@@ -245,7 +252,8 @@ This situation should be used as a pre-amble to *centralised workflow: branching
 - Maintenance
 ```
 
-### 3.2.3 Organising Research Team for Collaborative Development [3 mins]
+### 3.2.3 Organising Research Team for Collaborative Development 
+**[3 mins]**
 
 ```{admonition} Instructor's Note
 **Rores and Responsibilities**
@@ -262,7 +270,7 @@ Describe the responsibilities for each role and why they are important for a res
 ```
 
 ````{card} 
-Exercise 2 --- Roles and Responsibilities [6 mins]
+Exercise 2 --- Roles and Responsibilities
 ^^^    
 
 ```{include} exercises/L3-ex02.md
@@ -276,9 +284,10 @@ Exercise 2 --- Roles and Responsibilities [6 mins]
 ```
 ````
 
-## Episode 3: Collaborative Workflows [8 min]
+## Episode 3: Collaborative Workflows 
 
 ### 3.3.1. Documenting Issues
+**[8 min]**
 
 Document and track ideas and tasks in a development project. They facilitate planning, discussing  and tracking the progress of a software project.
 
@@ -291,6 +300,7 @@ Collaborative workflows are estrategies to organise the work of a development te
 - The **branching workflow** and
 - The **forking workflow**
 
+(branching)=
 ### 3.3.2. Centralised workflow: branching
 
 ```{admonition} Instructor's Note
@@ -298,7 +308,7 @@ A short explanation on the branching workflow (slides)
 ```
 
 ````{card} 
-Exercise 3 --- Branching workflow [15 min]
+Exercise 3 --- Branching workflow 
 ^^^    
 
 ```{include} exercises/L3-ex03.md
@@ -311,7 +321,8 @@ Exercise 3 --- Branching workflow [15 min]
 ```
 ````
 
-### 3.3.3. Pull requests [5 min]
+### 3.3.3. Pull requests 
+**[5 min]**
 
 ```{admonition} Instructor's Note
 Ask participant if they already have experience with making pull request.
@@ -335,14 +346,15 @@ Exercise 3 --- Pull requests [6 min]
 ```
 ````
 
-### 3.3.4. Shared workflow: forking [5 min]
+### 3.3.4. Shared workflow: forking 
+**[5 min]**
 
 ```{admonition} Instructor's Note
 A short explanation on the fork workflow (slides)
 ```
 
 ````{card} 
-Exercise 3 --- Forking Workflow [6 min]
+Exercise 3 --- Forking Workflow
 ^^^    
 
 ```{include} exercises/L3-ex05.md
