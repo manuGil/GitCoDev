@@ -15,4 +15,34 @@ parts:
     - file: lesson2
     - file: lesson3
     - file: lesson4
+  - caption: Exercises
+    chapters:
+    - file: exercises/L1-ex01
+    - file: exercises/L1-ex02
+    - file: exercises/L1-ex03
+    - file: exercises/L1-ex04
+    - file: exercises/L1-ex05
+    - file: exercises/L1-ex06
+    - file: exercises/L1-ex07
+    - file: exercises/L1-ex08
+    - file: exercises/L1-ex09
+    - file: exercises/L1-ex10
+    - file: exercises/L2-ex01
+    - file: exercises/L2-ex02
+    - file: exercises/L2-ex03
+    - file: exercises/L2-ex04
+    - file: exercises/L2-ex05
+    - file: exercises/L3-ex01
+    - file: exercises/L3-ex02
+    - file: exercises/L3-ex03
+    - file: exercises/L3-ex04
+    - file: exercises/L3-ex05
+
+
+
+
+
+
+
+
 
