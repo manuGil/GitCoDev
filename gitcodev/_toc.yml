@@ -9,7 +9,7 @@ parts:
       - file: curriculum
       - file: teaching
       - file: schedule
-  - caption: Lessons
+  - caption: Lecture Notes
     chapters:
     - file: lesson1
     - file: lesson2
