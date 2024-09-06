@@ -131,11 +131,11 @@ This course is organised into lessons, episodes and topics. The course consists 
 | --- | Code Reviews |
 | --- | Contributing Guidelines |
 | **4.2** | **Licensing and Citation** |
-| --- | Open source Licenses |
-| --- | Citation |
+| --- | Open Source Licenses |
+| --- | Software Citation |
 | **4.3** | **Releasing Software** | 
-| --- | Semantic versioning |
-| --- | Softare Releases |
+| --- | Semantic Versioning |
+| --- | Software Releases |
 
 ```
 ````
