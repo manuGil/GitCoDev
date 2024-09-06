@@ -22,6 +22,15 @@ This contains general information about the lesson and illustrations for suppori
 
 ````
 
+## i. Recapitulation: 
+
+Participants complete a group exercise to recap the content of Lesson 3.
+
+
+
+
+
+
 ## Episode 1: Managing Collaboration
 
 ### 4.1.1. Code Reviews
