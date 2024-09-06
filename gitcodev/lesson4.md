@@ -1,13 +1,65 @@
 # LESSON 4: Managing Collaboration and Best Practices
 
-**Presentation:** *[Collaboration and best practices](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing)*
+Lecture notes for the lesson on managing collaboration and best practices. 
+Most of the content in this lesson aims to present some best-practices for developing research software and lead an open discussion about when to apply them. 
 
-Lecture notes for the lesson on collaborative software development.
-Most of the content in this lesson uses the presentation. We present best-practices and lead an open discussion.
+These notes contains the following pointers for the instructor:
 
-## Code Reviews
+* Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
+* The text in  **Instructor note** contain explanations or reminders for the instructor. For example:
+    `````{admonition} Instructor's Note
+
+    An SSH key must be set to push changes to a remote repository in GitHub.
+    ````` 
+
+````{card} 
+Presentation 
+^^^    
+
+This contains general information about the lesson and illustrations for supporing the explanations of some of the concepts, and 
+
+*[Collaborative software development](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing)*
+
+````
+
+## i. Recapitulation: Collaborative Workflows
+
+Participants complete a group exercise to recap the content of Lesson 3.
+
+````{card} 
+Exercise  --- Implement a Collaborative Workflow 
+^^^    
+
+```{include} exercises/L4-ex01.md
+```
+
+```{dropdown} Answers
+
+    No answer are provided for this exercise.
+
+```
+````
+
+
+## Episode 1: Managing Collaboration
+
+### 4.1.1. Code Reviews
 
 > This lesson will be completed later.
+
+### 4.1.2. Contributing Guidelines
+
+## Episode 2: Licensing and Citation
+
+### 4.2.1. Open Source Licenses
+
+### 4.2.2. Software Citation
+
+## Episode 3: Releasing Software
+
+### 4.3.1. Semantic Versioning
+
+### 4.3.1. Software Releases
 
 
 #### 5. EXERCISE 6. 
