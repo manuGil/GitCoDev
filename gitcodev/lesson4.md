@@ -22,13 +22,23 @@ This contains general information about the lesson and illustrations for suppori
 
 ````
 
-## i. Recapitulation: 
+## i. Recapitulation: Collaborative Workflows
 
 Participants complete a group exercise to recap the content of Lesson 3.
 
+````{card} 
+Exercise  --- Implement a Collaborative Workflow 
+^^^    
 
+```{include} exercises/L4-ex01.md
+```
 
+```{dropdown} Answers
 
+    No answer are provided for this exercise.
+
+```
+````
 
 
 ## Episode 1: Managing Collaboration
