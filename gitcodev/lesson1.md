@@ -79,7 +79,7 @@ The list of commands below has been grouped arbitrarily for readability's sake.
     echo 'second line' >>lines.txt
     cat lines.txt 
     git status
-    git init
+    git init                                    #initialise repository
 ```
 ```shell
     ls

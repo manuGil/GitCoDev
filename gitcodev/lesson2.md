@@ -31,7 +31,7 @@ git branch -m B1 B2            # new short option
 git log --oneline              # verify
 git branch -d B2               # new short option
 git log --oneline              # verify
-git branch -m master foo       # known action
+git branch -m main foo       # known action
 ```
 ```shell
 git log --oneline              # verify
@@ -130,7 +130,7 @@ git switch main                                                 # on branch main
 git log --oneline --all                                         # verify
 ```
 ```shell
-echo 'ninth line (duplicate)' >>Lines.txt                       # routine (an intended mistake)
+echo 'ninth line (duplicate)' >> Lines.txt                      # routine (an intended mistake)
 git add Lines.txt                                               # routine
 git commit -m 'Add tenth line on main (with mistake)' Lines.txt # routine
 cat Lines.txt                                                   # verify
