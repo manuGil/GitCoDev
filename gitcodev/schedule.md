@@ -21,5 +21,5 @@ A lesson has been designe to be delivered in one session. In our experience, the
 
 
 `````{important}
-If a session must be longer what it is suggested above, we recommend to extend the *teaching* times up to 60 minutes, but maintaining the duration and frequency of *breaks*.  
+If a session must be longer than what it is suggested above, we recommend to extend the *teaching* times up to 60 minutes, but maintaining the duration and frequency of *breaks*.  
 `````
