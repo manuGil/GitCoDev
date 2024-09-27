@@ -1,5 +1,5 @@
 # GitCoDev
-A curriculum for a short course on **Version Control and collaboratie Development for Research Software**. 
+A curriculum for a short course on **Version Control and Collaborative Development for Research Software**. 
 
 ## Installation
 
@@ -19,7 +19,7 @@ jupyter book build gitcodev/
 
 ## Contributing
 
-Read the [contributing guidelines](CONTRIBUTING.md) to know how can you take part in this project. 
+Please read the [contributing guidelines](CONTRIBUTING.md) to know how you could contribute to this project. 
 
 
 ## Citation
