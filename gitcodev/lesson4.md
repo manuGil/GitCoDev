@@ -3,6 +3,11 @@
 Lecture notes for the lesson on managing collaboration and best practices. 
 Most of the content in this lesson aims to present some best-practices for developing research software and lead an open discussion about when to apply them. 
 
+`````{admonition} Work in progress
+:class: important
+This part is work in progress. A revised version will be available soon.
+`````
+
 These notes contains the following pointers for the instructor:
 
 * Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
