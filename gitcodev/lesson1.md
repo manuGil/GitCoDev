@@ -1,20 +1,7 @@
 # LESSON 1: Fundamental Operations with Git
 
 Lecture notes on the fundamental operation with Git. A hands-on lesson for introducing version control, tracking changes, and the tracking history. 
-
-```{attention}
-At the moment, there are no detail explanations for each of the topics. But we expect the experienced instructor will be able to provide explanations using the topics and code snippets  below.
-Accidental errors have been removed, but intended errors have been kept.
-After each excercise the instructor should demostrate the solutions. Some of the solutions a missing from this lecture notes.
-```
-
-````{note}
-The list of commands below has been grouped arbitrarily for readability's sake.
-````
-
-Sections below include content from lesson 3:
-
-Lecture notes for the lesson on introduction to collaborative software development. These notes contains the following pointers for the instructor:
+These notes contains the following pointers for the instructor:
 
 * Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
 * The text in  **Instructor note** contain explanations or reminders for the instructor. For example:
