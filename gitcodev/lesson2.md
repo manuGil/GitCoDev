@@ -239,6 +239,7 @@ c165327 Adding .gitignore
 3. Tags (`tag1`): Tags are used to mark specific commits, often for releases or significant milestons.
 4. `HEAD`: `HEAD` is a special pointer that indicates your current position in the repository. It points to the latest commit in the currently branch (`master` in this case)
 5. Commit Messages: These are descriptions provided when making commits to explain what changes were made. Good commit messages are essential for understanding the history and purpose of changes.
+
 Once a branch has created and its not longer needed, it can be deleted. Removing branches that are no longer active helps maintain a clean and manageable branch structure. To delete a branch, you can use the `git branch` command, followed by a `-d` flag:
 
 
@@ -248,16 +249,14 @@ git log --oneline              # verify (notice that master is the only branch a
 git branch -m master foo       # known action (rename "main" to "foo" branch)
 ```
 
-````{admonition} Instructor's Note 
+
 * **Possible Q & A:**
 
 Q1. Is best practices modifying **main** branch name? 
 **A1:** 
 Recommendation:
-
 If there is a specific organizational reason (e.g., inclusivity, consistency), renaming the main branch is a good practice as long as it is done thoughtfully with clear communication and updates to all systems. However, if the repository is already well-established and widely used with the main branch name, the impact of renaming might outweigh the benefits. [Show the best practices for naming Git branches](https://graphite.dev/guides/git-branch-naming-conventions).
 
-````
 
 
 ```shell
@@ -287,13 +286,11 @@ git branch -m foo master         # known action (replace "foo" to "main")
 git branch                     # verify
 ```
 
-````{admonition} Instructor's Note 
 * **Key steps:**
 
 - Checked-out branch: The branch you're currently working on.
 - You can’t delete the branch you’re on because Git needs to keep a reference to your working directory.
 
-````
 
 ```shell
 git status                     # verify
@@ -308,11 +305,9 @@ Lets now change branches with `git switch` git command.
 git switch                     # new commmand (fails - fatal: missing branch or commit argument)
 ```
 
-````{admonition} Instructor's Note 
 Important Notes:
 - You must always specify the target branch when using git switch. Without a branch name or commit hash, Git doesn’t know what to switch to, hence the error.
 - git switch is a modern alternative to the older git checkout for branch operations, and it's more intuitive for switching branches.
-````
 
 ```shell
 git switch B1                  # new argument: on branch B1
@@ -410,10 +405,9 @@ no changes added to commit (use "git add" and/or "git commit -a")
 - `no changes added to commit (use "git add" and/or "git commit -a")`: This message indicates that there are no changes currently staged for commit. It suggests using git add to stage changes or git commit -a to automatically stage and commit all changes to tracked files.
 
 
-````{admonition} Instructor's Note 
+
 **Possible question: what means "stage" the changes in a file?**
 In Git, "staging the changes" refers to the process of preparing specific changes to be included in the next commit. It’s a way to organize your work before making a permanent snapshot (a commit) of your changes in the repository. Once staged, the changes are ready to be included in the next commit, which is then recorded in the Git repository.
-````
 
 
 
@@ -533,12 +527,10 @@ ninth line(duplicate)
 
 ### 2.1.3 Visualise and merge branches, and conflict resolution (45 min)
 
-````{admonition} Instructor's Note 
 * **Key objetive:**
 - Show participants how to identify what has been changed in a file between commits.
 - Explain the meaning of each part of the diff output, including how to interpret the context of changes.
 - Teach participants how to merge branches and handle conflicts.
-````
 
 
 
@@ -1156,13 +1148,10 @@ git status                                        # verify
 
 The git fetch command is used to download commits, files, and references from a remote repository into your local repository. It updates your local copy of the remote branches without modifying your working directory or local branches.
 
-````{admonition} Instructor's Note 
-
 **Key Points**
 - Fetches Updates: Downloads new data from the remote repository.
 - No Changes to Working Directory: Does not change your working directory or local branches.
 - Updates Remote Tracking Branches: Updates your local copy of the remote branches (e.g., origin/master).
-````
 
 ```shell
 cd ../git-one                                      # Change to the directory of the first clone
