@@ -874,19 +874,39 @@ Lets first explain what is a bare repository:
 
 > A bare repository is a repository that doesn't have a working directory. It only contains the .git directory, the directory in which Git stores all its internal data. The main purpose of these repositories is to be a central repository that developers can push to and pull from, so there's no need in having a working directory. Bare repositories are also used in Git hosting services like GitHub and GitLab. In the next several lessons we will learn how to create a bare repository and how to push to it [Stackoverflow forum](https://stackoverflow.com/questions/37992400/what-is-a-bare-repository-and-why-would-i-need-one).
 
-A bare repository is a Git repository that does not have a working directory. It only contains the .git directory, which stores all the version control information.
+**- A. Working Space (Working Directory)**
+  1. What It Is: The working space (or working directory) is where you can see and modify files in a Git repository. It represents the current state of your project on your local machine. This is where you do your coding, editing, and file changes.
+  2. Purpose: The working space is for active development. It contains your project files in their checked-out state (the version currently being worked on).
+  3. What It Contains: The working directory contains all the project files, including the .git directory (the hidden folder that stores Git’s metadata and history). You can modify these files and later stage and commit the changes to the repository.
+
+- Key Operations in the ** Working Space**:
+  1. `git add`: Stage changes from the working directory for commit.
+  2. `git commit`: Commit the staged changes to the Git history.
+  3. `git status`: View the current state of the working directory (i.e., which files have been modified, staged, or are untracked).
+  4. `git checkout` or `git switch`: Change branches or switch to different commits in the working directory.
+
+- Relation to the Repository:  The working space is tied to a non-bare Git repository, which allows you to see and work with your project files.
+![Key Differences:](image.png)
 
 
+**B. Bare Repository**
+  1. What It Is: A bare repository is a Git repository without a working directory. It consists only of the Git version history, metadata, and objects (commits, branches, tags, etc.), but no editable project files.
+  2. Purpose: Bare repositories are commonly used as central repositories that developers push their changes to or fetch changes from. They are not meant for active development; instead, they are used as a collaboration hub for multiple contributors.
+  3. What It Contains: A bare repository contains only the internal .git directory with the Git metadata, commit objects, and references (branches, tags, etc.), but none of the project files are checked out. There is no working space, so you cannot directly modify files in a bare repository.
+  4. Instead of containing a .git directory inside a folder of files, the bare repository consists only of Git's contents, including:
+      - `HEAD`
+      - `refs/`
+      - `objects/`
+      - `config`
 
-````{admonition} Instructor's Note 
-*Why We Need Bare Repositories?*
-- Central Repository:
-Bare repositories are typically used as a central repository that multiple developers can **push** to and **pull** from. This setup is common in **collaborative** environments.
-- No Working Directory:
-Since bare repositories do not have a working directory, they are not intended for direct development work. This prevents accidental changes to the repository's content.
-- Git Hosting Services:
-Services like GitHub, GitLab, and Bitbucket use bare repositories to manage and host repositories.
-````
+  **Key Operations in a Bare Repository:**
+      - `git push`: Developers push changes from their local repositories to the bare repository.
+      - `git fetch` or `git pull`: Developers pull or fetch changes from the bare repository to their local repositories.
+      - Bare repositories are typically hosted on remote servers or shared locations (e.g., GitHub, GitLab).
+
+  **Relation to the Repository:**
+      - A bare repository is a remote repository used for collaboration and centralization. It is typically created with the --bare flag (e.g., git init --bare).
+      - You cannot directly edit files in a bare repository because it does not have a working directory.
 
 
 ```shell
