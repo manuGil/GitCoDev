@@ -107,6 +107,10 @@ We can remove folder `directory` and `new.txt`
 rm -r directory/
 ```
 
+```shell
+git rm -r directory/
+```
+
 or
 
 ```shell
@@ -343,7 +347,7 @@ git rm --cached directory/dontrackme.txt
 git rm --cached directory/emptyfile
 ```
 
-
+```shell
 git log --oneline              # verify
 git branch B2                  # known action
 git log --oneline              # verify
