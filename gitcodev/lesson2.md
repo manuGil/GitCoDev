@@ -233,14 +233,12 @@ c165327 Adding .gitignore
 
 > Interpretation: This is an older commit with the message "Jabberwocky line 2". It isn't associated with any specific branch or tag.
 
-````{admonition} Instructor's Note
 **Key Concepts Illustrated in the Output**
 1. Commit Hashed: each commit has a unique identifier. The abbreviated form (first 7 characters) is usually sufficient for referencing commits in commands.
 2. Branches (`master`, `b2`): Branches are pointers to specific commits. In our case, `master` and `b2` are pointing to the latest commit `c0ebedd`
 3. Tags (`tag1`): Tags are used to mark specific commits, often for releases or significant milestons.
 4. `HEAD`: `HEAD` is a special pointer that indicates your current position in the repository. It points to the latest commit in the currently branch (`master` in this case)
 5. Commit Messages: These are descriptions provided when making commits to explain what changes were made. Good commit messages are essential for understanding the history and purpose of changes.
-````
 Once a branch has created and its not longer needed, it can be deleted. Removing branches that are no longer active helps maintain a clean and manageable branch structure. To delete a branch, you can use the `git branch` command, followed by a `-d` flag:
 
 
