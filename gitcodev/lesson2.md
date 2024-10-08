@@ -187,7 +187,6 @@ Lets explore in our terminal with `git branch --help`:
 * `-v` or `--verbose`: Shows more information when listing branches, including the last commit message.
 ---
 
-````
 
 ```shell
 git branch -m B1 B2            # new short option (rename B1 to B2)
