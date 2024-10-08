@@ -56,7 +56,6 @@ Lesson 2: Branching and Remote Operations
 - Clone and push changes to remote Gir repositories.
 - Synchronise changes between local and remote Git repositories.
 
-```{dropdown} Topics
 | Episode | Topic | Time |
 |:----|:----|:----|
 | **2.1** | **Branching** | **13:00**| 
@@ -67,7 +66,6 @@ Lesson 2: Branching and Remote Operations
 | --- | Create a bare repositories |-|
 | --- | Cloning and pushing to upstreams |-|
 | --- | Syncing changes between repositories |-|
-```
 
 First let’s make sure we’re still in the right directory. You should be in the `root` directory with `Lines.txt` and `history.log` files. Remember that the branch we are located in `main*`. Note that you might need to change the default branch to be called `main`. This might be the default branch depending on your settings and version of git.
 
