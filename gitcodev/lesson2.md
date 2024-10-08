@@ -98,6 +98,11 @@ Lines.txt   directory   history.log new.txt
 We can remove folder `directory` and `new.txt`
 
 ```shell
+rm -rf test-gitcodev
+rm -rf 2024-gitcodev
+```
+
+```shell
 rm -r directory/
 ```
 
