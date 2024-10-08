@@ -134,14 +134,12 @@ eigth line
 
 ## Episode 1: Understanding Branches (45 min)
 
-````{admonition} Instructor's Note 
 **Objetive**: Introduce basic branch operations and concepts
 
 **Tasks:**
 1. Ask what they understand about Branches in Git
 2. Explain in a nushell what are Branches in Git
 3. Memorise the new commands and the Branch where the instructor is `main*`
-````
 
 
 
@@ -155,25 +153,24 @@ git branch                     # verify (output: B1, *main)
 ```
 Your newly created branch (here, `B1`) will show up, but your active branch should still be main. Note that `B1` is just a name. You could also call your branch ``delft``, if you want.
 
-````{admonition} Instructor's Note 
 * **Possible Q & A:**
 
 Q1. Lowercase matters? 
 **A1:** 
 While it's essential to provide enough information for clarity, overly long branch names can become cumbersome and difficult to manage. Lowercase and dashes: Stick to lowercase letters and use dashes instead of spaces in branch names to ensure compatibility across different operating systems and Git hosting platforms. [Show the best practices for naming Git branches](https://graphite.dev/guides/git-branch-naming-conventions).
 
-````
 
 ```shell
 git status                     # verify (output: On branch master - nothing to commit, working tree clean)
 cat Lines.txt                  # verify (ouptut: Lines.txt with eighth line)
 ```
 
-````{admonition} Instructor's Note 
+
 * **Lets first explain the following:**
 - **What are branches?**
-<div style="text-align: center;"> <img src="https://book.the-turing-way.org/_images/sub-branch.png" alt="Branches"> <p><strong>Figure 1:</strong> Branches in version control</p> </div>
+<!-- <div style="text-align: center;"> <img src="https://book.the-turing-way.org/_images/sub-branch.png" alt="Branches"> <p><strong>Figure 1:</strong> Branches in version control</p> </div> -->
 
+- ![](https://book.the-turing-way.org/_images/sub-branch.png)
 - **Why we use branches?** ([The Turing Way Community examples 2022](https://lennartwittkuhn.com/version-control-book/misc/references.html#ref-community2022))
 - ![](https://nvie.com/img/git-model@2x.png)
 - [A successful Git branching model, article from 2010](https://nvie.com/posts/a-successful-git-branching-model/)
