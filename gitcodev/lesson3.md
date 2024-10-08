@@ -65,6 +65,13 @@ Common operations with remotes
 ````{admonition} Instructor's Note
 * Recap slide on how local repostories and remotes are connected and how to work with remotes (Slides).
 * Recap what `clone, fetch, merge, pull` and `push` commands do.
+
+```{figure} ../img/recap-remotes.png
+---
+height: 300px
+name: recap-remote-operations
+---
+```
 ````
 
 ## Episode 1: Collaborative Platforms
@@ -125,7 +132,7 @@ GitHub requires authentication via SSH to do pulls and pushes, but not for cloni
         ```
 
     ````{admonition} Instructor's Note
-    Window's user would need to set up the *ssh-agent** to [start the automatically](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows)
+    Window's user need to set up the *ssh-agent** to [start automatically](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows).
     Mac and Linux user don't have to worry about this.
     ````
 5. Copy public key to GitHub:
@@ -133,9 +140,9 @@ GitHub requires authentication via SSH to do pulls and pushes, but not for cloni
         clip < .ssh/id_ed25519.pub
     ```
 
-````{admonition} Instructor's Note
-Go to GitHub, explain the basics of the interface and
-````
+    ````{admonition} Instructor's Note
+    Go to GitHub, explain the basics of the interface and how to add an SSH key to their account.
+    ````
 
 6. add the SSH key.
     ```shell
@@ -159,9 +166,9 @@ The message for a successful outcome is friendly and plain.Ask participants whet
 
 1. Create GitHub Repo: Go to Github and create an public empty repository called `workshop`. Repo description: *workshop on collaborative development*
 
-2. Add Remote to Local Repo: before this remove any existing remotes in the repository with: `git remote remove <name>`
+2. Add Remote to Local Repo: before this, remove any existing remotes in the repository with: `git remote remove <name>` This is necessary because in Lesson 2, they have added other remotes.
 
-Move back to the repo directory: `~/Desktop/`
+Move back to the root of the repo: `~/Desktop/<path-to-repo>`
 In your local repository (on the terminal), add the remote repository and push the content.
 
 * Connect to remote
@@ -177,7 +184,7 @@ In your local repository (on the terminal), add the remote repository and push t
     ```
 
 #### 3. Check the Content's Repositoy is in GitHub
-Go back to your repo page and refresh the browser.
+Go back to your repo page (in GitHub) and refresh the browser.
 
 ````{admonition} Instructor's Note
 Questions?
@@ -203,7 +210,7 @@ Participants are invited as collaborators to the **check-in** repository. Partic
 
 2. Paticipant accept inviation via email or GitHub GUI.
 
-````{card} 
+`````{card} 
 Exercise 1 --- Startig with Collaboration [10 mins]
 ^^^    
 
@@ -215,12 +222,35 @@ While completing this exercise, many participants will be warned by Git that the
 This situation should be used as a pre-amble to [branching](branching).
 ```
 
-```{dropdown} Answers
+````{dropdown} Answers
 
-    No answer are provided for this exercise.
+2. copy template:
 
+```shell
+cp ./check-in/template.md ./check-in/<initials><digits>.md
 ```
+
+3. Add something to the list:
+
+```shell
+nano ./check-in/<initials><digits>.md
+
+# Type a few things
+# Save and close the file: CTRL + O, CTTL + X
+```
+4. Commit and push
+
+```shell
+git add .
+git commit -m 'added things to my list'
+git push
+```
+
+5. Git will complain  about not being able to push because the remote
+has unsynced changes (except for the very first push). An explanation will be given by the instructor. 
+
 ````
+`````
 
 ## Episode 2: Collaborative Development for Research Software
 
