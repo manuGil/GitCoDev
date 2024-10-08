@@ -32,7 +32,7 @@ The list of commands below has been grouped arbitrarily for readability's sake.
 
 * **Objective:** Recap previous lesson and introduce the lesson 2.
 
-````{admonition} Instructor's Note 
+
 * **Tasks:**
 1. Introduction to the learning objectives
 2. Confirm the participants have Git correctly setup from lesson 1
@@ -41,7 +41,6 @@ The list of commands below has been grouped arbitrarily for readability's sake.
 ---
 5. Explain the schedule of the lesson 2
 6. Show the [**objectives and topics**](https://manugil.github.io/GitCoDev/curriculum.html) of the lesson 2
-````
 
 ### Schedule
 | 13:00  | 13:50 | 14:00 | 14:50 | 15:10 | 16:00 | 16:10 | 17:00 | 17:10 |
