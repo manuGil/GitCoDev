@@ -62,7 +62,7 @@ Lesson 2: Branching and Remote Operations
 | --- | Create, rename, change, and delete branches | -|
 | --- | Develop and compare branches | -|
 | --- | Visualise and merge branches and resolve conflicts |-| 
-| **2.2** | **Operations with remotes** | -|
+| **2.2** | **Operations with remotes** | **15:00**|
 | --- | Create a bare repositories |-|
 | --- | Cloning and pushing to upstreams |-|
 | --- | Syncing changes between repositories |-|
@@ -348,6 +348,7 @@ git switch master                # known action: on branch main
 git log --oneline              # verify
 ```
 
+![alt text](image-1.png)
 
 ````{card} 
 Exercise 1 --- Get familiar with branches (5 min)
@@ -709,6 +710,8 @@ git log --oneline --all --graph                        # routine
 cat Lines.txt                                          # verify
 ```
 
+![alt text](image-2.png)
+
 ````{card} 
 Exercise 2 --- Explore differences across branches (5 min)
 ^^^    
@@ -722,6 +725,7 @@ Exercise 2 --- Explore differences across branches (5 min)
 
 ```
 ````
+![alt text](image-3.png)
 
 ````{card} 
 Exercise 3 --- Commit in a secondary branch (5 min)
@@ -843,7 +847,7 @@ git status                                                # verify
 git log --oneline --all --graph                           # verify
 git log --oneline --all --graph --parents                 # verify
 ```
-
+![alt text](image-4.png)
 
 ````{card} 
 Exercise 4 --- A first type of merging (10 min)
@@ -1347,6 +1351,7 @@ git push                                           # known action
 git log --oneline                                  # verify
 git status                                         # verify
 ```
+![alt text](image-5.png)
 
 ````{card} 
 Exercise 5 --- Another type of merge
