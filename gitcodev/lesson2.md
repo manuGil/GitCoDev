@@ -165,6 +165,7 @@ git status                     # verify (output: On branch master - nothing to c
 cat Lines.txt                  # verify (ouptut: Lines.txt with eighth line)
 ```
 
+![](https://cdn.vectorstock.com/i/1000v/32/97/colorful-tree-with-leafy-branches-vector-13883297.jpg)
 
 * **Lets first explain the following:**
 - **What are branches?**
