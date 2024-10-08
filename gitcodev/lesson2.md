@@ -181,8 +181,8 @@ cat Lines.txt                  # verify (ouptut: Lines.txt with eighth line)
 <div style="text-align: center;"> <img src="https://book.the-turing-way.org/_images/sub-branch.png" alt="Branches"> <p><strong>Figure 1:</strong> Branches in version control</p> </div>
 
 - **Why we use branches?** ([The Turing Way Community examples 2022](https://lennartwittkuhn.com/version-control-book/misc/references.html#ref-community2022))
-
-
+- ![](https://nvie.com/img/git-model@2x.png)
+- [A successful Git branching model, article from 2010](https://nvie.com/posts/a-successful-git-branching-model/)
 - **what are the most common `git branch` flags?**
 
 Lets explore in our terminal with `git branch --help`:
