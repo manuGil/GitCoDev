@@ -13,7 +13,8 @@ parts:
     chapters:
     - file: lesson1
     - file: lesson2
-    - file: lesson3
+    - file: lesson3-extra
+    # - file: lesson3
     - file: lesson4
   - caption: Exercises
     chapters:
