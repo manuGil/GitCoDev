@@ -49,8 +49,7 @@ The list of commands below has been grouped arbitrarily for readability's sake.
 | Teaching 50' | **Break 10'** | Teaching 50' | **Break 20'** | Teaching 50' | **Break 10'** | Teaching  50'| **Wrap-up 10'** | Closure |
 
 
-````{admonition} Instructor's Note 
-````{card} Lesson 2: Branching and Remote Operations
+Lesson 2: Branching and Remote Operations
 **Learning Objectives:**
 - Understand the concept of branches in Git repositories.
 - Apply Git operations to create and merge branches in a local Git repository.
@@ -69,9 +68,7 @@ The list of commands below has been grouped arbitrarily for readability's sake.
 | --- | Create a bare repositories |-|
 | --- | Cloning and pushing to upstreams |-|
 | --- | Syncing changes between repositories |-|
-
 ```
-````
 
 First let’s make sure we’re still in the right directory. You should be in the `root` directory with `Lines.txt` and `history.log` files. Remember that the branch we are located in `main*`. Note that you might need to change the default branch to be called `main`. This might be the default branch depending on your settings and version of git.
 
