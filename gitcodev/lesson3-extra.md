@@ -81,8 +81,8 @@ git status                    # observe (fails).
 ```
 
 ```{admonition} Instructor's Note
-A bare repository is a special type of Git repository without a *working tree/directory*
-"A bare Git repository is intended to be used as a remote repository where code is shared between members of the team. The bare Git repo is not intended for local development." -- [source: blogpost](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-a-bare-git-repository)
+A bare repository is a special type of Git repository without a *working tree/directory*.
+"A bare Git repository is intended to be used as a remote repository where code is shared between members of the team. The bare Git repository is not intended for local development." -- [source: blogpost](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/What-is-a-bare-git-repository)
 ```
 
 ### i.2 Cloning and pushing to "remote" bare repositories (upstreams)
@@ -273,7 +273,7 @@ name: recap-remote-operations
     * pick up Git Bash from the list
     * launch Git Bash with the option **Run as administrator** available from the drop-down submenu.
     The participants need to type in their credentials as local administrators.
-This gain authority to have SSH installing its own features in their laptop next.
+This gain authority to have SSH installing its own features in their laptop.
 
 ```{admonition} Instructor's Note
 At their very first `git push`, Git might complain about a mismatch between the credentials of local and global administrator.
@@ -307,7 +307,7 @@ GitHub requires authentication via SSH to do pulls and pushes, but not for cloni
             ls ~/.ssh/
         ```
 
-    3. Start the `ssh-agent` and add private key to agent:
+    3. Start the `ssh-agent` and add private key to agent (Window's users only):
         ```shell
             # start agent
             eval "$(ssh-agent -s)"
@@ -344,7 +344,7 @@ GitHub requires authentication via SSH to do pulls and pushes, but not for cloni
     ```
 
 ````{admonition} Instructor's Note
-The message for a successful outcome is friendly and plain.Ask participants whether git@github.com has welcomed them.
+The message for a successful outcome is friendly and plain. Ask participants whether git@github.com has welcomed them.
 
 * More information on working with [SSH keys and GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 * Check the info on [Troubleshooting SSH for GitHub](https://docs.github.com/en/authentication/troubleshooting-ssh).
@@ -377,17 +377,20 @@ Go back to your repo page (in GitHub) and refresh the browser.
 
 ````{admonition} Instructor's Note
 Questions?
+
 ````
 
 ### 3.1.2. Exploring the GitHub GUI 
 **[5 min]**
 
-Collaborative platform host and manage remote repositories to enable collaborative development.
+Collaborative platforms host and manage remote repositories to enable collaborative development.
 
 ````{admonition} Instructor's Notes
 Ask participants if they are familiar with GitHub. If not, give a short explanation of what it is for how to explore the GUI.
 
 Mention GitLab at TU Delft as an alternative for a collaborative platform: https://gitlab.tudelft.nl/
+
+> Invite participants to the **check-in** repo
 ````
 
 ### 3.1.3. Collaborating 
@@ -395,7 +398,7 @@ Mention GitLab at TU Delft as an alternative for a collaborative platform: https
 
 Participants are invited as collaborators to the **check-in** repository. Participants must have permission to merge pull requets.
 
-1. Demo on how to invite collaborators using the [check-in repository.](https://github.com/manuGil/check-in)
+1. Demo on how to invite collaborators using the [check-in repository.](https://github.com/WorkshopGitcodev/check-in)
 
 2. Paticipant accept inviation via email or GitHub GUI.
 
@@ -450,9 +453,9 @@ has unsynced changes (except for the very first push). An explanation will be gi
 
 * An Quick introduction to collaborative development. Definitions  (Slides).
 
-> Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
+> Developing high-quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
 
-* Explain the difference between private and close collaboration.
+* Explain the difference between open and close collaboration.
 
 * When to Aim for a Collaborative Approach?
 
@@ -469,6 +472,8 @@ has unsynced changes (except for the very first push). An explanation will be gi
 - People
 - Time
 - Maintenance
+
+Explain the difference between the purpose of a research project an the purpose of software. 
 ```
 
 ### 3.2.3 Organising Research Team for Collaborative Development 
