@@ -32,7 +32,7 @@ This contains general information about the lesson and illustrations for suppori
 Participants complete a group exercise to recap the content of Lesson 3.
 
 ````{card} 
-Exercise  --- Implement a Collaborative Workflow 
+Exercise 1 --- Implement a Collaborative Workflow 
 ^^^    
 
 ```{include} exercises/L4-ex01.md
@@ -52,13 +52,38 @@ Exercise  --- Implement a Collaborative Workflow
 
 > This lesson will be completed later.
 
+````{card} 
+Exercise 2 --- Code Reviews [10 mins]
+^^^    
+
+```{include} exercises/L4-ex02.md
+```
+````
+
 ### 4.1.2. Contributing Guidelines
+
+````{card} 
+Exercise 3 --- Guidelines for Contributions [10 mins]
+^^^    
+
+```{include} exercises/L4-ex03.md
+```
+````
 
 ## Episode 2: Licensing and Citation
 
 ### 4.2.1. Open Source Licenses
 
 ### 4.2.2. Software Citation
+
+
+````{card} 
+Exercise 3 --- hoosing Licenses and Enabling Software Citation [10 mins]
+^^^    
+
+```{include} exercises/L4-ex04.md
+```
+````
 
 ## Episode 3: Releasing Software
 
