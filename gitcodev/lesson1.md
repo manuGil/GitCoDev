@@ -23,11 +23,40 @@ This contains general information about the lesson and illustrations for suppori
 ## Episode 1: Git repositories for version control
 **[ca 50 min total]** 
 
+**Intended Audience**
+This course is intended for:
+- Researchers who have not previously used version control and will be owners or participants in collaborative development projects of some complexity
+- Researchers who have limited experience of the basic operations of version control but want a deeper understanding of how these fit into a git-based workflow.
+
+In short, this course requires little prior knowledge but steps learners through git operations in enough detail that they should be able to 
+troubleshoot and self-orient with respect to most collaborative workflows.
+
+**Learning Objectives**
+After completing this lesson, you will be able to:
+ - **Describe** how a local version control systems records the history of a project
+ - **Create** a local project repository using git at the command-line
+ - **Understand** the core operations on a local version repository:
+   - **Determine** the status of the working directory in comparison with the index
+   - **Add** files to be committed to the index
+   - **Remove** unneeded files from the index
+   - **Track changes** that need to be committed
+   - **Commit** changes to the project history
+   - **Revert** part or all of the project to a previous state
+   - **Tag** important moments in the history of the project for easy reference
+- **Navigate** your way through unexpected situations involving local workflows.
+  
+ 
+
 ### 1.1.0 Welcome slides
 **[10 min]**
 
 ### 1.1.1 Introduction to Git
 **[10 min]**
+
+`````{admonition} Instructor's Note
+It can be worth reminding learners that they all have different levels of experience with the shell.
+If the early steps seem too basic, please be patient. We are all in this to support each other.
+````` 
 
 * Create a directory for the course
 
@@ -70,6 +99,7 @@ This contains general information about the lesson and illustrations for suppori
 ```shell
     git config --global core.editor nano
     git config --global core.autocrlf input # false for Win
+    git config --global init.defaultBranch main
     git config --list
     git help config
 ```
