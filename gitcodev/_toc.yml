@@ -17,6 +17,7 @@ parts:
     - file: lesson4
   - caption: Exercises
     chapters:
+    - file: exercises/L3-ex01-2
     - file: exercises/L1-ex01
     - file: exercises/L1-ex02
     - file: exercises/L1-ex03
@@ -41,7 +42,7 @@ parts:
     - file: exercises/L4-ex02
     - file: exercises/L4-ex03
     - file: exercises/L4-ex04
-  - Appendix:
+  - caption: Appendices
     chapters:
     - file: appendix
  
