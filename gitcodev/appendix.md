@@ -1,24 +1,28 @@
-# Appendix: Formatting conventions
+# Appendix: Formating conventions
 
-This website uses the [Jupyterbook Theme](https://jupyterbook.org/en/stable/basics/organize.html) for rendering content. The following conventions are used to organise and format content.
+This website renders content with the [Jupyterbook Theme](https://jupyterbook.org/en/stable/basics/organize.html). The following conventions are used to organise and format content.
 
 
 ## Lessons
+A lesson shall be organised as follows:
 
+1. Title.
+1. Learning objectives (at the top of the document).
+2. Main body containing other elements, including exercises. 
+2. Lesson summary with the take-home messages of the lesson.
 
 ### Learning Objective
 
-Use a `card` at the begining of each lesson to state the learning objectives:
-
+Use a `card` at the beginning of each lesson to state the learning objectives:
 
 ````md
 :::{card} Learning Objectives:
 
-* Ojbective 1
+* Objective 1
 * Objective 2
 
 +++
-Materilas:
+Materials:
 
 * A list of additional materials related to the lesson for the instructor. 
 * For example: slides.
@@ -30,7 +34,7 @@ Rendered as:
 
 :::{card} Learning Objectives:
 
-* Ojbective 1
+* Objective 1
 * Objective 2
 
 +++
@@ -58,7 +62,7 @@ Rendered as:
 
 ### Figures
 
-Figures will be numbered and shall include a caption. The size of the can be controled by adjusting the value for `height`.
+Figures will be numbered and shall include a caption. Their size can be controlled by adjusting the value for `height`.
 
 ````md
 ```{figure} ../img/teaching-approach.png
@@ -79,9 +83,9 @@ name: approach-fig
 Caption
 ```
 
-### Lesson's Ecercises
+### Lesson's Exercises
 
-Exercises within a lesson are shown using a `card`, as follows:
+Exercises within a lesson are included using a `card`  and the `{include}` directive as follows.
 
 ````md
 :::{card} 
@@ -94,24 +98,25 @@ Exercise 1
 :::
 ````
 
-Exercises are numbered for each lesson, starting at one. The header of the lesson includes the word *Exercise* and the number of the exercise. The body of the card contains a reference to the file that describes the exercise.  
+Exercises are numbered for each lesson, starting at one. The header of the lesson includes the word *Exercise* and the number of the exercise. The body of the card contains a reference to the file that describes the exercise (see below).  
 
 
-## Exercises
+## Exercise Files
 
-Excercises are organize in files, each file  contains the following parts:
+Exercises are organised in files; each file  contains the following parts:
 
 * A title mentioning the lesson and the episode. 
 * The time required to complete the exercise.
-* A list of tasks or instructions 
+* A statement indicating if the exercise should be resolved individually or as a team/group.
+* A list of tasks or instructions.
 * Admonistions, figures, etc. (optional)
-* The answers to the exercise. If the exercise has no answers, that is stated by writting `No answers are provided for this exercise` 
+* The answers to the exercise. If the exercise has no answers, that is stated by writing, `No answers are provided for this exercise`. 
 
 
 Example:
 
 ````md
-# Lesson 3 Episode 1 --- Clone a reposiory and make a contribution 
+# Lesson 3 Episode 1 --- Clone a repository and make a contribution 
 
 **Time: 10 min**
 
@@ -120,20 +125,12 @@ Please perform the following tasks individually.
 1. Clone the Check-in repository via SSH: https://github.com/manuGil/check-in
 1. Make a copy of the file `check-in/template.md` in the same directory; 
 1. Open your copy of `template.md` and add something to the lists in the file.
-1. Commit your changes, and push them to the remote repository. 
-1. Reflect on the difficulties you faced, and how we might avoid them.
 
 ```{admonition} Instructor's Note
-While completing this exercise, many participants will be warned by Git that they have to pull changes before pushing their contribution. 
-This situation should be used as a pre-amble to [branching](branching).
+Optionally, include other content
 ```
 
 ```{dropdown} Answers
-
-    No answers are provided for this exercise.
-
+ Use a dropdown to provide answers to the exercise. If none, use the text: "No answers are provided for this exercise."
 ```
 ````
-
-
-
