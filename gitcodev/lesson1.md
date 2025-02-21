@@ -1,32 +1,45 @@
 # LESSON 1: Fundamental Operations with Git
 
 Lecture notes on the fundamental operation with Git. A hands-on lesson for introducing version control, tracking changes, and the tracking history. 
+These notes contains the following pointers for the instructor:
 
-```{attention}
-At the moment, there are no detail explanations for each of the topics. But we expect the experienced instructor will be able to provide explanations using the topics and code snippets  below.
-Accidental errors have been removed, but intended errors have been kept.
-After each excercise the instructor should demostrate the solutions. Some of the solutions a missing from this lecture notes.
-```
+* Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
+* The text in  **Instructor note** contain explanations or reminders for the instructor. For example:
+    `````{admonition} Instructor's Note
 
-````{note}
-The list of commands below has been grouped arbitrarily for readability's sake.
+    Ensure that all users have git and bash available at the start of the course.
+    ````` 
+
+````{card} 
+Presentation 
+^^^    
+
+This contains general information about the lesson and illustrations for supporing the explanations of some of the concepts, and 
+
+*[Collaborative software development](https://docs.google.com/presentation/d/1BucILQ9Osz_2tKYF3kF-c3uZFND8xfJ4/edit?usp=sharing)*
 ````
 
+
 ## Episode 1: Git repositories for version control
+**[ca 50 min total]** 
+
+### 1.1.0 Welcome slides
+**[10 min]**
 
 ### 1.1.1 Introduction to Git
+**[10 min]**
 
 * Create a directory for the course
 
 ```shell
     cd ~/Desktop/
     ls
-    mkdir -p 2310-gitcodev/git
+    mkdir -p 2410-gitcodev/git
     ls
-    ls 2310-gitcodev/
+    ls 2410-gitcodev/
 ```
 ```shell
-    cd 2310-gitcodev/git/
+    cd 2410-gitcodev/git/
     ls
     pwd
 ```
@@ -46,10 +59,10 @@ The list of commands below has been grouped arbitrarily for readability's sake.
 ```
 
 ### 1.1.2 Git Command Syntax and Getting Help
+**[10 min]**
 
 ```shell
     git help
-    git helphelp
     git help help
     git config
     git config --list
@@ -66,6 +79,7 @@ The list of commands below has been grouped arbitrarily for readability's sake.
 ```
 
 ### 1.1.3. Creating an Empty Reposiory
+**[10 min]**
 
 ``` shell
     pwd
@@ -79,7 +93,7 @@ The list of commands below has been grouped arbitrarily for readability's sake.
     echo 'second line' >>lines.txt
     cat lines.txt 
     git status
-    git init                                    #initialise repository
+    git init
 ```
 ```shell
     ls
@@ -89,9 +103,18 @@ The list of commands below has been grouped arbitrarily for readability's sake.
     ls
 ```
 
+### 1.1.4. Q&A
+**[10 min]**
+
+### Short Break
+**[10 min]**
+
 ## Episode 2: Tracking Changes in Working Documents
+**[ca 75 min instruction + 20 min break]**
 
 ### 1.2.1 Tracking Changes with the Index
+**[10 min]**
+
 ```shell
     git status 
     git add lines.txt
@@ -116,6 +139,7 @@ The list of commands below has been grouped arbitrarily for readability's sake.
 
 ````{card} 
 Exercise 1 --- Tracking changes with the Index
+**[5 min]**
 ^^^    
 
 ```{include} exercises/L1-ex01.md
@@ -129,6 +153,7 @@ Exercise 1 --- Tracking changes with the Index
 ````
 
 #### Tracking Directories
+**[10 min]**
 
 ```shell
     mkdir directory
@@ -150,6 +175,7 @@ Exercise 1 --- Tracking changes with the Index
 ```
 
 ### 1.2.2 Not Tracking and Stop Tracking
+**[10 min]**
 
 ```shell
     history
@@ -177,6 +203,7 @@ Exercise 1 --- Tracking changes with the Index
     git status 
 ```
 #### Ignore Untracked Directories
+**[10 min]**
 
 ```shell
     touch directory/trackme.txt
@@ -214,6 +241,7 @@ Exercise 1 --- Tracking changes with the Index
 
 ````{card} 
 Exercise 2 --- Stop tracking Changes in a File
+**[5 min]**
 ^^^    
 
 ```{include} exercises/L1-ex02.md
@@ -226,7 +254,11 @@ Exercise 2 --- Stop tracking Changes in a File
 ```
 ````
 
+### Longer Break
+**[20 min]**
+
 ### 1.2.3 Undoing Changes with the Index
+**[10 min]**
 ```shell
     cat lines.txt 
     echo 'fifth line' >>lines.txt 
@@ -262,6 +294,7 @@ Exercise 2 --- Stop tracking Changes in a File
 ```
 
 ### 1.2.4  Deleting and renaming tracked files and directories
+**[10 min]**
 
 ```shell
     git rm --cached directory/donttrackme.txt 
@@ -303,6 +336,7 @@ Exercise 2 --- Stop tracking Changes in a File
 
 ````{card} 
 Exercise 3 --- Renaming Tracked Files
+**[5 min]**
 ^^^    
 
 ```{include} exercises/L1-ex03.md
@@ -316,8 +350,10 @@ Exercise 3 --- Renaming Tracked Files
 ````
 
 ## Episode 3: Organizing Tracked Changes in a History
+**[ca 75 min + 10 min break]**
 
 ### 1.3.1 Commiting Changes with a Configured Identify and a Message
+**[10 min]**
 
 ```shell
     cat Lines.txt 
@@ -333,6 +369,7 @@ Exercise 3 --- Renaming Tracked Files
 
 `````{card} 
 Exercise 4 --- Commit Changes in a Tracked File
+**[5 min]**
 ^^^    
 
 ````{include} exercises/L1-ex04.md
@@ -356,6 +393,7 @@ Exercise 4 --- Commit Changes in a Tracked File
 
 `````{card} 
 Exercise 5 --- Follow the state of the repository in the commit routine
+**[5 min]**
 ^^^    
 
 ````{include} exercises/L1-ex05.md
@@ -384,6 +422,7 @@ Exercise 5 --- Follow the state of the repository in the commit routine
 
 `````{card} 
 Exercise 6 --- Follow the state of the index in the commit routines
+**[5 min]**
 ^^^    
 
 ````{include} exercises/L1-ex06.md
@@ -458,9 +497,12 @@ Exercise 6 --- Follow the state of the index in the commit routines
 ````
 `````
 
+###Short break
+**[10 min]**
 
 `````{card} 
 Exercise 7 --- Explore the changes recorded in the history
+**[5 min]**
 ^^^    
 
 ````{include} exercises/L1-ex07.md
@@ -477,12 +519,14 @@ Exercise 7 --- Explore the changes recorded in the history
 
 
 ### 1.3.3 Undoing Changes with the History
+**[10 min]**
 
 ````{note}
 This topic involves using `git restore`. Actual commands are missing.
 ````
 
 ### 1.3.4 Marking the History Using Tags
+**[10 min]**
 
 * Lightweight tags
 
@@ -545,6 +589,7 @@ This topic involves using `git restore`. Actual commands are missing.
 
 `````{card} 
 Exercise 9 --- Add lightweight tags to the history
+**[5 min]**
 ^^^    
 
 ````{include} exercises/L1-ex09.md
@@ -574,7 +619,8 @@ Exercise 9 --- Add lightweight tags to the history
 ```
 
 ## Wrap Up
+**[10 min]**
 
 ```{note}
-Give a short wrap up about what has been learn.
+Give a short wrap up about what has been learned.
 ```

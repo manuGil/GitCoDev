@@ -38,6 +38,10 @@ parts:
     - file: exercises/L3-ex04
     - file: exercises/L3-ex05
     - file: exercises/L4-ex01
+    - file: exercises/L4-ex02
+    - file: exercises/L4-ex03
+    - file: exercises/L4-ex04
+
 
 
 
