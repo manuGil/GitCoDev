@@ -1,6 +1,6 @@
 # LESSON 2: Branching and remote operations
 
-This is a summary of the lecture notes for this lesson.
+<!-- This is a summary of the lecture notes for this lesson.
 The original list of commands has been edited and decorated with headings corresponding to the [lessons in the curriculum](course-units) more clearly. 
 Some commands have been either removed or relocated or added for clarity and help self-study after the lesson.
 Accidental errors have been removed, but intended errors have been kept.
@@ -9,53 +9,60 @@ The comments after each line are annotations on whether a command/option appears
 Else, the annotation recalls why we typed that certain command, for example to **observe** the state of the play (typically before a certain change) or to **verify** the results of a change.
 **routine** commands are the typical commit sequence learned in Lesson 1.
 
-The original list of commands is available at this commit [as displayed by GitHub](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/056617efa8abb7d79ffb3e85b3ac8dbbcaed50e6/Lesson2.md).
+The original list of commands is available at this commit [as displayed by GitHub](https://github.com/4TUResearchData-Carpentries/workshop_notes/blob/056617efa8abb7d79ffb3e85b3ac8dbbcaed50e6/Lesson2.md). -->
 
-````{note}
+<!-- ````{note}
 The list of commands below has been grouped arbitrarily for readability's sake.
-````
+```` -->
 ---
 
 
 ## Learning objectives:
 
-1. Understand the concept of **branches** in Git repositories.
-2. Apply Git operations to **create** and **merge** branches in a local Git repository.
-3. Understand the concepts of **bare** and **remote** Git repositories.
-4. **Clone** and **push** changes to remote Git repositories.
-5. **Synchronise** changes between local and remote Git repositories.
+:::{card} Learning Objectives:
+
+* Understand the concept of **branches** in Git repositories.
+* Apply Git operations to **create** and **merge** branches in a local Git repository.
+* Understand the concepts of **bare** and **remote** Git repositories.
+* **Clone** and **push** changes to remote Git repositories.
+* **Synchronise** changes between local and remote Git repositories.
+
++++
+Materials:
+
+* A list of additional materials related to the lesson for the instructor. 
+* For example: slides.
+
+:::
+
+
 
 ---
 
 
-## Episode 0: Introduction and Setup (15 min) 
+:::{admonition} Instructor's Note 
+:class: tip
+*The instructor should recap lesson 1 and introduce lesson 2. The following **tasks** are expected from the instructor*:
+1. Confirm the participants have Git correctly setup from lesson 1
+2. Ensure everyone has configured a repository for lesson 1
+3. Ask participants for question related to lesson 1
 
-* **Objective:** Recap previous lesson and introduce the lesson 2.
+If times allow, explain briefly:
+4. The schedule of the lesson 2
+5. The [**topics**](https://manugil.github.io/GitCoDev/curriculum.html) fot the lesson 2
+:::
 
 
-* **Tasks:**
-1. Introduction to the learning objectives
-2. Confirm the participants have Git correctly setup from lesson 1
-3. Ensure everyone has configured a repository for lesson 1
-4. Ask participants for question related to lesson 1
----
-5. Explain the schedule of the lesson 2
-6. Show the [**objectives and topics**](https://manugil.github.io/GitCoDev/curriculum.html) of the lesson 2
 
-### Schedule
+
+
+<!-- ### Schedule
 | 13:00  | 13:50 | 14:00 | 14:50 | 15:10 | 16:00 | 16:10 | 17:00 | 17:10 |
 |:-------|:------|:------|:------|:------|:------|:------|:------|:------|
-| Teaching 50' | **Break 10'** | Teaching 50' | **Break 20'** | Teaching 50' | **Break 10'** | Teaching  50'| **Wrap-up 10'** | Closure |
+| Teaching 50' | **Break 10'** | Teaching 50' | **Break 20'** | Teaching 50' | **Break 10'** | Teaching  50'| **Wrap-up 10'** | Closure | -->
 
 
-Lesson 2: Branching and Remote Operations
-**Learning Objectives:**
-- Understand the concept of branches in Git repositories.
-- Apply Git operations to create and merge branches in a local Git repository.
-- Understand the concepts of bare and remote Git repositories. 
-- Clone and push changes to remote Gir repositories.
-- Synchronise changes between local and remote Git repositories.
-
+<!-- 
 | Episode | Topic | Time |
 |:----|:----|:----|
 | **2.1** | **Branching** | **13:00**| 
@@ -65,8 +72,10 @@ Lesson 2: Branching and Remote Operations
 | **2.2** | **Operations with remotes** | **15:00**|
 | --- | Create a bare repositories |-|
 | --- | Cloning and pushing to upstreams |-|
-| --- | Syncing changes between repositories |-|
+| --- | Syncing changes between repositories |-| -->
 
+:::{admonition} Instructor's Note 
+:class: tip
 First let’s make sure we’re still in the right directory. You should be in the `root` directory with `Lines.txt` and `history.log` files. Remember that the branch we are located in `main*`. Note that you might need to change the default branch to be called `main`. This might be the default branch depending on your settings and version of git.
 
 
@@ -136,6 +145,7 @@ did gyre and gimble
 seventh
 eigth line
 ```
+:::
 
 ## Episode 1: Understanding Branches (45 min)
 
