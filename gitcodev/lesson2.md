@@ -149,12 +149,14 @@ eigth line
 
 ## Episode 1: Understanding Branches (45 min)
 
-**Objetive**: Introduce basic branch operations and concepts
+<!-- **Objetive**: Introduce basic branch operations and concepts -->
 
-**Tasks:**
+:::{admonition} Instructor's Note 
+:class: tip
 1. Ask what they understand about Branches in Git
 2. Explain in a nushell what are Branches in Git
 3. Memorise the new commands and the Branch where the instructor is `main*`
+:::
 
 
 
@@ -166,21 +168,22 @@ git branch                     # new command for checking the branches (output: 
 git branch B1                  # new argument (create new branch)
 git branch                     # verify (output: B1, *main)
 ```
-Your newly created branch (here, `B1`) will show up, but your active branch should still be main. Note that `B1` is just a name. You could also call your branch ``delft``, if you want.
+Your newly created branch (here, `B1`) will show up, but your active branch should still be `main`. Note that `B1` is just a name. You could also call your branch ``delft``, if you want.
 
-* **Possible Q & A:**
 
-Q1. Lowercase matters? 
-**A1:** 
-While it's essential to provide enough information for clarity, overly long branch names can become cumbersome and difficult to manage. Lowercase and dashes: Stick to lowercase letters and use dashes instead of spaces in branch names to ensure compatibility across different operating systems and Git hosting platforms. [Show the best practices for naming Git branches](https://graphite.dev/guides/git-branch-naming-conventions).
+:::{admonition} Instructor's Note 
+:class: tip
+**Possible question: Lowercase matters?** 
 
+*Possible Answer: While it's essential to provide enough information for clarity, overly long branch names can become cumbersome and difficult to manage. Lowercase and dashes: Stick to lowercase letters and use dashes instead of spaces in branch names to ensure compatibility across different operating systems and Git hosting platforms. [Show the best practices for naming Git branches](https://graphite.dev/guides/git-branch-naming-conventions).*
+:::
 
 ```shell
 git status                     # verify (output: On branch master - nothing to commit, working tree clean)
 cat Lines.txt                  # verify (ouptut: Lines.txt with eighth line)
 ```
 
-![](https://cdn.vectorstock.com/i/1000v/32/97/colorful-tree-with-leafy-branches-vector-13883297.jpg)
+<!-- ![](https://cdn.vectorstock.com/i/1000v/32/97/colorful-tree-with-leafy-branches-vector-13883297.jpg) -->
 
 * **Lets first explain the following:**
 - **What are branches?**
