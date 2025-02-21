@@ -147,7 +147,7 @@ eigth line
 ```
 :::
 
-## Episode 1: Understanding Branches (45 min)
+## Episode 1: Understanding Branches
 
 <!-- **Objetive**: Introduce basic branch operations and concepts -->
 
@@ -176,6 +176,16 @@ Your newly created branch (here, `B1`) will show up, but your active branch shou
 **Possible question: Lowercase matters?** 
 
 *Possible Answer: While it's essential to provide enough information for clarity, overly long branch names can become cumbersome and difficult to manage. Lowercase and dashes: Stick to lowercase letters and use dashes instead of spaces in branch names to ensure compatibility across different operating systems and Git hosting platforms. [Show the best practices for naming Git branches](https://graphite.dev/guides/git-branch-naming-conventions).*
+
+- **Why we use branches?**
+
+```{figure} ../img/git-branches.png
+---
+height: 400px
+name: approach-fig
+---
+[A successful Git branching model, article from 2010](https://nvie.com/posts/a-successful-git-branching-model/)
+```
 :::
 
 ```shell
@@ -185,15 +195,13 @@ cat Lines.txt                  # verify (ouptut: Lines.txt with eighth line)
 
 <!-- ![](https://cdn.vectorstock.com/i/1000v/32/97/colorful-tree-with-leafy-branches-vector-13883297.jpg) -->
 
-* **Lets first explain the following:**
+<!-- * **Lets first explain the following:**
 - **What are branches?**
 <!-- <div style="text-align: center;"> <img src="https://book.the-turing-way.org/_images/sub-branch.png" alt="Branches"> <p><strong>Figure 1:</strong> Branches in version control</p> </div> -->
 
-- ![](https://book.the-turing-way.org/_images/sub-branch.png)
-- **Why we use branches?** ([The Turing Way Community examples 2022](https://lennartwittkuhn.com/version-control-book/misc/references.html#ref-community2022))
-- ![](https://nvie.com/img/git-model@2x.png)
-- [A successful Git branching model, article from 2010](https://nvie.com/posts/a-successful-git-branching-model/)
-- **what are the most common `git branch` flags?**
+
+
+<!-- - **what are the most common `git branch` flags?** -->
 
 Lets explore in our terminal with `git branch --help`:
 
@@ -206,12 +214,11 @@ Lets explore in our terminal with `git branch --help`:
 * `-v` or `--verbose`: Shows more information when listing branches, including the last commit message.
 ---
 
-
 ```shell
 git branch -m B1 B2            # new short option (rename B1 to B2)
 git log --oneline              # verify (notice that B1 is renamed to B2)
 ```
-**Can you explain this output?**
+Now its time to explain the output of `git log --online`"
 
 ```csharp
 c0ebedd (HEAD -> master, b2) Eighth line
@@ -222,8 +229,16 @@ c165327 Adding .gitignore
 0e77df2 Add first four lines
 ```
 
-**Interpretation:**
-
+:::{admonition} Instructor's Note 
+:class: tip
+**Key Concepts Illustrated in the previous output**
+1. Commit Hashed: each commit has a unique identifier. The abbreviated form (first 7 characters) is usually sufficient for referencing commits in commands.
+2. Branches (`master`, `b2`): Branches are pointers to specific commits. In our case, `master` and `b2` are pointing to the latest commit `c0ebedd`
+3. Tags (`tag1`): Tags are used to mark specific commits, often for releases or significant milestons.
+4. `HEAD`: `HEAD` is a special pointer that indicates your current position in the repository. It points to the latest commit in the currently branch (`master` in this case)
+5. Commit Messages: These are descriptions provided when making commits to explain what changes were made. Good commit messages are essential for understanding the history and purpose of changes.
+:::
+<!-- 
 1. `c0ebedd (HEAD -> master, b2) Eighth line`
 
 `c0ebedd`:
@@ -250,14 +265,7 @@ c165327 Adding .gitignore
 - No References: This commit isn't currently pointed to by any branch or tag.
 - Jabberwocky line 2: Commit Message.
 
-> Interpretation: This is an older commit with the message "Jabberwocky line 2". It isn't associated with any specific branch or tag.
-
-**Key Concepts Illustrated in the Output**
-1. Commit Hashed: each commit has a unique identifier. The abbreviated form (first 7 characters) is usually sufficient for referencing commits in commands.
-2. Branches (`master`, `b2`): Branches are pointers to specific commits. In our case, `master` and `b2` are pointing to the latest commit `c0ebedd`
-3. Tags (`tag1`): Tags are used to mark specific commits, often for releases or significant milestons.
-4. `HEAD`: `HEAD` is a special pointer that indicates your current position in the repository. It points to the latest commit in the currently branch (`master` in this case)
-5. Commit Messages: These are descriptions provided when making commits to explain what changes were made. Good commit messages are essential for understanding the history and purpose of changes.
+> Interpretation: This is an older commit with the message "Jabberwocky line 2". It isn't associated with any specific branch or tag. -->
 
 Once a branch has created and its not longer needed, it can be deleted. Removing branches that are no longer active helps maintain a clean and manageable branch structure. To delete a branch, you can use the `git branch` command, followed by a `-d` flag:
 
@@ -268,14 +276,14 @@ git log --oneline              # verify (notice that master is the only branch a
 git branch -m master foo       # known action (rename "main" to "foo" branch)
 ```
 
+:::{admonition} Instructor's Note 
+:class: tip
+* **Possible Q & A: Is best practices modifying **main** branch name?**
 
-* **Possible Q & A:**
+*Recommendation:
 
-Q1. Is best practices modifying **main** branch name? 
-**A1:** 
-Recommendation:
-If there is a specific organizational reason (e.g., inclusivity, consistency), renaming the main branch is a good practice as long as it is done thoughtfully with clear communication and updates to all systems. However, if the repository is already well-established and widely used with the main branch name, the impact of renaming might outweigh the benefits. [Show the best practices for naming Git branches](https://graphite.dev/guides/git-branch-naming-conventions).
-
+If there is a specific organizational reason (e.g., inclusivity, consistency), renaming the main branch is a good practice as long as it is done thoughtfully with clear communication and updates to all systems. However, if the repository is already well-established and widely used with the main branch name, the impact of renaming might outweigh the benefits. [Show the best practices for naming Git branches](https://graphite.dev/guides/git-branch-naming-conventions).*
+:::
 
 
 ```shell
@@ -287,14 +295,7 @@ This should output similar to:
 ```shell
 error: Cannot delete branch 'foo' checked out at '/Users/courses/gitcodev/2310-gitcodev/git/lesson2'
 ```
-
-You can only delete a branch you are **NOT** currently working on. Since we are on the branch `foo`, we cannot delete it.
-
-**Explanation:**
-
-> In Git, every repository has a current branch that your working directory is using. This is known as the checked-out branch. The error you're encountering means that Git is preventing you from deleting the branch you're currently on.
-
-This happens because:
+In Git, every repository has a current branch that your working directory is using. This is known as the checked-out branch. The **error** you're encountering means that Git is preventing you from deleting the branch you're currently on. This happens because:
 
 - Git needs an active branch to track changes. If you delete the current branch, there would be no branch left for Git to refer to in the working directory.
 - To prevent you from accidentally removing the branch where your work is happening, Git won’t allow you to delete the branch you are currently on.
@@ -305,10 +306,14 @@ git branch -m foo master         # known action (replace "foo" to "main")
 git branch                     # verify
 ```
 
-* **Key steps:**
 
+:::{admonition} Instructor's Note 
+:class: tip
 - Checked-out branch: The branch you're currently working on.
 - You can’t delete the branch you’re on because Git needs to keep a reference to your working directory.
+- You must always specify the target branch when using git switch. Without a branch name or commit hash, Git doesn’t know what to switch to, hence the error.
+- git switch is a modern alternative to the older git checkout for branch operations, and it's more intuitive for switching branches.
+:::
 
 
 ```shell
@@ -324,10 +329,6 @@ Lets now change branches with `git switch` git command.
 git switch                     # new commmand (fails - fatal: missing branch or commit argument)
 ```
 
-Important Notes:
-- You must always specify the target branch when using git switch. Without a branch name or commit hash, Git doesn’t know what to switch to, hence the error.
-- git switch is a modern alternative to the older git checkout for branch operations, and it's more intuitive for switching branches.
-
 ```shell
 git switch B1                  # new argument: on branch B1
 ```
@@ -339,10 +340,9 @@ A	directory/emptyfile
 Switched to branch 'b1'
 ```
 Understanding the `A`:
-The letter A stands for "Added". This indicates that these files have been added to the staging area (also known as the **index**) in Git. 
-The staging area is where you prepare changes before committing them to the repository.
+The letter *A* stands for *"Added"*. This indicates that these files have been added to the staging area (also known as the **index**) in Git. The staging area is where you prepare changes before committing them to the repository.
 
-Removing Tracking from `b1`:
+Removing Tracking from `B1`:
 
 ```shell
 git rm --cached directory/dontrackme.txt
@@ -361,10 +361,10 @@ git switch master                # known action: on branch main
 git log --oneline              # verify
 ```
 
-![alt text](image-1.png)
+<!-- ![alt text](image-1.png) -->
 
-````{card} 
-Exercise 1 --- Get familiar with branches (5 min)
+:::{card} 
+Exercise 1 --- Get familiar with branches
 ^^^    
 
 ```{include} exercises/L2-ex01.md
@@ -372,19 +372,19 @@ Exercise 1 --- Get familiar with branches (5 min)
 
 ```{dropdown} Answers
 
-    [Need to be completed]
-
-    ```shell
-    (your work)
-    git branch                                                          # verify
-    git branch -d B1 B2                                                 # known action
-    git branch                                                          # verify
-    git log --oneline                                                   # verify
-    cat Lines.txt                                                       # verify
-    ```
-
+```shell
+git branch
+# verify
+git branch -d B1 B2
+# known action
+git branch
+# verify
+git log --oneline
+# verify
+cat Lines.txt
+# verify
 ```
-````
+:::
 
 
 ### 2.1.2 Develop and compare branches
@@ -415,19 +415,20 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
-**Explanation:**
 
+
+:::{admonition} Instructor's Note 
 - `On branch main`: This indicates that you are currently on the `main` branch.
 - `Changes not staged for commit`: This section lists the changes that have been made to the files in your working directory but have not yet been staged for commit.
 - `(use "git add <file>..." to update what will be committed)`: This message suggests that you can use the git add <file> command to stage the changes in the specified file(s) for the next commit.
 - `(use "git restore <file>..." to discard changes in working directory)`: This message suggests that you can use the git restore <file> command to discard the changes in the specified file(s) and revert them to the last committed state.
 - `modified: Lines.txt`: This indicates that the file Lines.txt has been modified but the changes have not been staged for commit.
 - `no changes added to commit (use "git add" and/or "git commit -a")`: This message indicates that there are no changes currently staged for commit. It suggests using git add to stage changes or git commit -a to automatically stage and commit all changes to tracked files.
+:::
 
 
-
-**Possible question: what means "stage" the changes in a file?**
-In Git, "staging the changes" refers to the process of preparing specific changes to be included in the next commit. It’s a way to organize your work before making a permanent snapshot (a commit) of your changes in the repository. Once staged, the changes are ready to be included in the next commit, which is then recorded in the Git repository.
+<!-- **Possible question: what means "stage" the changes in a file?**
+In Git, "staging the changes" refers to the process of preparing specific changes to be included in the next commit. It’s a way to organize your work before making a permanent snapshot (a commit) of your changes in the repository. Once staged, the changes are ready to be included in the next commit, which is then recorded in the Git repository. -->
 
 
 
@@ -494,6 +495,7 @@ The output of the `git log --oneline --all` command provides a concise view of t
 b90bce0 (b1) add ninth line on B1
 f6ef1b3 (HEAD -> main) add ninth line on main
 ```
+<!-- 
 **1. Commit Hash (b90bce0 and f6ef1b3)**
 Each commit in Git has a unique identifier called commit hash (also known as a SHA-1 hash). In this case:
 - `b90bce0` is the hash of one commit.
@@ -511,7 +513,7 @@ The text in parentheses indicates which branch or branches point to a particular
 
 **4. HEAD (`HEAD -> main`)**
 - `HEAD` refers to the currently branch you are working on "checked-out"
-- `HEAD -> main` means that the `main` branch is currently checked out, and you are working on this branch
+- `HEAD -> main` means that the `main` branch is currently checked out, and you are working on this branch -->
 
 This output suggests that the branches `b1` and `main` both have separate commits, and the HEAD is currently pointing to the main branch.
 
@@ -545,13 +547,15 @@ ninth line
 ninth line(duplicate)
 ```
 
-### 2.1.3 Visualise and merge branches, and conflict resolution (45 min)
+### 2.1.3 Visualise and merge branches, and conflict resolution
 
-* **Key objetive:**
+
+:::{admonition} Instructor's Note 
+*Objectives:*
 - Show participants how to identify what has been changed in a file between commits.
 - Explain the meaning of each part of the diff output, including how to interpret the context of changes.
 - Teach participants how to merge branches and handle conflicts.
-
+:::
 
 
 Git also offers an option for  visualization of branches inside the command line. For that you can use `git log` (introduced in the previous chapter on Git Essentials) with four flags:
@@ -561,6 +565,7 @@ git log --oneline --all                                # explore
 git log --oneline --all --parents                      # explore
 git log --oneline --all --parents --graph              # explore
 ```
+<!-- 
 1. `git log --oneline --all:`
 
 - `--oneline`: Displays each commit in a condensed format (one line per commit) with the commit hash and message.
@@ -571,7 +576,7 @@ git log --oneline --all --parents --graph              # explore
 - `--oneline`: Same as before, showing each commit in one line.
 - `--all`: Shows commits from all branches.
 - `--parents`: Displays the parent commit hashes for each commit. This is especially useful for merge commits, as it shows which commits were merged.
-- `--graph`: Adds a visual representation of the commit history, including branches and merges. The history is displayed as a graph of lines and characters (like `|`, `/`, and `*`) to represent the structure of branches and merges.
+- `--graph`: Adds a visual representation of the commit history, including branches and merges. The history is displayed as a graph of lines and characters (like `|`, `/`, and `*`) to represent the structure of branches and merges. -->
 
 ```csharp
 * c5d261c 9122e5b (HEAD -> main) add tenth line on main (with mistake)
@@ -585,7 +590,13 @@ git log --oneline --all --parents --graph              # explore
 * c165327 0e77df2 Adding .gitignore
 * 0e77df2 Add first four lines
 ```
-It shows a shows a visual representation of the commit history in your Git repository, along with the commit hash, parent relationships, and any associated branches or tags. What each part means:
+
+The graph shows a branching history with a divergence between `main` and `b1` at commit `c0ebedd`. 
+`HEAD -> main` indicates that you are currently on the main branch, and this is the latest commit in the repository.
+ The tags and branch names are helpful for identifying important commits or points in the history (like tag1). 
+ Merge points and relationships between branches are clearly shown using the `|` (vertical bar), `/`, and `*` symbols.
+
+<!-- What each part means:
 **Breaking Down the Output:**
 
 **Commit Structure**:
@@ -630,27 +641,19 @@ It shows a shows a visual representation of the commit history in your Git repos
 
 The `|` shows that b1 continues from the common commit `c0ebedd` (on both main and b1).
 The `|/` indicates that the b1 branch diverged from main at commit c0ebedd.
-So, `|` just shows the linear flow of commits in a particular branch.
+So, `|` just shows the linear flow of commits in a particular branch. -->
 
-> Key Takeaways:
-The graph shows a branching history with a divergence between `main` and `b1` at commit `c0ebedd`. 
-`HEAD -> main` indicates that you are currently on the main branch, and this is the latest commit in the repository.
- The tags and branch names are helpful for identifying important commits or points in the history (like tag1). 
- Merge points and relationships between branches are clearly shown using the `|` (vertical bar), `/`, and `*` symbols.
+
 
 ```shell
 git log --oneline --all --graph --decorate             # any change?
 ```
 
-**Use Case for --decorate:**
+:::{admonition} Instructor's Note 
+Use `--decorate` when you want to quickly understand which commits belong to which branches or tags. It’s particularly helpful when working on repositories with multiple branches and tags, as you can immediately see where each branch or tag is positioned in the commit history.
+:::
 
-Use `--decorate` when you want to quickly understand which commits belong to which branches or tags.
-> It’s particularly helpful when working on repositories with multiple branches and tags, as you can immediately see where each branch or tag is positioned in the commit history.
-
-We should now focus on the output!
-
-
-lets change the branch now to `B1`:
+We should now focus on the output! Lets change the branch now to `B1`:
 ```shell
 git switch B1                                          # on branch B1
 cat Lines.txt                                          # verify (Lines.txt should be without duplicate ninth line)
@@ -685,7 +688,7 @@ index 8622345..e24eb28 100644
 -ninth line (duplicate)
 (END)
 ```
-
+<!-- 
 **1. diff --git a/Lines.txt b/Lines.txt:**
 This line indicates that a diff is being generated for the file Lines.txt, comparing the version in the **current commit (b/Lines.txt)** to the version in the **previous commit (a/Lines.txt)**.
 **2. index 8622345..e24eb28 100644:**
@@ -697,11 +700,14 @@ This line indicates that a diff is being generated for the file Lines.txt, compa
 `--- a/Lines.txt`: Refers to the version of the file in the previous commit.
 `+++ b/Lines.txt`: Refers to the version of the file in the current commit.
 
-**4. @@ -7,4 +7,3 @@:**
+**4. @@ -7,4 +7,3 @@:** -->
+
+:::{admonition} Instructor's Note 
 This line indicates the line numbers where the differences occur:
   * -7,4: The previous version had 4 lines starting from line 7.
   * +7,3: The current version has 3 lines starting from line 7.
 This means that at line 7 of the previous version, there were 4 lines, while in the current version, there are 3 lines.
+:::
 
 
 ```shell
@@ -723,10 +729,9 @@ git log --oneline --all --graph                        # routine
 cat Lines.txt                                          # verify
 ```
 
-![alt text](image-2.png)
 
 ````{card} 
-Exercise 2 --- Explore differences across branches (5 min)
+Exercise 2 --- Explore differences across branches
 ^^^    
 
 ```{include} exercises/L2-ex02.md
@@ -734,14 +739,14 @@ Exercise 2 --- Explore differences across branches (5 min)
 
 ```{dropdown} Answers
 
-    [No answers yet]
+    [No answers are provided for this exercise.]
 
 ```
 ````
-![alt text](image-3.png)
+
 
 ````{card} 
-Exercise 3 --- Commit in a secondary branch (5 min)
+Exercise 3 --- Commit in a secondary branch
 ^^^    
 
 ```{include} exercises/L2-ex03.md
@@ -763,9 +768,7 @@ Exercise 3 --- Commit in a secondary branch (5 min)
 ```
 ````
 
-**Merging branches**
-
-Lets come back to branch `B1`:
+Lets keep going and come back to branch `B1`:
 ```shell
 git switch B1                                             # on branch B1
 echo 'eleventh line' >>Lines.txt                          # routine
@@ -784,6 +787,7 @@ git switch main                                           # on branch main
 git diff main B1 Lines.txt                                # verify
 git merge -m 'Merge development from branch B1' Lines.txt # wrong syntax
 ```
+Here is the output:
 
 ```csharp
 ❯ git merge -m "merge development from branch b1" Lines.txt
@@ -794,6 +798,8 @@ This `Lines.txt` in the previous `git merge` command is incorrectly specified as
 ```shell
 git merge -m 'Merge development from branch B1'           # wrong syntax
 ```
+
+
 The error message fatal: No remote for the current branch indicates that the current branch does not have a remote tracking branch set up. This means Git doesn't know which remote branch to merge from. To merge changes from a specific branch (e.g., `B1`) into the current branch, you need to specify the branch name:
 
 ```shell
@@ -826,13 +832,13 @@ You can also check the different file versions with `diff`
 ```csharp
 git diff Lines.txt                                        # verify
 ```
-Git will highlight the conflicting parts in the affected file(s), and you must choose the desired changes or modify them to create a consistent version. To do this, open up the file(s) with conflicts in a text editor of your choice, and you’ll see the conflicting sections marked with the following indicators:
+<!-- Git will highlight the conflicting parts in the affected file(s), and you must choose the desired changes or modify them to create a consistent version. To do this, open up the file(s) with conflicts in a text editor of your choice, and you’ll see the conflicting sections marked with the following indicators:
 
 * `<<<<<<<`: indicates the beginning of lines that encountered a merge conflict.
 * `=======`: shows the break point for comparison.
 * `>>>>>>>`: shows the end of the lines with a merge conflict.
 
-The lines between `<<<<<<< HEAD` and `=======` represent the changes that were made in your current branch.
+The lines between `<<<<<<< HEAD` and `=======` represent the changes that were made in your current branch. -->
 
 
 To resolve the merge conflict, you need to manually edit the conflicting sections to the desired state, removing the conflict markers. You might want to keep some changes from your current branch, some from the merged branch, keep only the changes from one branch, or make entirely new changes.
@@ -860,33 +866,37 @@ git status                                                # verify
 git log --oneline --all --graph                           # verify
 git log --oneline --all --graph --parents                 # verify
 ```
-![alt text](image-4.png)
 
 ````{card} 
-Exercise 4 --- A first type of merging (10 min)
+Exercise 4 --- A first type of merging
 ^^^    
 
 ```{include} exercises/L2-ex04.md
 ```
 
+
 ```{dropdown} Answers
 
     ```shell
-    # No answers yet
+    # No answers are provided for this exercise.
     ```
 
 ```
 ````
 
-## Episode 2: Operations with remotes
+## Episode 2: Understanding operations with remotes
 
 ### 2.2.1 Create and explore a bare repository
 
+:::{admonition} Instructor's Note 
+:class: tip
 Lets first explain what is a bare repository:
 
 > A bare repository is a repository that doesn't have a working directory. It only contains the .git directory, the directory in which Git stores all its internal data. The main purpose of these repositories is to be a central repository that developers can push to and pull from, so there's no need in having a working directory. Bare repositories are also used in Git hosting services like GitHub and GitLab. In the next several lessons we will learn how to create a bare repository and how to push to it [Stackoverflow forum](https://stackoverflow.com/questions/37992400/what-is-a-bare-repository-and-why-would-i-need-one).
 
-**- A. Working Space (Working Directory)**
+:::
+
+<!-- **- A. Working Space (Working Directory)**
   1. What It Is: The working space (or working directory) is where you can see and modify files in a Git repository. It represents the current state of your project on your local machine. This is where you do your coding, editing, and file changes.
   2. Purpose: The working space is for active development. It contains your project files in their checked-out state (the version currently being worked on).
   3. What It Contains: The working directory contains all the project files, including the .git directory (the hidden folder that stores Git’s metadata and history). You can modify these files and later stage and commit the changes to the repository.
@@ -918,7 +928,7 @@ Lets first explain what is a bare repository:
 
   **Relation to the Repository:**
       - A bare repository is a remote repository used for collaboration and centralization. It is typically created with the --bare flag (e.g., git init --bare).
-      - You cannot directly edit files in a bare repository because it does not have a working directory.
+      - You cannot directly edit files in a bare repository because it does not have a working directory. -->
 
 
 ```shell
@@ -936,6 +946,8 @@ ls -Fa git/.git               # List all files and directories, including hidden
 cd git-zero.git               # Change to the directory of the bare repository
 ls                            # List all files and directories in the bare repository
 ```
+The following output should be displayed in your terminal:
+
 ```csharp
 ❯ ls -Fa git-one/.git  
 ./           HEAD         description  info/        refs/
@@ -944,7 +956,7 @@ ls                            # List all files and directories in the bare repos
 
 
 The files and directories inside `.git` are the **internal data and configuration files** that Git uses to manage the repository. When you run `ls -Fa git-one/.git`, you’re looking at the contents of the `.git directory` in your **cloned repository (git-one)**. This directory is what makes the folder a Git repository.
-
+<!-- 
 **Explanation of Each File/Directory:**
 
 - `./`: This refers to the **current** directory (.git itself).
@@ -962,7 +974,7 @@ The files and directories inside `.git` are the **internal data and configuratio
 - `hooks/`: Contains scripts to run on specific **Git actions**.
 - `info/`: Additional repository information, like ignore rules.
 - `objects/`: Stores the content and history (blobs, trees, and commits).
-- `refs/`: Stores references to branches and tags.
+- `refs/`: Stores references to branches and tags. -->
 
 The `.git directory` is the heart of your repository, containing everything Git needs to manage and track changes in your project.
 
@@ -970,10 +982,12 @@ Lets try to write:
 ```shell
 git status                    # observe (fails)
 ```
+
+:::{admonition} Instructor's Note 
+:class: tip
+
 The error message `fatal: this operation must be run in a work tree` indicates that the git status command was run inside a bare repository. The git status command requires a working directory to show the status of files, but bare repositories do not have a working directory. 
-**Explanation**
-A bare repository only contains the version control information and does not have a working directory where files are checked out.
-Commands like git status, git log, and others that operate on the working directory or the index are not applicable in a bare repository.
+:::
 
 
 Another:
@@ -996,10 +1010,12 @@ This command clones the bare repository `git-zero.git` into a new directory name
 ```shell
 git clone git-zero.git git-one                    # new command
 ```
-**Command Breakdown:**
+
+:::{admonition} Instructor's Note 
 - `git clone:` This command is used to create a copy of an existing Git repository. It creates a local copy from the remote repository.
 - `git-zero.git:` This is the URL or path of the remote repository that you are cloning. In this case, git-zero.git is the source repository.
 - `git-one:` This is the name of the directory where the cloned repository will be saved locally. Instead of cloning into a folder with the same name as the repository (git-zero), you specify a new folder called git-one where the cloned content will go.
+:::
 
 You should get the following output:
 
@@ -1008,7 +1024,7 @@ You should get the following output:
 Cloning into 'git-one'... 
 warning: You appear to have cloned an empty repository. done.
 ```
-**What Happened:**
+<!-- **What Happened:**
 - `Cloning into 'git-one'...`:
 1. Git is starting the cloning process and creating a new directory called git-one in your current working directory.
 2. This directory will contain the clone of the repository git-zero.git.
@@ -1027,7 +1043,7 @@ warning: You appear to have cloned an empty repository. done.
 Since the cloned repository is empty, you could:
 - Add some files to the git-one directory.
 - Stage and commit these files using git add and git commit.
-- Push the changes back to the remote repository git-zero.git using git push.
+- Push the changes back to the remote repository git-zero.git using git push. -->
 
 
 ```shell
@@ -1042,11 +1058,9 @@ git branch                                        # observe that is empty
 git log                                           # observe (fatal: your current branch 'master' does not have any commits yet)
 ```
 The git remote command is used to manage the set of repositories ("remotes") whose branches you track. These remotes are typically other repositories that you can **fetch** from and **push** to.
-**What is a Remote Repository?**
-A remote repository is another Git repository, typically stored on a remote server (such as GitHub, GitLab, Bitbucket, or another machine), that your local Git repository can interact with.
-- When you work locally, you usually have a copy of a repository, but you often need to sync changes with other developers or backups stored in other locations.
-- This is where remotes come into play: they represent those **external locations**.
 
+:::{admonition} Instructor's Note 
+:class: tip
 **Key Functions of git remote:**
 - `Fetching`:
   1. Fetching from a remote repository means **downloading** new data (commits, branches, or tags) from that remote repository into your local repository.
@@ -1054,6 +1068,12 @@ A remote repository is another Git repository, typically stored on a remote serv
 - `Pushing`:
   1. Pushing to a remote repository means **uploading** your local commits to the remote repository.
   2. This is how you share your changes with others who are working on the same project.
+:::
+
+<!-- **What is a Remote Repository?**
+A remote repository is another Git repository, typically stored on a remote server (such as GitHub, GitLab, Bitbucket, or another machine), that your local Git repository can interact with.
+- When you work locally, you usually have a copy of a repository, but you often need to sync changes with other developers or backups stored in other locations.
+- This is where remotes come into play: they represent those **external locations**. -->
 
 ```shell
 git remote                                        # new command
@@ -1062,18 +1082,22 @@ git remote -v                                     # new short option
 The command `git remote` lists the short names of all configured remote repositories. When you run `git remote` and see `origin`, it means that there is a remote repository configured with the name `origin`. 
 
 ```csharp
-origin	/Users/ccugutrillague/Desktop/2024-gitcodev/git-zero.git (fetch)
-origin	/Users/ccugutrillague/Desktop/2024-gitcodev/git-zero.git (push)
+origin	/Users/user/Desktop/2024-gitcodev/git-zero.git (fetch)
+origin	/Users/user/Desktop/2024-gitcodev/git-zero.git (push)
 ```
 
-**1. origin /Users/ccugutrillague/Desktop/2024-gitcodev/git-zero.git (fetch)**
+:::{admonition} Instructor's Note 
+:class: tip
+
+- `origin /Users/user/Desktop/2024-gitcodev/git-zero.git (fetch)`
 This shows the URL used for fetching changes from the remote repository. When you run commands like git fetch or git pull, Git will fetch changes from the remote repository located at this path.
 
-**2. origin /Users/ccugutrillague/Desktop/2024-gitcodev/git-zero.git (push)**
+- `origin /Users/user/Desktop/2024-gitcodev/git-zero.git (push)`
 This shows the URL used for pushing changes to the remote repository. When you run commands like git push, Git will push your local changes to this remote repository.
+:::
 
 
-What is `origin`?: origin is the default name given to the remote repository when you clone a repository or add a remote for the first time. It is a shorthand reference to the URL of the remote repository from which you cloned your local repository. You can fetch from and push to this remote repository using the name origin.
+<!-- What is `origin`?: origin is the default name given to the remote repository when you clone a repository or add a remote for the first time. It is a shorthand reference to the URL of the remote repository from which you cloned your local repository. You can fetch from and push to this remote repository using the name origin. -->
 
 ```shell
 echo 1 >> numbers.txt                              # routine
@@ -1091,7 +1115,7 @@ git status                                        # verify (ignore the but-warni
 ```shell
 git push                                          # new command
 ```
-This is the output:
+This is the expected output after `git push`:
 
 ```csharp
 Enumerating objects: 3, done.
@@ -1103,7 +1127,7 @@ To /Users/ccugutrillague/Documents/courses/gitcodev/2310-gitcodev/git/git-zero.g
 ```
 
 
-**Explanations:**
+<!-- **Explanations:**
 
 1. Enumerating objects: 3, done.
 Git is identifying the objects (commits, trees, blobs) that need to be pushed to the remote repository.
@@ -1124,7 +1148,7 @@ It shows the total size of the objects (234 bytes) and the speed at which they w
 Specifies the remote repository to which the objects are being pushed.
 6. `* [new branch] master -> master`
 Indicates that a new branch named master is being created on the remote repository.
-The local master branch is being pushed to the remote master branch.
+The local master branch is being pushed to the remote master branch. -->
 
 ```shell
 git status                                        # verify
@@ -1149,10 +1173,13 @@ git log                                           # observe
 git remote -v                                     # observe
 ```
 
+:::{admonition} Instructor's Note 
+:class: tip
 **Summary of `git remote -v` Output**
 - **`origin`** is the remote repository.
 - The URL for `origin` is `/Users/../Documents/courses/gitcodev/2310-gitcodev/git/git-zero.git`.
 - The URL is used for both fetching and pushing changes.
+:::
 
 ```shell
 echo 2 >>numbers.txt                              # routine
@@ -1171,10 +1198,13 @@ git status                                        # verify
 
 The git fetch command is used to download commits, files, and references from a remote repository into your local repository. It updates your local copy of the remote branches without modifying your working directory or local branches.
 
+:::{admonition} Instructor's Note 
+:class: tip
 **Key Points**
 - Fetches Updates: Downloads new data from the remote repository.
 - No Changes to Working Directory: Does not change your working directory or local branches.
 - Updates Remote Tracking Branches: Updates your local copy of the remote branches (e.g., origin/master).
+:::
 
 ```shell
 cd ../git-one                                      # Change to the directory of the first clone
@@ -1183,6 +1213,8 @@ git status                                         # Verify the status of the wo
 git log --oneline                                  # View the commit history in a concise format
 git fetch                                          # Fetch updates from the remote repository
 ```
+The below code is the expected output of the last command:
+
 ```csharp
 remote: Enumerating objects: 5, done.
 remote: Counting objects: 100% (5/5), done.
@@ -1192,10 +1224,13 @@ From /Users/ccugutrillague/Desktop/2024-gitcodev/git-zero
    fa26574..88ee05e  master     -> origin/master
 ```
 
-**Summary:**
+:::{admonition} Instructor's Note 
+:class: tip
+
 The git fetch operation successfully downloaded new commits from the **remote repository (git-zero)** and updated the `origin/master` reference. 
 You now have the latest changes from the remote, but *they haven’t been merged into your local branch* yet. 
 You can review them or choose to integrate them into your local working directory with a `git merge` or `git pull`.
+:::
 
 
 ```shell
@@ -1266,7 +1301,7 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 The error message you received when running git push indicates that your push was rejected because the remote repository contains commits that are not present in your local repository. This situation typically arises when someone else has pushed changes to the remote repository that you do not have locally. 
-
+<!-- 
 **Explanation:**
 
 **To /Users/ccugutrillague/Documents/courses/gitcodev/2310-gitcodev/git/git-zero.git**
@@ -1290,14 +1325,17 @@ The error message you received when running git push indicates that your push wa
 - Suggests that you should fetch and merge the remote changes into your local branch before attempting to push again.
 
 **hint: See the 'Note about fast-forwards' in 'git push --help' for details.**
-- Refers you to the Git documentation for more information about fast-forward merges and push rejections.
+- Refers you to the Git documentation for more information about fast-forward merges and push rejections. -->
 
 The reason for rejection is that you need to `fetch` the latest changes from the remote repository first.
 
-**Summary of git push Output**
+:::{admonition} Instructor's Note 
+:class: tip
+Summary of git push Output
 1. Push Rejected: The push was rejected because the remote repository contains commits that are not present in your local repository.
 2. Fetch First: You need to fetch the latest changes from the remote repository and integrate them into your local branch before pushing again.
 3. Steps to Resolve: Fetch the latest changes, merge them into your local branch, resolve any conflicts, and then push again.
+:::
 
 ```shell
 git fetch                                          # Fetch updates from the remote repository
@@ -1323,6 +1361,8 @@ index 2ca3cd5,e13c5bf..0000000
 + 1
 ++>>>>>>> refs/remotes/origin/master
 ```
+
+
 This part shows the merge conflict markers and the conflicting lines between the two versions of the file:
 - `@@@ -1,3 -1,3 +1,7 @@@`: This shows the conflicting area in both versions of the file. In both the local HEAD and the remote origin/master, there’s a conflict starting from line 1, and the conflict spans a few lines.
 Conflict Markers:
@@ -1331,11 +1371,13 @@ This means that, in your local branch, there is an additional 2 that was added t
 - `=======`: This marker separates the changes between your local branch (HEAD) and the remote branch (origin/master).
 - `>>>>>>> refs/remotes/origin/master`: The lines below this marker are the changes from the remote branch (origin/master), which is the branch being merged into your local branch.
 
+:::{admonition} Instructor's Note 
+:class: tip
 **What is Happening Here?**
 In your local branch (the current HEAD), you added a second 2 to **numbers.txt** (resulting in two lines with 2).
 In the remote origin/master branch, a 1 was added to the file (which conflicts with your changes).
 
-**Resolving the Conflict:**
+**How should we resolve this conflict:**
 To resolve this, you need to manually edit the numbers.txt file and decide which change to keep. You have three options:
 
 1. Keep your changes from the local branch (HEAD):
@@ -1345,7 +1387,7 @@ To resolve this, you need to manually edit the numbers.txt file and decide which
 3. Combine both changes:
   + Modify the file to include both changes in a way that makes sense.
 
-
+:::
 ```shell
 cat numbers.txt                                    # View the contents of numbers.txt
 nano numbers.txt                                   # Edit the file to resolve the conflict
@@ -1364,7 +1406,6 @@ git push                                           # known action
 git log --oneline                                  # verify
 git status                                         # verify
 ```
-![alt text](image-5.png)
 
 ````{card} 
 Exercise 5 --- Another type of merge
@@ -1376,20 +1417,18 @@ Exercise 5 --- Another type of merge
 ```{dropdown} Answers
 
     ```shell
-    # No answers yet
+    No answers are provided for this exercise
     ```
 
 ```
 ````
 
 
-```{dropdown} Differences Between git fetch and git merge?
+<!-- ```{dropdown} Differences Between git fetch and git merge?
 Key Differences
 * `git fetch:` Only downloads updates from the remote repository.
 Does not change your working directory or local branches.
 Allows you to review changes before merging.
 * `git merge:` Merges changes from one branch into another branch.
 Directly modifies your current branch by integrating changes from the specified branch.
-Typically used to combine feature branches into the main branch.
-
-```
+Typically used to combine feature branches into the main branch. -->
