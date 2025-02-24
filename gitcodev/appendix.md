@@ -43,14 +43,13 @@ Materials:
 :::
 
 
-
 ### Instructor's Notes
 Lessons may include explanations or instructions for the instructor. Use the following admonition for including *instructor's notes*:
 
 ```md
 :::{admonition} Instructor's Note 
 :class: tip
-*The content in italics*
+<Content>
 :::
 ```
 Rendered as:
@@ -109,9 +108,8 @@ Exercises are organised in files; each file  contains the following parts:
 * The time required to complete the exercise.
 * A statement indicating if the exercise should be resolved individually or as a team/group.
 * A list of tasks or instructions.
-* Admonistions, figures, etc. (optional)
+* Admonitions (`note, warning, important`), figures, etc. (optional)
 * The answers to the exercise. If the exercise has no answers, that is stated by writing, `No answers are provided for this exercise`. 
-
 
 Example:
 
@@ -126,11 +124,13 @@ Please perform the following tasks individually.
 1. Make a copy of the file `check-in/template.md` in the same directory; 
 1. Open your copy of `template.md` and add something to the lists in the file.
 
-```{admonition} Instructor's Note
-Optionally, include other content
-```
+:::{admonition} Instructor's Note 
+:class: tip
+Optional. Include other content
+:::
 
-```{dropdown} Answers
+
+:::{dropdown} Answers
  Use a dropdown to provide answers to the exercise. If none, use the text: "No answers are provided for this exercise."
-```
+:::
 ````
