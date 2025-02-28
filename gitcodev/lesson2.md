@@ -750,9 +750,17 @@ Exercise 2 --- Explore differences across branches
 
 ```{dropdown} Answers
 
-    [No answers are provided for this exercise.]
-
-```
+   ```shell
+   # sol. ex1
+   git switch B2 sol ex.1
+   # sol. ex2 
+   git diff HEAD~1
+   git diff HEAD~2
+   git diff HEAD~3
+   ```
+   # sol. ex3
+   git diff HEAD~4
+   git diff HEAD~5
 ````
 
 
@@ -879,7 +887,7 @@ git log --oneline --all --graph --parents                 # verify
 ```
 
 ````{card} 
-Exercise 4 --- A first type of merging
+Exercise 4 --- A first type of merge
 ^^^    
 
 ```{include} exercises/L2-ex04.md
@@ -888,8 +896,17 @@ Exercise 4 --- A first type of merging
 
 ```{dropdown} Answers
 
-    ```shell
-    # No answers are provided for this exercise.
+    ```shell   
+    # sol. ex.1 
+    git switch B2
+    wc -l Lines.txt
+    git switch main
+    wc -l Lines.txt
+    # sol. ex.2
+    git switch main
+    git merge B2
+    # sol. ex.3
+    git log --oneline --graph --decorate --all
     ```
 
 ```
@@ -1426,8 +1443,16 @@ Exercise 5 --- Another type of merge
 
 ```{dropdown} Answers
 
-    ```shell
-    No answers are provided for this exercise
+    ```shell   
+    # sol. ex.1 
+    git switch B2
+    git merge B2
+    # sol. ex.2
+    # make the changes in the file, then:
+    git commit
+    wc -l Lines.txt
+    # sol. ex.3
+    git log --oneline --graph --decorate --all
     ```
 
 ```
