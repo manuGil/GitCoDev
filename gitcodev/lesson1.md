@@ -1,6 +1,6 @@
 # LESSON 1: Fundamental Operations with Git
 
-Lecture notes on the fundamental operation with Git. A hands-on lesson for introducing version control, tracking changes, and the tracking history. 
+Lecture notes on the fundamental local operations with Git. A hands-on lesson for introducing version control, tracking changes, and the tracking history. 
 These notes contains the following pointers for the instructor:
 
 * Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
@@ -19,44 +19,35 @@ This contains general information about the lesson and illustrations for suppori
 *[Collaborative software development](https://docs.google.com/presentation/d/1BucILQ9Osz_2tKYF3kF-c3uZFND8xfJ4/edit?usp=sharing)*
 ````
 
+The key topic covered on this day are:
+
+* What are Version Control and Git
+* Git Command syntax and getting help
+* Creating an Empty Repository
+* Tracking Changes in Working Documents
+  * With the Index
+  * Tracking Directories
+  * Ignoring and untracking files
+  * Ignoring untracked directories
+* Undoing changes
+  * Undoing changes with the Index
+  * Deleting and renaming tracked files and directories
+* Sequencing changes into a history
+  * Committing changes
+  * Inspecting changes using the history
+  * Undoing changes with the history
+  * Marking the history with tags
+
+
 
 ## Episode 1: Git repositories for version control
 **[ca 50 min total]** 
-
-**Intended Audience**
-This course is intended for:
-- Researchers who have not previously used version control and will be owners or participants in collaborative development projects of some complexity
-- Researchers who have limited experience of the basic operations of version control but want a deeper understanding of how these fit into a git-based workflow.
-
-In short, this course requires little prior knowledge but steps learners through git operations in enough detail that they should be able to 
-troubleshoot and self-orient with respect to most collaborative workflows.
-
-**Learning Objectives**
-After completing this lesson, you will be able to:
- - **Describe** how a local version control systems records the history of a project
- - **Create** a local project repository using git at the command-line
- - **Understand** the core operations on a local version repository:
-   - **Determine** the status of the working directory in comparison with the index
-   - **Add** files to be committed to the index
-   - **Remove** unneeded files from the index
-   - **Track changes** that need to be committed
-   - **Commit** changes to the project history
-   - **Revert** part or all of the project to a previous state
-   - **Tag** important moments in the history of the project for easy reference
-- **Navigate** your way through unexpected situations involving local workflows.
-  
- 
 
 ### 1.1.0 Welcome slides
 **[10 min]**
 
 ### 1.1.1 Introduction to Git
 **[10 min]**
-
-`````{admonition} Instructor's Note
-It can be worth reminding learners that they all have different levels of experience with the shell.
-If the early steps seem too basic, please be patient. We are all in this to support each other.
-````` 
 
 * Create a directory for the course
 
@@ -97,6 +88,8 @@ If the early steps seem too basic, please be patient. We are all in this to supp
     git config --list
 ```
 ```shell
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
     git config --global core.editor nano
     git config --global core.autocrlf input # false for Win
     git config --global init.defaultBranch main
