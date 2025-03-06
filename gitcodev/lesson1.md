@@ -104,6 +104,13 @@ The key topic covered on this day are:
 ### 1.1.3. Creating an Empty Reposiory
 **[10 min]**
 
+````{admonition} Instructor's Note
+
+    Here and throughout, it is possible to edit the file with an editor rather than appending
+    lines with *echo*, however this will make the nature of the changes invisible in any
+    gitautopush record.
+````
+
 ``` shell
     pwd
     ls
@@ -546,6 +553,8 @@ Exercise 7 --- Explore the changes recorded in the history
 
 ````{note}
 This topic involves using `git restore`. Actual commands are missing.
+
+**TODO**:  Fill out detail in this section
 ````
 
 ### 1.3.4 Marking the History Using Tags
