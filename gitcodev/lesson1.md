@@ -19,7 +19,19 @@ This contains general information about the lesson and illustrations for suppori
 *[Collaborative software development](https://docs.google.com/presentation/d/1BucILQ9Osz_2tKYF3kF-c3uZFND8xfJ4/edit?usp=sharing)*
 ````
 
-The key topic covered on this day are:
+## Learning Objectives
+
+:::{card}
+* Understand the need for version control, especially in collaborative projects
+* Be able to **create a new** local git repository
+* Check on changes between the repository index and the working directory
+* Know how to add, delete and rename files and resources within the repository
+* Know how to ignore files and resources that should not be tracked
+* Know how to commit changes in order to create a sequential history of the project
+* Be able to restore the project to a previous state
+:::
+
+## Key Topics
 
 * What are Version Control and Git
 * Git Command syntax and getting help
@@ -46,10 +58,22 @@ The key topic covered on this day are:
 ### 1.1.0 Welcome slides
 **[10 min]**
 
+Introduce:
+* Trainers
+* Code of conduct
+* Course outline
+* Today's schedule
+* The need for and goals of version control
+
 ### 1.1.1 Introduction to Git
 **[10 min]**
 
 * Create a directory for the course
+
+````{admonition}
+Students are assumed to have at least basic awareness of working from the command line and navigating the directory tree,
+but help them if necessary.
+````
 
 ```shell
     cd ~/Desktop/
@@ -81,12 +105,17 @@ The key topic covered on this day are:
 ### 1.1.2 Git Command Syntax and Getting Help
 **[10 min]**
 
+
+
 ```shell
     git help
     git help help
     git config
     git config --list
 ```
+
+Introduce the key config parameterts, including pre-setting some that only apply on day 2
+
 ```shell
     git config --global user.name "John Doe"
     git config --global user.email johndoe@example.com
@@ -105,10 +134,9 @@ The key topic covered on this day are:
 **[10 min]**
 
 ````{admonition} Instructor's Note
-
     Here and throughout, it is possible to edit the file with an editor rather than appending
     lines with *echo*, however this will make the nature of the changes invisible in any
-    gitautopush record.
+    gitautopush record, so is not recommended in class.
 ````
 
 ``` shell
@@ -125,6 +153,8 @@ The key topic covered on this day are:
     git status
     git init
 ```
+The *git status* command above should return a fatal error because we are not in a repository.
+
 ```shell
     ls
     ls -a
@@ -135,6 +165,10 @@ The key topic covered on this day are:
 
 ### 1.1.4. Q&A
 **[10 min]**
+
+At this point, we have an empty repository, plus a single file in a working directory that has not been added to the repository.
+Students have had a brief view (via *ls -af .git*) of the inner contents of the repository proper, but should not be encouraged to dig
+too deeply at this point.
 
 ### Short Break
 **[10 min]**
@@ -152,13 +186,31 @@ The key topic covered on this day are:
     ls -a .git
     git diff lines.txt
 ```
+````{admonition} Instructor's Note
+    The only visible difference between the output of this and the previous *ls -a .git* is the appearance of the *index*
+````
+
 ```shell
     echo 'third line' >>lines.txt
     cat lines.txt
     git diff lines.txt
-    git status 
-    git add lines.txt
 ```
+
+**Output:**
+The output of the *git diff* command should resemble the following. Use this opportunity to explore the format of a diff file.
+
+```csharp {Output}
+    diff --git a/lines.txt b/lines.txt
+    index 06fcdd7..20aeba2 100644
+    --- a/lines.txt
+    +++ b/lines.txt
+    @@ -1,2 +1,3 @@
+     first line
+     second line
+    +third line
+```
+
+
 ```shell
     git status 
     git add lines.txt
@@ -184,6 +236,11 @@ Exercise 1 --- Tracking changes with the Index
 
 #### Tracking Directories
 **[10 min]**
+
+````{admonition} Instructor's Note
+    In this section, we see that while empty directories are not tracked or `seen' by git,
+    adding a directory to the index automatically adds its contents.
+````
 
 ```shell
     mkdir directory
@@ -227,6 +284,11 @@ Exercise 1 --- Tracking changes with the Index
     echo 'lines.txt' >>.gitignore
     cat .gitignore
 ```
+````{admonition} Instructor's Note
+    Adding lines.txt, as we can see in the git status output, does not remove lines.txt from the index,
+    and git continues to track it, but would not start tracking it or offer it for staging if it were new.
+````
+
 ```shell 
     git status 
     git add .gitignore 
@@ -234,6 +296,13 @@ Exercise 1 --- Tracking changes with the Index
 ```
 #### Ignore Untracked Directories
 **[10 min]**
+
+```{admonition} Instructor's Note
+    This section illustrates three points:
+    * That git ignores the contents of directories that match a line in .gitignore,
+    * That ! is a not operatory for matching purposes
+    * That git will implement the 'last rule standing' after parsing .gitignore
+```
 
 ```shell
     touch directory/trackme.txt
@@ -262,7 +331,6 @@ Exercise 1 --- Tracking changes with the Index
     git status 
 ```
 ```shell
-    git rm --staged directory/emptyfile.txt
     git rm --cached directory/emptyfile.txt 
     git status 
     ls -FR
@@ -289,6 +357,11 @@ Exercise 2 --- Stop tracking Changes in a File
 
 ### 1.2.3 Undoing Changes with the Index
 **[10 min]**
+
+```{admonition} Instructor's Note
+    The central idea here is the use of git restore to 'undo' changes to tracked files in the working directory
+```
+
 ```shell
     cat lines.txt 
     echo 'fifth line' >>lines.txt 
@@ -326,10 +399,14 @@ Exercise 2 --- Stop tracking Changes in a File
 ### 1.2.4  Deleting and renaming tracked files and directories
 **[10 min]**
 
+```{admonition} Instructor's Note
+    Here we illustrate the need to use git's utilities to delete or rename files
+    that are tracked in the repo, if their history is to be properly maintained.
+```
+
 ```shell
     git rm --cached directory/donttrackme.txt 
     git status 
-    rm directory/
     rm -r directory/
     ls -FR
 ```
@@ -552,10 +629,16 @@ Exercise 7 --- Explore the changes recorded in the history
 **[10 min]**
 
 ````{note}
-This topic involves using `git restore`. Actual commands are missing.
-
-**TODO**:  Fill out detail in this section
+This topic involves using `git restore`.
 ````
+```shell
+    git restore -s HEAD~2 Lines.txt
+    cat Lines.txt
+    git status
+    git restore -s HEAD Lines.txt
+    git status
+```
+
 
 ### 1.3.4 Marking the History Using Tags
 **[10 min]**
