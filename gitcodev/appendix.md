@@ -72,6 +72,8 @@ name: approach-fig
 Caption
 ```
 ````
+
+
 Example:
 
 ```{figure} ../img/teaching-approach.png
@@ -79,7 +81,7 @@ Example:
 height: 400px
 name: approach-fig
 ---
-Caption
+A visual representation of the teaching approach used to build self-reliance across the lessons.
 ```
 
 ### Lesson's Exercises
