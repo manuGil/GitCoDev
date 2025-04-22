@@ -122,7 +122,7 @@ This course is organised into lessons, episodes and topics. The course consists 
 - Understand the impact of code reviews and best practices on software quality.
 - Perform code reviews as part of a research software team.
 - Apply best practices when conducting code reviews. 
-- Describe best practices related to licensing, citation, semantic versioning, and releases or software.
+- Describe best practices related to licensing, citation, semantic versioning, and software releases.
 
 ```{dropdown} Topics
 | Episode | Topic |

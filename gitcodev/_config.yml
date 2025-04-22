@@ -3,7 +3,7 @@
 
 title: Version Control and Collaborative Development for Research Software
 author: Manuel G. Garcia Alvarez and Giordano Lipari
-logo: ../img/ascii-gitcodev.png
+logo: ../img/gitcodev-logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

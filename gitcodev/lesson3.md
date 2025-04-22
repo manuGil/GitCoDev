@@ -210,16 +210,6 @@ Exercise 1 --- Startig with Collaboration [10 mins]
 ```{include} exercises/L3-ex01.md
 ```
 
-```{admonition} Instructor's Note
-While completing this exercise, many participants will be warned by Git that they have to pull changes before pushing their contribution. 
-This situation should be used as a pre-amble to [branching](branching).
-```
-
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
 
 ## Episode 2: Collaborative Development for Research Software

@@ -3,11 +3,6 @@
 Lecture notes for the lesson on managing collaboration and best practices. 
 Most of the content in this lesson aims to present some best-practices for developing research software and lead an open discussion about when to apply them. 
 
-`````{admonition} Work in progress
-:class: important
-This part is work in progress. A revised version will be available soon.
-`````
-
 These notes contains the following pointers for the instructor:
 
 * Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
@@ -27,9 +22,10 @@ This contains general information about the lesson and illustrations for suppori
 
 ````
 
+
 ## i. Recapitulation: Collaborative Workflows
 
-Participants complete a group exercise to recap the content of Lesson 3.
+Participants complete a group exercise to recapitulate the content of Lesson 3.
 
 ````{card} 
 Exercise 1 --- Implement a Collaborative Workflow 
@@ -37,20 +33,43 @@ Exercise 1 --- Implement a Collaborative Workflow
 
 ```{include} exercises/L4-ex01.md
 ```
-
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
+
+
+
 
 
 ## Episode 1: Managing Collaboration
 
 ### 4.1.1. Code Reviews
 
-> This lesson will be completed later.
+Provide an introduction in the form of a short lecture on code reviews and their importance in collaborative software development. The following are some points to present and discuss with the participants:
+* Reasons for code reviews:
+    * Sharing knowledge
+    * Spreding ownership
+    * Unifiying development practices
+    * Quality control
+
+* Aspect to focus on during code reviews.
+* Giving feedback as part of the code review process.
+* Explicit communication.
+* Documenting code revies as an author .
+* Best practices in code reviews: do's and don'ts.
+
+:::{admonition} Instructor's Note 
+:class: tip
+Slides 6 to 16 of the presentation above contain information on this topic.
+:::
+
+The instructor demonstrates how to conduct a code review on the collaborative platform used in the course (GitHub, GitLab, etc.). The instructor can use the pull request created in the previous exercise as an example. Depending on the platform, the instructor can show how to:
+
+* Assign reviewers to a pull request/merge request.
+* Add comments to the code.
+* Suggest changes to the code.
+* Approve the pull request/merge request.
+* Merge the pull request/merge request into the main branch.
+* Close the pull request/merge request.
+
 
 ````{card} 
 Exercise 2 --- Code Reviews [10 mins]
@@ -59,6 +78,8 @@ Exercise 2 --- Code Reviews [10 mins]
 ```{include} exercises/L4-ex02.md
 ```
 ````
+
+
 
 ### 4.1.2. Contributing Guidelines
 
