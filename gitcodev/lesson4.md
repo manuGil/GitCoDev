@@ -80,7 +80,7 @@ Exercise 2 --- Code Reviews [10 mins]
 ````
 
 
-CONTINUE HERE
+
 ### 4.1.2. Contributing Guidelines
 
 ````{card} 
