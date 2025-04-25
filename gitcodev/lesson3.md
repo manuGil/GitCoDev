@@ -1,62 +1,30 @@
 # LESSON 3: Collaborative Software Development
-Lecture notes for the lesson on introduction to collaborative software development. These notes contains the following pointers for the instructor:
+Lecture notes for the lesson on introduction to collaborative software development. 
 
-* Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
-* The text in  **Instructor note** contain explanations or reminders for the instructor. For example:
-    :::{admonition} Instructor's Note
-    :class: tip
-    An SSH key must be set to push changes to a remote repository in GitHub.
-    ::: 
+:::{card} Learning Objectives:
 
-````{card} 
-Presentation 
-^^^    
+- Collaborate on software projects using one of the Git repository platforms such as GitHub.
+- Understand the principles of managing research software projects.
+- Organise a software development team by assigning roles and responsibilities.
+- Contribute to the development of research software using a collaborative approach.
+- Understand the difference between centralised and shared collaborative workflow and when to use them.
+- Contribute to open or close software projects using features such as issues, code changes, and pull/merge requests.
 
-This contains general information about the lesson and illustrations for supporing the explanations of some of the concepts, and 
++++
+Materials:
 
-*[Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
+* [Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing): a presentation general information about the lesson and illustrations for supporing the explanations of some of the concepts, and exercises.
+* [Username form](https://forms.gle/asj6dAhTh6vcyUhV9): a Google form to collect users-names of the collaborative platform that participants will use during the lesson.
+:::
 
-````
 
 ## Preparation
 
 :::{admonition} Instructor's Note 
 :class: tip
-The instructor must collect particiapant's user names for GitHub/Gitlab the day before, so that they can be invited to collaborative repositories.
-We recommend a [Google form](https://forms.gle/asj6dAhTh6vcyUhV9), or similar solution.
+The instructor must collect particiapant's user names for GitHub/Gitlab the day before, so that they can be invited to collaborative repositories. The **username form** above could be use for that.
 :::
 
-The following helps the instructor to set up a terminal that will show the history of command from one terminal in another. This helps participant to keep track of what commands have been typed by the instructor.  
-
-1. On main terminal:
-```bash
- export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
-```
-2. On second (history) terminal:
-```bash
- tail -f ~/.bash_history | nl -w 3
-```
-
-### Windows Terminal (Preview) 
-Shortcuts for the Windows Terminal (Preview) App on Windows 11.
-
-| Action             | Shortcut                |
-|--------------------|--------------------------|
-|Split pane horizontally | Alt + Shift + `-`   | 
-|Split pane vertically   | Alt + Shift + `+`   |
-|Close a pane            | Ctrl+Shift + `w`     |
-|Move pane focus         | Alt + `Arrow keys`   |
-|Resize the focused pane | Alt+Shift + `Arrow keys` |
-
-
-### MacOS Terminal
-Shortcuts for the terminal in MacOS
-
-| Action             | Shortcut                |
-|--------------------|--------------------------|
-|Split pane horizontally | Cmd + `d`   | 
-|Close a pane            | Shift + Cmd + `d`   |
-------
 
 ## i. Recapitulation Operations with Remotes 
 **[5 min]**
