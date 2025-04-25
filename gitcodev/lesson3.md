@@ -266,12 +266,6 @@ Exercise 2 --- Roles and Responsibilities
 ```{include} exercises/L3-ex02.md
 ```
 
-
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
 
 ## Episode 3: Collaborative Workflows 
@@ -304,11 +298,6 @@ Exercise 3 --- Branching workflow
 ```{include} exercises/L3-ex03.md
 ```
 
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
 
 ### 3.3.3. Pull requests 
@@ -329,11 +318,6 @@ Exercise 3 --- Pull requests [6 min]
 ```{include} exercises/L3-ex04.md
 ```
 
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
 
 ### 3.3.4. Shared workflow: forking 
@@ -350,11 +334,6 @@ Exercise 3 --- Forking Workflow
 ```{include} exercises/L3-ex05.md
 ```
 
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
 
 ```{admonition} Instructor's Note
