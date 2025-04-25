@@ -31,9 +31,6 @@ Exercise 1 --- Implement a Collaborative Workflow
 ````
 
 
-
-
-
 ## Episode 1: Managing Collaboration
 
 ### 4.1.1. Code Reviews
