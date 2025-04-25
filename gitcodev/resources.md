@@ -39,7 +39,7 @@ Shortcuts for the terminal in MacOS
 |--------------------|--------------------------|
 |Split pane horizontally | Cmd + `d`   | 
 |Close a pane            | Shift + Cmd + `d`   |
-------
+
 
 ## Presentations
 
@@ -48,7 +48,7 @@ Shortcuts for the terminal in MacOS
 * [Lesson 3: Collaborative workflows](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)
 * [Lesson 4: Managing collaboration and best practices](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing)
 
-
+-----------
 ## Preparation Resources
 
 * [Git Documentation](https://git-scm.com/doc)
