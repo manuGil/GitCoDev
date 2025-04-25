@@ -13,7 +13,7 @@ Lecture notes for the lesson on introduction to collaborative software developme
 +++
 Materials:
 
-* [Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing): a presentation general information about the lesson and illustrations for supporing the explanations of some of the concepts, and exercises.
+* [Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing): a presentation with general information about the lesson and illustrations for supporing the explanations of some of the concepts, and exercises.
 * [Username form](https://forms.gle/asj6dAhTh6vcyUhV9): a Google form to collect users-names of the collaborative platform that participants will use during the lesson.
 :::
 
