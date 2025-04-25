@@ -3,25 +3,20 @@
 Lecture notes for the lesson on managing collaboration and best practices. 
 Most of the content in this lesson aims to present some best-practices for developing research software and lead an open discussion about when to apply them. 
 
-These notes contains the following pointers for the instructor:
+:::{card} Learning Objectives:
 
-* Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
-* The text in  **Instructor note** contain explanations or reminders for the instructor. For example:
-    `````{admonition} Instructor's Note
+- Understand the importance of contribution guidelines and best practices to manage collaboration in research software projects.
+- Organise a software team independently to work on activities related to collaborative software development.
+- Understand the impact of code reviews and best practices on software quality.
+- Perform code reviews as part of a research software team.
+- Apply best practices when conducting code reviews. 
+- Describe best practices related to licensing, citation, semantic versioning, and software releases.
 
-    An SSH key must be set to push changes to a remote repository in GitHub.
-    ````` 
++++
+Materials:
 
-````{card} 
-Presentation 
-^^^    
-
-This contains general information about the lesson and illustrations for supporing the explanations of some of the concepts, and 
-
-*[Collaborative software development](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing)*
-
-````
-
+[Managing collaboration and best practices](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing): a presentation with  general information about the lesson and illustrations for supporing the explanations of some of the concepts, and exercises. 
+:::
 
 ## i. Recapitulation: Collaborative Workflows
 
