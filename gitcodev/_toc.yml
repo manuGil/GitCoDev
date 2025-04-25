@@ -9,6 +9,8 @@ parts:
       - file: curriculum
       - file: teaching
       - file: schedule
+      - file: resources
+      - file: licensing
   - caption: Lecture Notes
     chapters:
     - file: lesson1

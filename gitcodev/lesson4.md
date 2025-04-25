@@ -3,25 +3,20 @@
 Lecture notes for the lesson on managing collaboration and best practices. 
 Most of the content in this lesson aims to present some best-practices for developing research software and lead an open discussion about when to apply them. 
 
-These notes contains the following pointers for the instructor:
+:::{card} Learning Objectives:
 
-* Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
-* The text in  **Instructor note** contain explanations or reminders for the instructor. For example:
-    `````{admonition} Instructor's Note
+- Understand the importance of contribution guidelines and best practices to manage collaboration in research software projects.
+- Organise a software team independently to work on activities related to collaborative software development.
+- Understand the impact of code reviews and best practices on software quality.
+- Perform code reviews as part of a research software team.
+- Apply best practices when conducting code reviews. 
+- Describe best practices related to licensing, citation, semantic versioning, and software releases.
 
-    An SSH key must be set to push changes to a remote repository in GitHub.
-    ````` 
++++
+Materials:
 
-````{card} 
-Presentation 
-^^^    
-
-This contains general information about the lesson and illustrations for supporing the explanations of some of the concepts, and 
-
-*[Collaborative software development](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing)*
-
-````
-
+[Managing collaboration and best practices](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing): a presentation with  general information about the lesson and illustrations for supporing the explanations of some of the concepts, and exercises. 
+:::
 
 ## i. Recapitulation: Collaborative Workflows
 
@@ -34,9 +29,6 @@ Exercise 1 --- Implement a Collaborative Workflow
 ```{include} exercises/L4-ex01.md
 ```
 ````
-
-
-
 
 
 ## Episode 1: Managing Collaboration
@@ -80,8 +72,24 @@ Exercise 2 --- Code Reviews [10 mins]
 ````
 
 
-
 ### 4.1.2. Contributing Guidelines
+
+Contributing guidelines are a set of rules and best practices that help to ensure that contributions to a project are consistent, high-quality, and easy to review. They can include information on how to write code, how to format code, how to write commit messages, how to write documentation, and how to submit pull requests.
+Provide an explanation on the purpose and importance of contributing guidelines in collaborative software development, and show some examples of the conent in a `CONTRIBUTING.md` file.
+
+Examples:
+- [Illuminator project](https://github.com/Illuminator-team/Illuminator/blob/main/CONTRIBUTING.md)
+- [FairCode template](https://github.com/manuGil/fair-code/blob/main/CONTRIBUTING.md)
+
+:::{admonition} Instructor's Note 
+:class: tip
+The instructor facilitess a discussion on the importance of contributing guidelines in collaborative software development before the exercise. Somoe of the topics that can be discussed are:
+* Why are contributing guidelines important?
+* How contributing guidelines can help to ensure that contributions to a project are consistent, high-quality, and easy to review?
+* What are the main components of a contributing guideline and how to adapt them depending of the nature of the project?
+* Why contributors should follow the contributing guidelines?
+:::
+
 
 ````{card} 
 Exercise 3 --- Guidelines for Contributions [10 mins]
@@ -93,13 +101,31 @@ Exercise 3 --- Guidelines for Contributions [10 mins]
 
 ## Episode 2: Licensing and Citation
 
+Explain and discuss the importance of software licenses and software citation for software. 
+
 ### 4.2.1. Open Source Licenses
+
+Explain the importance of open source licenses and how they can help to protect the rights of the authors and users of the software. Discuss the different types of open source licenses, such as permissive licenses (e.g., MIT, Apache) and copyleft licenses (e.g., GPL), and their implications for software development (reuse of soruce code) and distribution. Limit the explantions to the most common licenses, such as MIT, Apache, and GPL without focusing too much on the legal details. 
+
+It is important to mention what it is assumed (by law) when software provides no licensing information. In such cases, it is assumed that software cannot be use by anyone else than the author. 
+
+Also explain why software licensing is diffrent than data and digital content licensing. For exaple, why [Creative Common licenses](https://creativecommons.org/share-your-work/) should not be used for software.
+
+:::{admonition} Instructor's Note
+:class: tip
+
+If your institutions has a software policy for research software, it is important to mention it to the particpants, and provide relevant details about guidelines provided by the university to publish open source software.
+:::
 
 ### 4.2.2. Software Citation
 
+Explain how citations files are used to provide information about the software and its authors, and how they can be used to generate citations in different formats. In GitHub, for example, the citation file is called `CITATION.cff` citation file can be used to generate citations in different formats, such as BibTeX, APA, and MLA.
+
+Provide a demo on how to create `.cff` files using this [CFFInit Tool](https://citation-file-format.github.io/cff-initializer-javascript/)
+
 
 ````{card} 
-Exercise 3 --- hoosing Licenses and Enabling Software Citation [10 mins]
+Exercise 3 --- Choosing Licenses and Enabling Software Citation [10 mins]
 ^^^    
 
 ```{include} exercises/L4-ex04.md
@@ -108,11 +134,36 @@ Exercise 3 --- hoosing Licenses and Enabling Software Citation [10 mins]
 
 ## Episode 3: Releasing Software
 
+Releasing software is an important step in the software development process. It allows developers to share their work with others and to get feedback on their code. It also allows users to use the software and to report bugs or issues.
+
+
 ### 4.3.1. Semantic Versioning
 
+Explain the concept of [semantic versioning](https://semver.org/) and how it helps to have a common language for communicating about software releases. Discuss the different components of a semantic version number, such as major, minor, patch versions, and their implications for software development and distribution.
+
 ### 4.3.1. Software Releases
+Explain the importance of releasing software and how it can help to ensure that the software is stable, reliable, and easy to use. Discuss the different types of software releases, such as alpha, beta, release candidates and stable releases, and their implications for software development and distribution.
+
+Demonstrate how to create a software release in the collaborative platform used in the course (GitHub, GitLab, etc.). 
+
+Explain and discuss the role and importance of [keeping a changelog](https://keepachangelog.com/en/1.0.0/) file in the software repository. A changelog file is a file that contains a list of changes made to the software, such as bug fixes, new features, and improvements. It is important to keep a changelog file up to date so that users can see what has changes between releases, and how those changes may affect them.
+
+## Lesson Summary
+**[5 mins]**
+
+- Code reviews a essential to produce high quality software.
+- Be mindful when giving feedback to someone else code.
+- Collaborative guidelines let potential collaborators to know how they can contribute to a software.
+- It is important to think about citing an licensing your software.
+- Use semantic versioning when releasing software.
 
 
-#### 5. EXERCISE 6. 
+:::{admonition} Follow-up Material
+:class: info
 
-> More on remotes: https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes 
+- [A complete guide to code reviews](https://www.swarmia.com/blog/a-complete-guide-to-code-reviews/?utm_term=github%20review%20process&utm_campaign=SRH-REVIEW-EU-EN&utm_source=adwords&utm_medium=ppc&hsa_acc=6644081770&hsa_cam=16463390785&hsa_grp=134848023315&hsa_ad=585675515695&hsa_src=g&hsa_tgt=kwd-1139323406817&hsa_kw=github%20review%20process&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=EAIaIQobChMIzsGZhPiO-gIVgbrVCh1dwABgEAAYASAAEgKVufD_BwE)
+- [Code review guidelines for humans](https://phauer.com/2018/code-review-guidelines/)
+- [Google's code review  developer guide](https://google.github.io/eng-practices/review/)
+- [GitHub pull request reviews](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
+- [Best practices for reviewing pull requests in GitHub](https://rewind.com/blog/best-practices-for-reviewing-pull-requests-in-github/)
+:::

@@ -1,71 +1,41 @@
 # LESSON 3: Collaborative Software Development
-Lecture notes for the lesson on introduction to collaborative software development. These notes contains the following pointers for the instructor:
+Lecture notes for the lesson on introduction to collaborative software development. 
 
-* Numbers between `[]` are indicative of how much time should be spend in each topic or exercise to keep in track with the lesson [schedule.](schedule.md)
-* The text in  **Instructor note** contain explanations or reminders for the instructor. For example:
-    `````{admonition} Instructor's Note
+:::{card} Learning Objectives:
 
-    An SSH key must be set to push changes to a remote repository in GitHub.
-    ````` 
+- Collaborate on software projects using one of the Git repository platforms such as GitHub.
+- Understand the principles of managing research software projects.
+- Organise a software development team by assigning roles and responsibilities.
+- Contribute to the development of research software using a collaborative approach.
+- Understand the difference between centralised and shared collaborative workflow and when to use them.
+- Contribute to open or close software projects using features such as issues, code changes, and pull/merge requests.
 
-````{card} 
-Presentation 
-^^^    
++++
+Materials:
 
-This contains general information about the lesson and illustrations for supporing the explanations of some of the concepts, and 
+* [Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing): a presentation with general information about the lesson and illustrations for supporing the explanations of some of the concepts, and exercises.
+* [Username form](https://forms.gle/asj6dAhTh6vcyUhV9): a Google form to collect users-names of the collaborative platform that participants will use during the lesson.
+:::
 
-*[Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)*
-
-````
 
 ## Preparation
 
-````{admonition} Instructor's Note 
-The instructor must collect particiapant's user names for GitHub/Gitlab the day before, so that they can be invited to collaborative repositories.
-We recommend a [Google form](https://forms.gle/asj6dAhTh6vcyUhV9), or similar solution.
-````
+:::{admonition} Instructor's Note 
+:class: tip
+The instructor must collect particiapant's user names for GitHub/Gitlab the day before, so that they can be invited to collaborative repositories. The **username form** above could be use for that.
+:::
 
-The following helps the instructor to set up a terminal that will show the history of command from one terminal in another. This helps participant to keep track of what commands have been typed by the instructor.  
-
-1. On main terminal:
-```bash
- export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
-```
-2. On second (history) terminal:
-```bash
- tail -f ~/.bash_history | nl -w 3
-```
-
-### Windows Terminal (Preview) 
-Shortcuts for the Windows Terminal (Preview) App on Windows 11.
-
-| Action             | Shortcut                |
-|--------------------|--------------------------|
-|Split pane horizontally | Alt + Shift + `-`   | 
-|Split pane vertically   | Alt + Shift + `+`   |
-|Close a pane            | Ctrl+Shift + `w`     |
-|Move pane focus         | Alt + `Arrow keys`   |
-|Resize the focused pane | Alt+Shift + `Arrow keys` |
-
-
-### MacOS Terminal
-Shortcuts for the terminal in MacOS
-
-| Action             | Shortcut                |
-|--------------------|--------------------------|
-|Split pane horizontally | Cmd + `d`   | 
-|Close a pane            | Shift + Cmd + `d`   |
-------
 
 ## i. Recapitulation Operations with Remotes 
 **[5 min]**
 
 Common operations with remotes
 
-````{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 * Recap slide on how local repostories and remotes are connected and how to work with remotes (Slides).
 * Recap what `clone, fetch, merge, pull` and `push` commands do.
-````
+:::
 
 ## Episode 1: Collaborative Platforms
 
@@ -79,16 +49,18 @@ Common operations with remotes
     The participants need to type in their credentials as local administrators.
 This gain authority to have SSH installing its own features in their laptop next.
 
-```{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 At their very first `git push`, Git might complain about a mismatch between the credentials of local and global administrator.
 The warning itself suggests another Git command as the remedy to this impasse.
-```
+:::
 
 #### Setting up SSH connection for GitHub
 
-````{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 GitHub requires authentication via SSH to do pulls and pushes, but not for cloning. **Use slides** to explain what a SSH connection entitles.
-````
+:::
 
 * Ask participants to test the connection with:
     ```shell
@@ -124,18 +96,20 @@ GitHub requires authentication via SSH to do pulls and pushes, but not for cloni
             ssh -i <path/private/keyfile>
         ```
 
-    ````{admonition} Instructor's Note
+    :::{admonition} Instructor's Note
+    :class: tip
     Window's user would need to set up the *ssh-agent** to [start the automatically](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows)
     Mac and Linux user don't have to worry about this.
-    ````
+    :::
 5. Copy public key to GitHub:
     ```shell
         clip < .ssh/id_ed25519.pub
     ```
 
-````{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 Go to GitHub, explain the basics of the interface and
-````
+:::
 
 6. add the SSH key.
     ```shell
@@ -147,12 +121,13 @@ Go to GitHub, explain the basics of the interface and
         ssh -T git@github.com
     ```
 
-````{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 The message for a successful outcome is friendly and plain.Ask participants whether git@github.com has welcomed them.
 
 * More information on working with [SSH keys and GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
 * Check the info on [Troubleshooting SSH for GitHub](https://docs.github.com/en/authentication/troubleshooting-ssh).
-````
+:::
 
 #### 2. Publishing Local Repository to GitHub 
 **[5 min]**
@@ -179,20 +154,22 @@ In your local repository (on the terminal), add the remote repository and push t
 #### 3. Check the Content's Repositoy is in GitHub
 Go back to your repo page and refresh the browser.
 
-````{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 Questions?
-````
+:::
 
 ### 3.1.2. Exploring the GitHub GUI 
 **[5 min]**
 
 Collaborative platform host and manage remote repositories to enable collaborative development.
 
-````{admonition} Instructor's Notes
+:::{admonition} Instructor's Notes
+:class: tip
 Ask participants if they are familiar with GitHub. If not, give a short explanation of what it is for how to explore the GUI.
 
 Mention GitLab at TU Delft as an alternative for a collaborative platform: https://gitlab.tudelft.nl/
-````
+:::
 
 ### 3.1.3. Collaborating 
 **[5 min]**
@@ -217,35 +194,36 @@ Exercise 1 --- Startig with Collaboration [10 mins]
 ### 3.2.1.   Introduction to collaboration in software projects 
 **[5 min]**
 
-```{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
+* A Quick introduction to collaborative development. Definitions  (Slides).
 
-* An Quick introduction to collaborative development. Definitions  (Slides).
-
-> Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
+Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
 
 * Explain the difference between private and close collaboration.
 
 * When to Aim for a Collaborative Approach?
-
-```
+:::
 
 ### 3.2.2 Managing Research Software Projects 
 **[2 min]**
 
-```{admonition} Instructor's Note
- Explain why management is important for developing software, the key factors to consider, and recommend a management strategy (slides)
+:::{admonition} Instructor's Note
+:class: tip
+Explain why management is important for developing software, the key factors to consider, and recommend a management strategy (slides)
 
 **Key Factors:**
 - Purpose
 - People
 - Time
 - Maintenance
-```
+:::
 
 ### 3.2.3 Organising Research Team for Collaborative Development 
 **[3 mins]**
 
-```{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 **Rores and Responsibilities**
 
 Describe the responsibilities for each role and why they are important for a research-software development project.
@@ -257,7 +235,7 @@ Describe the responsibilities for each role and why they are important for a res
 - Collaborator
 
 > Questions? [10 min]
-```
+:::
 
 ````{card} 
 Exercise 2 --- Roles and Responsibilities
@@ -266,12 +244,6 @@ Exercise 2 --- Roles and Responsibilities
 ```{include} exercises/L3-ex02.md
 ```
 
-
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
 
 ## Episode 3: Collaborative Workflows 
@@ -281,9 +253,10 @@ Exercise 2 --- Roles and Responsibilities
 
 Document and track ideas and tasks in a development project. They facilitate planning, discussing  and tracking the progress of a software project.
 
-```{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 Do-along. Instruct participant on how to crate issues in a repository. Participants create issue in their recently pushed repository.
-```
+:::
 
 Collaborative workflows are estrategies to organise the work of a development team so that many developers can contribute to a software project. Two common estrategies that use version control and collaborative platforms as leverage are:
 
@@ -293,9 +266,10 @@ Collaborative workflows are estrategies to organise the work of a development te
 (branching)=
 ### 3.3.2. Centralised workflow: branching
 
-```{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 A short explanation on the branching workflow (slides)
-```
+:::
 
 ````{card} 
 Exercise 3 --- Branching workflow 
@@ -304,11 +278,6 @@ Exercise 3 --- Branching workflow
 ```{include} exercises/L3-ex03.md
 ```
 
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
 
 ### 3.3.3. Pull requests 
@@ -329,19 +298,15 @@ Exercise 3 --- Pull requests [6 min]
 ```{include} exercises/L3-ex04.md
 ```
 
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
 
 ### 3.3.4. Shared workflow: forking 
 **[5 min]**
 
-```{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 A short explanation on the fork workflow (slides)
-```
+:::
 
 ````{card} 
 Exercise 3 --- Forking Workflow
@@ -350,16 +315,12 @@ Exercise 3 --- Forking Workflow
 ```{include} exercises/L3-ex05.md
 ```
 
-```{dropdown} Answers
-
-    No answer are provided for this exercise.
-
-```
 ````
 
-```{admonition} Instructor's Note
+:::{admonition} Instructor's Note
+:class: tip
 Ask participants if they have Questions.
-```
+:::
 
 ## Lesson Summary
 **[5 min]**
