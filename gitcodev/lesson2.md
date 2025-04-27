@@ -181,7 +181,7 @@ A question from students may arise: *Lowercase matters?*
 ```{figure} ../img/git-branches.png
 ---
 height: 400px
-name: approach-fig
+name: git-branches
 ---
 [A successful Git branching model, article from 2010](https://nvie.com/posts/a-successful-git-branching-model/)
 ```
