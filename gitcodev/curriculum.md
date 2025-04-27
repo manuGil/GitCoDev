@@ -26,16 +26,25 @@ Knowledge and experience in using the command-line interface (CLI) with Unix She
 (course-units)=
 ## Course Units
 
-This course is organised into lessons, episodes and topics. The course consists of **Lessons**. Each Lesson is divided into **Episodes** and then into **Topics**. The order in which lessons, episodes and topic is organised is the result of extensive discussions on the best way to deliver the course to an audience with little to intermediate previous experience and knowledge and the experience gathered from providing the course to two groups of mostly PhD candidates. 
+This course is organised in lessons, episodes and topics. The course consists of **Lessons**. 
+Each Lesson is divided into **Episodes** and then into **Topics**. The order in which lessons, 
+episodes and topics are organised is the result of extensive discussions on the best way to deliver 
+the course. The following aspects played a key role in the organisation:
+
+*  The audience of the course are researchers with previous experience and knowledge at a level between beginner and intermediate user. 
+*  Feedback and experiences gathered from delivering the content in three different occasions where most of the audience were PhD candidates. 
+
+The learning objectives and topics of each lesson are presented below. The taxon according to [Bloom's revised taxonomy](https://upload.wikimedia.org/wikipedia/commons/6/6a/Bloom%27s_revised_taxonomy.svg) is indicated in parenthesis. 
+
 
 ````{card} Lesson 1: Fundamental Operations with Git 
 
 **Learning Objectives:**
 
-- Understand the basics of version control.
-- Use Git to create repositories and commit changes.
-- Apply Git operations to track, reverse and delete changes in working documents.
-- Organise tracked changes in the Git history.
+- To understand the basic operations of version control using Git. (*understand*)
+- To use Git to create repositories and commit changes. (*apply*)
+- To apply Git operations to track, reverse and delete changes in working documents. (*apply*)
+- To organise tracked changes in the Git history. (*understand*)
 
 ```{dropdown} Topics
 | Episode | Topic |
@@ -61,11 +70,11 @@ This course is organised into lessons, episodes and topics. The course consists 
 ````{card} Lesson 2: Branching and Remote Operations
 
 **Learning Objectives:**
-- Understand the concept of branches in Git repositories.
-- Apply Git operations to create and merge branches in a local Git repository.
-- Understand the concepts of bare and remote Git repositories. 
-- Clone and push changes to remote Gir repositories.
-- Synchronise changes between local and remote Git repositories.
+- To understand the concept of branches in Git repositories. (*understand*)
+- To apply Git operations to create and merge branches in a local Git repository. (*apply*)
+- To understand the concepts of bare and remote Git repositories. (*understand*)
+- To clone and push changes to remote Git repositories. (*apply*)
+- To synchronise changes between local and remote Git repositories. (*apply*)
 
 ```{dropdown} Topics
 | Episode | Topic |
@@ -85,12 +94,13 @@ This course is organised into lessons, episodes and topics. The course consists 
 ````{card} Lesson 3: Collaborative Software Development
 
 **Learning Objectives:**
-- Collaborate on software projects using one of the Git repository platforms such as GitHub.
-- Understand the principles of managing research software projects.
-- Organise a software development team by assigning roles and responsibilities.
-- Contribute to the development of research software using a collaborative approach.
-- Understand the difference between centralised and shared collaborative workflow and when to use them.
-- Contribute to open or close software projects using features such as issues, code changes, and pull/merge requests.
+
+- To understand the key aspects of managing research software projects. (*understand*)
+- To make use of issues, code changes, and pull/merge requests to make contributions to a software project hosted in a collaborative platform (*apply*)
+- To compose a software development team by assigning roles and responsibilities to a group of developers. (*create*)
+- To contribute to the development of research software using a collaborative approach. (*analyse*)
+- To choose between a centralised and shared collaborative workflow for a new software project. (*analyse*)
+- To create contributions to software projects using one of the Git repository platforms such as GitHub. (*create*) 
 
 ```{dropdown} Topics
 | Episode | Topic |
@@ -117,12 +127,11 @@ This course is organised into lessons, episodes and topics. The course consists 
 
 **Learning Objectives:**
 
-- Understand the importance of contribution guidelines and best practices to manage collaboration in research software projects.
-- Organise a software team independently to work on activities related to collaborative software development.
-- Understand the impact of code reviews and best practices on software quality.
-- Perform code reviews as part of a research software team.
-- Apply best practices when conducting code reviews. 
-- Describe best practices related to licensing, citation, semantic versioning, and software releases.
+- To understand the importance of contribution guidelines and best practices to manage collaboration in research software projects. (*understand*)
+- To organise the activities of a software team that participates in a collaborative development workflow. (*crate*)
+- To understand the impact of code reviews and best practices on software quality. (*understand*)
+- To perform code reviews as part of a research software team. (*apply*)
+- To discuss best practices related to code reviews, licensing, citation, semantic versioning, and software releases. (*evaluate*)
 
 ```{dropdown} Topics
 | Episode | Topic |

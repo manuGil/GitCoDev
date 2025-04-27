@@ -3,12 +3,12 @@ Lecture notes for the lesson on introduction to collaborative software developme
 
 :::{card} Learning Objectives:
 
-- Collaborate on software projects using one of the Git repository platforms such as GitHub.
-- Understand the principles of managing research software projects.
-- Organise a software development team by assigning roles and responsibilities.
-- Contribute to the development of research software using a collaborative approach.
-- Understand the difference between centralised and shared collaborative workflow and when to use them.
-- Contribute to open or close software projects using features such as issues, code changes, and pull/merge requests.
+- To understand the key aspects of managing research software projects. 
+- To make use of issues, code changes, and pull/merge requests to make contributions to a software project hosted in a collaborative platform.
+- To compose a software development team by assigning roles and responsibilities to a group of developers. 
+- To contribute to the development of research software using a collaborative approach. 
+- To choose between a centralised and shared collaborative workflow for a new software project. 
+- To create contributions to software projects using one of the Git repository platforms such as GitHub. 
 
 +++
 Materials:
@@ -198,7 +198,8 @@ Exercise 1 --- Startig with Collaboration [10 mins]
 :class: tip
 * A Quick introduction to collaborative development. Definitions  (Slides).
 
-Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. But good programmers will need to collaborate in order to develop complex, high quality software.
+Developing high quality software requires more than programming and technical skill. Exceptionally good programmers can produce high quality software by themselves. 
+But good programmers will need to collaborate in order to develop complex, high quality software.
 
 * Explain the difference between private and close collaboration.
 
@@ -258,7 +259,8 @@ Document and track ideas and tasks in a development project. They facilitate pla
 Do-along. Instruct participant on how to crate issues in a repository. Participants create issue in their recently pushed repository.
 :::
 
-Collaborative workflows are estrategies to organise the work of a development team so that many developers can contribute to a software project. Two common estrategies that use version control and collaborative platforms as leverage are:
+Collaborative workflows are estrategies to organise the work of a development team so that many developers can contribute to a software project. 
+Two common estrategies that use version control and collaborative platforms as leverage are:
 
 - The **branching workflow** and
 - The **forking workflow**

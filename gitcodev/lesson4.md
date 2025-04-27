@@ -5,12 +5,12 @@ Most of the content in this lesson aims to present some best-practices for devel
 
 :::{card} Learning Objectives:
 
-- Understand the importance of contribution guidelines and best practices to manage collaboration in research software projects.
-- Organise a software team independently to work on activities related to collaborative software development.
-- Understand the impact of code reviews and best practices on software quality.
-- Perform code reviews as part of a research software team.
-- Apply best practices when conducting code reviews. 
-- Describe best practices related to licensing, citation, semantic versioning, and software releases.
+- To understand the importance of contribution guidelines and best practices to manage collaboration in research software projects.
+- To organise the activities of a software team that participates in a collaborative development workflow. 
+- To understand the impact of code reviews and best practices on software quality.
+- To perform code reviews as part of a research software team. 
+- To discuss best practices related to code reviews, licensing, citation, semantic versioning, and software releases. 
+
 
 +++
 Materials:
