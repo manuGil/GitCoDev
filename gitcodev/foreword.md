@@ -46,7 +46,8 @@ However, in those cases, there was also an initial reluctance to change the way 
 These experiences convinced me that researchers would benefit from understanding what software development entitles and adopting some of the best practices without needing to become software engineers themselves. 
 If that could be achieved, research software would be of better quality, software as a research output would be easier to maintain, which would increase the likelihood of research results being reproducible for a longer time, the productivity among researchers that continuously engage in the development of research software could be improved; and,  the time spent on directly working on research software, as a software engineer, could be increased to the benefit of the researchers themselves. 
 
-In summary, two situations motivated the development of this course. First, there is a need to increase confidence and independence in applying version control to research software among researchers attending similar courses. Second, we are enthusiastic about helping researchers adopt best practices in collaborative development to foster their productivity and improve the quality of research software. 
+In summary, two situations motivated the development of this course. First, there is a need to increase confidence and independence in applying version control to research software among researchers attending similar courses. 
+Second, we are enthusiastic about helping researchers adopt best practices in collaborative development to foster their productivity and improve the quality of research software. 
 
 <h3 class="dancing">Manuel. G. García</h3>
 
