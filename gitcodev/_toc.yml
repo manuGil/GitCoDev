@@ -7,9 +7,9 @@ parts:
   - caption: Course Description
     chapters:
       - file: curriculum
-      - file: teaching
-      - file: schedule
+      - file: philosophy
       - file: resources
+      - file: schedule
       - file: licensing
   - caption: Lecture Notes
     chapters:
@@ -45,7 +45,7 @@ parts:
     - file: exercises/L4-ex04
   - caption: Appendices
     chapters:
-    - file: appendix
+    - file: appendices/conventions
  
 
 
