@@ -26,7 +26,11 @@ Knowledge and experience in using the command-line interface (CLI) with Unix She
 (course-units)=
 ## Course Units
 
-This course is organised into lessons, episodes and topics. The course consists of **Lessons**. Each Lesson is divided into **Episodes** and then into **Topics**. The order in which lessons, episodes and topic is organised is the result of extensive discussions on the best way to deliver the course to an audience with little to intermediate previous experience and knowledge and the experience gathered from providing the course to two groups of mostly PhD candidates. 
+This course is organised into lessons, episodes and topics. The course consists of **Lessons**. 
+Each Lesson is divided into **Episodes** and then into **Topics**. The order in which lessons, 
+episodes and topic is organised is the result of extensive discussions on the best way to deliver 
+the course to an audience with little to intermediate previous experience and knowledge and the 
+experience gathered from providing the course to two groups of mostly PhD candidates. 
 
 ````{card} Lesson 1: Fundamental Operations with Git 
 
