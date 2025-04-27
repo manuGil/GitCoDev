@@ -1,4 +1,4 @@
-# Appendix: Formating conventions
+# Formating Conventions
 
 This website renders content with the [Jupyterbook Theme](https://jupyterbook.org/en/stable/basics/organize.html). The following conventions are used to organise and format content.
 
@@ -64,7 +64,7 @@ Rendered as:
 Figures will be numbered and shall include a caption. Their size can be controlled by adjusting the value for `height`.
 
 ````md
-```{figure} ../img/teaching-approach.png
+```{figure} img/teaching-approach.png
 ---
 height: 400px
 name: approach-fig
@@ -76,12 +76,12 @@ Caption
 
 Example:
 
-```{figure} ../img/teaching-approach.png
+```{figure} ../../img/teaching-approach.png
 ---
 height: 400px
-name: approach-fig
+name: approach-fig-example
 ---
-A visual representation of the teaching approach used to build self-reliance across the lessons.
+Example figure caption
 ```
 
 ### Lesson's Exercises
