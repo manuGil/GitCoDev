@@ -3,12 +3,12 @@ Lecture notes for the lesson on introduction to collaborative software developme
 
 :::{card} Learning Objectives:
 
-- Collaborate on software projects using one of the Git repository platforms such as GitHub.
-- Understand the principles of managing research software projects.
-- Organise a software development team by assigning roles and responsibilities.
-- Contribute to the development of research software using a collaborative approach.
-- Understand the difference between centralised and shared collaborative workflow and when to use them.
-- Contribute to open or close software projects using features such as issues, code changes, and pull/merge requests.
+- To understand the key aspects of managing research software projects. 
+- To make use of issues, code changes, and pull/merge requests to make contributions to a software project hosted in a collaborative platform.
+- To compose a software development team by assigning roles and responsibilities to a group of developers. 
+- To contribute to the development of research software using a collaborative approach. 
+- To choose between a centralised and shared collaborative workflow for a new software project. 
+- To create contributions to software projects using one of the Git repository platforms such as GitHub. 
 
 +++
 Materials:
