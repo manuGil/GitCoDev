@@ -70,10 +70,11 @@ Introduce:
 
 * Create a directory for the course
 
-````{admonition}
+:::{admonition} Instructor's Note 
+:class: tip
 Students are assumed to have at least basic awareness of working from the command line and navigating the directory tree,
 but help them if necessary.
-````
+:::
 
 ```shell
     cd ~/Desktop/
