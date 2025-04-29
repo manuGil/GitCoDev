@@ -295,7 +295,7 @@ Exercise 3 --- Branching workflow
 ### 3.3.3. Pull Requests 
 **[5 min]**
 
-Explain what pull request are, and give a demo.
+Explaination of what pull request are, and a live demonstation on a code repository ( e.g., GitHub or GitLab).
 Then teams follow the steps in the exercise below to create and merge pull requests.
 
 ```{admonition} Instructor's Note
@@ -314,7 +314,7 @@ Exercise 3 --- Pull requests [6 min]
 ### 3.3.4. Shared Workflow: Forking 
 **[5 min]**
 
-A short explanation on the fork workflow.
+A short explanation on the forking and branching workflow for managing contribution to code reposiotries.
 
 
 ````{card} 
