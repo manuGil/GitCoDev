@@ -7,7 +7,7 @@ This section contains a list of resources that can be used by the intructor. The
 
 ## Teaching Resources
 
-### Terminal History Set-Up
+### Terminal and History Setup
 
 The following helps the instructor to set up a terminal that will show the history of command from one terminal in another. This helps participant to keep track of what commands have been typed by the instructor.  
 
@@ -48,10 +48,22 @@ Shortcuts for the terminal in MacOS
 * [Lesson 3: Collaborative workflows](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing)
 * [Lesson 4: Managing collaboration and best practices](https://docs.google.com/presentation/d/1TvWIrBsVNwmEyvZodd4V7gueATeECKMubUqSSYKMyuU/edit?usp=sharing)
 
+
+## Repositories
+* [Check-in repository template](https://github.com/manuGil/check-in-template): a repository used in [](check-in) 
+
 -----------
 ## Preparation Resources
 
-* [Git Documentation](https://git-scm.com/doc)
-* [GitHub Documentation](https://docs.github.com/en)
+### Git
+* [Git Documentation website](https://git-scm.com/doc)
+
+### GitHub
+
+* [GitHub Documentation website](https://docs.github.com/en)
+* [SSH keys and GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+* [Troubleshooting SSH for GitHub](https://docs.github.com/en/authentication/troubleshooting-ssh).
+
+### GitLab
 * [GitLab Documentation](https://docs.gitlab.com/)
 
