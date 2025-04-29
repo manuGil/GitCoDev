@@ -113,7 +113,7 @@ The learning objectives and topics of each lesson are presented below. The taxon
 | --- | Introduction to collaboration in software projects |
 | --- | Managing research software projects |
 | --- | Organising research teams for collaborative development  |
-| **3.3** | Collaborative Workflows |
+| **3.3** | **Collaborative Workflows** |
 | --- | Documenting issues |
 | --- | Centralise workflow: branching
 | --- | Pull requests
