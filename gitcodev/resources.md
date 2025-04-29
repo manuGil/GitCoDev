@@ -51,6 +51,7 @@ Shortcuts for the terminal in MacOS
 
 ## Repositories
 * [Check-in repository template](https://github.com/manuGil/check-in-template): a repository used in [](check-in) 
+* [Collab-faircode repository template](https://github.com/the-magnificents/collab-faircode): a repository used in [forking workflow exercise](exercises/L3-ex05.md)
 
 -----------
 ## Preparation Resources
