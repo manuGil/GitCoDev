@@ -200,7 +200,7 @@ too deeply at this point.
 **Output:**
 The output of the *git diff* command should resemble the following. Use this opportunity to explore the format of a diff file.
 
-```csharp {Output}
+```shell {Output}
     diff --git a/lines.txt b/lines.txt
     index 06fcdd7..20aeba2 100644
     --- a/lines.txt
