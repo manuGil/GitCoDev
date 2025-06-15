@@ -499,13 +499,17 @@ Exercise 3 --- Renaming Tracked Files
 **[ca 75 min + 10 min break]**
 
 ```{admonition} Instructor's Note
-    This is a critical moment in the lesson. We have introduced the index, as a representation of the project
-    at a point in time. Now we begin to develop the idea of the repository as a sequence of such staged changes over
-    time that culminate in the current state of the project (or branch, but we haven't touched that yet), HEAD.
+    This is a critical moment in the lesson. We have introduced the index, as a representation
+    of the project at a point in time. Now we begin to develop the idea of the repository as a
+    sequence of such staged changes over time that culminate in the current state of the project
+    (or branch, but we haven't introduced that concept yet), HEAD.
 ```
 
 ### 1.3.1 Commiting Changes with a Configured Identify and a Message
 **[10 min]**
+
+* We introduce the 'git commit' command as an commitment of the state of the index at some point in time.
+* We note that a commit MUST be accompanied by a descriptive message
 
 ```shell
     cat Lines.txt 
@@ -513,6 +517,9 @@ Exercise 3 --- Renaming Tracked Files
     git status 
     git commit -m 'Add first four lines' Lines.txt
 ```
+* We see next that a succesful commit gives us a 'clean' index with no stages changes, but we can look at a log and see the history.
+* When we look at the log, we see the 'long form' commit ID for the commit we just made, which is effectively guaranteed to be globally unique.
+
 ```shell
     git status 
     git log
@@ -673,9 +680,10 @@ Exercise 7 --- Explore the changes recorded in the history
 ### 1.3.3 Undoing Changes with the History
 **[10 min]**
 
-````{note}
+```{admonition}
 This topic involves using `git restore`.
-````
+We have introduced the HEAD~x notation in the exercises above, and we will introduce both the short form commit ID and the tag mechanism shortly.  Here we see that using the -s flag we can specify a source (commit) from which to restore a specified file. 
+```
 ```shell
     git restore -s HEAD~2 Lines.txt
     cat Lines.txt
@@ -689,6 +697,8 @@ This topic involves using `git restore`.
 **[10 min]**
 
 * Lightweight tags
+* Using the git tag mechanism, we can 'name'specified commits for ease of reference.  These may represent special points in a project, like releases, or particular points in the development lifecycle, or just be useful 'bookmarks'.
+* We also see here, using git log --oneline, the short form commit ID, which is effectively guaranteed to be project-unique, if not globally unique.
 
 ```shell
     git log --oneline
@@ -765,6 +775,8 @@ Exercise 9 --- Add lightweight tags to the history
 
 * Annotated Tags
 
+* THis section is fundamentally similar except that the tags get an additional annotation via the -m option.
+
 ```shell
     git tag -a
     git tag -a -m 'First annotated tag' 
@@ -782,5 +794,9 @@ Exercise 9 --- Add lightweight tags to the history
 **[10 min]**
 
 ```{note}
-Give a short wrap up about what has been learned.
+Give a short wrap up about what has been learned. Encourage questions and perhaps give a 'teaser trailer' for day 2.
+```
+
+```{admonition}
+Remember to coordinate with the trainer for day 2 to ensure that they have a repository that begins day 2 with the same state as the learners, either by their rerunning the command log, or by physically copying your repo in a ZIP or tarfile.
 ```
