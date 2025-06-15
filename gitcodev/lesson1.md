@@ -23,8 +23,9 @@ This contains general information about the lesson and illustrations for suppori
 
 :::{card}
 * Understand the need for version control, especially in collaborative projects
-* Be able to **create a new** local git repository
+* Create a new  git repository
 * Check on changes between the repository index and the working directory
+* Understand the relationship between the working directory, the staging area and the repository
 * Know how to add, delete and rename files and resources within the repository
 * Know how to ignore files and resources that should not be tracked
 * Know how to commit changes in order to create a sequential history of the project
@@ -64,6 +65,7 @@ Introduce:
 * Course outline
 * Today's schedule
 * The need for and goals of version control
+* The role of git as a software solution supporting these goals
 
 ### 1.1.1 Introduction to Git
 **[10 min]**
@@ -75,6 +77,9 @@ Introduce:
 Students are assumed to have at least basic awareness of working from the command line and navigating the directory tree,
 but help them if necessary.
 :::
+
+In the first section, we create the directory that will house the project. Note that depending on the environment setup,
+the Desktop may or may not actually be under the participants' home directory so instructor and  helpers should be ready to help learners locate it.
 
 ```shell
     cd ~/Desktop/
@@ -96,6 +101,7 @@ but help them if necessary.
 ```
 
 * Check installed version of Git
+* (This will be the participants' first interaction with git, so any installation or PATH problems should show up here)
 
 ``` shell
     git
@@ -106,7 +112,7 @@ but help them if necessary.
 ### 1.1.2 Git Command Syntax and Getting Help
 **[10 min]**
 
-
+* We indtoduce the git help system both as a resource that they can use in future, and a way to start getting used to the CLI interface and command format.
 
 ```shell
     git help
@@ -115,7 +121,7 @@ but help them if necessary.
     git config --list
 ```
 
-Introduce the key config parameterts, including pre-setting some that only apply on day 2
+Introduce the key config parameterts, including pre-setting some that only apply on day 2. Participants may need a reminder to substitute their own details, and a quick explanation of the Windiws vs Unix end-of-line conventions (Carriage Return / Linefeed on Windows, only Linefeed on Mac / Linux / other unixoids)
 
 ```shell
     git config --global user.name "John Doe"
@@ -139,6 +145,9 @@ Introduce the key config parameterts, including pre-setting some that only apply
     lines with *echo*, however this will make the nature of the changes invisible in any
     gitautopush record, so is not recommended in class.
 ````
+
+* We add some content to a file and observe that, where no repo has been initialised, operations like 'git status' don't do very much.
+* We follow this with a git init.  It is important to be sure that all participants are actuall in the correct directory when they do this.
 
 ``` shell
     pwd
@@ -180,6 +189,8 @@ too deeply at this point.
 ### 1.2.1 Tracking Changes with the Index
 **[10 min]**
 
+* In this section, we observe that a file in the working directory that has not been explicitly added to the repo is observed by git status, but not yet tracked.  So we introduce the git add command and, alongside it, git diff.
+
 ```shell
     git status 
     git add lines.txt
@@ -200,7 +211,7 @@ too deeply at this point.
 **Output:**
 The output of the *git diff* command should resemble the following. Use this opportunity to explore the format of a diff file.
 
-```csharp {Output}
+```shell {Output}
     diff --git a/lines.txt b/lines.txt
     index 06fcdd7..20aeba2 100644
     --- a/lines.txt
@@ -211,6 +222,7 @@ The output of the *git diff* command should resemble the following. Use this opp
     +third line
 ```
 
+* We see that new additions to tracked file still need to be added to the index.  The instructor may want to explain cases where this is relevant and useful.
 
 ```shell
     git status 
@@ -250,6 +262,9 @@ Exercise 1 --- Tracking changes with the Index
     git status 
     touch directory/emptyfile.txt
 ```
+
+* git status should not 'notice' the empty directory
+
 ```shell
     ls -R
     ls -RF
@@ -257,13 +272,26 @@ Exercise 1 --- Tracking changes with the Index
     git status -u
     git help status
 ```
+
+* git status should report the untracked filename
+  
 ```shell
     git add directory
     git status
 ```
 
+* git status here should report emptyfile.txt as staged but not committed
+
 ### 1.2.2 Not Tracking and Stop Tracking
 **[10 min]**
+
+````{admonition} Instructor's Note
+    In this section, we introduce the .gitignore mechanism. It is worth taking a few minutes to talk about the kinds
+    of files associated with a project that you might not want to track, such as IDE configurations, Apple .DS_Store
+    files, log files, test run outputs etc. We don't want these cluttering up our git status output, or accidentally
+    messing up our coleagues' work environments.
+````
+* First, we generate a random log file of the kind we don't want to track.
 
 ```shell
     history
@@ -272,6 +300,10 @@ Exercise 1 --- Tracking changes with the Index
     cat history.log 
     git status
 ```
+
+* git status reports the new, untracked file
+* Next, we will add a glob that matches the file to .gitignore.
+
 ```shell
     echo '*.log'
     echo '*.log' >.gitignore
@@ -279,6 +311,9 @@ Exercise 1 --- Tracking changes with the Index
     ls -a
     ls -aF
 ```
+
+* git status should no longer report the file at all, although it is still present in the working directory
+
 ```shell
     git add .gitignore
     git status 
@@ -295,6 +330,8 @@ Exercise 1 --- Tracking changes with the Index
     git add .gitignore 
     git status 
 ```
+* .gitignore is a regular file and will be tracked unless listed in .gitignore. Whether or not this is a good idea for a particular project is up to the collaborators.
+
 #### Ignore Untracked Directories
 **[10 min]**
 
@@ -360,7 +397,8 @@ Exercise 2 --- Stop tracking Changes in a File
 **[10 min]**
 
 ```{admonition} Instructor's Note
-    The central idea here is the use of git restore to 'undo' changes to tracked files in the working directory
+    The central idea here is the use of git restore to 'undo' changes to tracked files in the working directory from
+    the index, not from the commit history, as we haven't introduced that yet.
 ```
 
 ```shell
@@ -460,8 +498,18 @@ Exercise 3 --- Renaming Tracked Files
 ## Episode 3: Organizing Tracked Changes in a History
 **[ca 75 min + 10 min break]**
 
+```{admonition} Instructor's Note
+    This is a critical moment in the lesson. We have introduced the index, as a representation
+    of the project at a point in time. Now we begin to develop the idea of the repository as a
+    sequence of such staged changes over time that culminate in the current state of the project
+    (or branch, but we haven't introduced that concept yet), HEAD.
+```
+
 ### 1.3.1 Commiting Changes with a Configured Identify and a Message
 **[10 min]**
+
+* We introduce the 'git commit' command as an commitment of the state of the index at some point in time.
+* We note that a commit MUST be accompanied by a descriptive message
 
 ```shell
     cat Lines.txt 
@@ -469,6 +517,9 @@ Exercise 3 --- Renaming Tracked Files
     git status 
     git commit -m 'Add first four lines' Lines.txt
 ```
+* We see next that a succesful commit gives us a 'clean' index with no stages changes, but we can look at a log and see the history.
+* When we look at the log, we see the 'long form' commit ID for the commit we just made, which is effectively guaranteed to be globally unique.
+
 ```shell
     git status 
     git log
@@ -629,9 +680,11 @@ Exercise 7 --- Explore the changes recorded in the history
 ### 1.3.3 Undoing Changes with the History
 **[10 min]**
 
-````{note}
+```{admonition} Instructor's Note
+
 This topic involves using `git restore`.
-````
+We have introduced the HEAD~x notation in the exercises above, and we will introduce both the short form commit ID and the tag mechanism shortly.  Here we see that using the -s flag we can specify a source (commit) from which to restore a specified file. 
+```
 ```shell
     git restore -s HEAD~2 Lines.txt
     cat Lines.txt
@@ -645,6 +698,8 @@ This topic involves using `git restore`.
 **[10 min]**
 
 * Lightweight tags
+* Using the git tag mechanism, we can 'name'specified commits for ease of reference.  These may represent special points in a project, like releases, or particular points in the development lifecycle, or just be useful 'bookmarks'.
+* We also see here, using git log --oneline, the short form commit ID, which is effectively guaranteed to be project-unique, if not globally unique.
 
 ```shell
     git log --oneline
@@ -721,6 +776,8 @@ Exercise 9 --- Add lightweight tags to the history
 
 * Annotated Tags
 
+* THis section is fundamentally similar except that the tags get an additional annotation via the -m option.
+
 ```shell
     git tag -a
     git tag -a -m 'First annotated tag' 
@@ -738,5 +795,10 @@ Exercise 9 --- Add lightweight tags to the history
 **[10 min]**
 
 ```{note}
-Give a short wrap up about what has been learned.
+Give a short wrap up about what has been learned. Encourage questions and perhaps give a 'teaser trailer' for day 2.
+```
+
+```{admonition} Instructor's Note
+
+Remember to coordinate with the trainer for day 2 to ensure that they have a repository that begins day 2 with the same state as the learners, either by their rerunning the command log, or by physically copying your repo in a ZIP or tarfile.
 ```
