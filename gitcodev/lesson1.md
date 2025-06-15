@@ -23,8 +23,9 @@ This contains general information about the lesson and illustrations for suppori
 
 :::{card}
 * Understand the need for version control, especially in collaborative projects
-* Be able to **create a new** local git repository
+* Create a new  git repository
 * Check on changes between the repository index and the working directory
+* Understand the relationship between the working directory, the staging area and the repository
 * Know how to add, delete and rename files and resources within the repository
 * Know how to ignore files and resources that should not be tracked
 * Know how to commit changes in order to create a sequential history of the project
@@ -64,6 +65,7 @@ Introduce:
 * Course outline
 * Today's schedule
 * The need for and goals of version control
+* The role of git as a software solution supporting these goals
 
 ### 1.1.1 Introduction to Git
 **[10 min]**
@@ -75,6 +77,9 @@ Introduce:
 Students are assumed to have at least basic awareness of working from the command line and navigating the directory tree,
 but help them if necessary.
 :::
+
+In the first section, we create the directory that will house the project. Note that depending on the environment setup,
+the Desktop may or may not actually be under the participants' home directory so instructor and  helpers should be ready to help learners locate it.
 
 ```shell
     cd ~/Desktop/
@@ -96,6 +101,7 @@ but help them if necessary.
 ```
 
 * Check installed version of Git
+* (This will be the participants' first interaction with git, so any installation or PATH problems should show up here)
 
 ``` shell
     git
@@ -106,7 +112,7 @@ but help them if necessary.
 ### 1.1.2 Git Command Syntax and Getting Help
 **[10 min]**
 
-
+* We indtoduce the git help system both as a resource that they can use in future, and a way to start getting used to the CLI interface and command format.
 
 ```shell
     git help
@@ -115,7 +121,7 @@ but help them if necessary.
     git config --list
 ```
 
-Introduce the key config parameterts, including pre-setting some that only apply on day 2
+Introduce the key config parameterts, including pre-setting some that only apply on day 2. Participants may need a reminder to substitute their own details, and a quick explanation of the Windiws vs Unix end-of-line conventions (Carriage Return / Linefeed on Windows, only Linefeed on Mac / Linux / other unixoids)
 
 ```shell
     git config --global user.name "John Doe"
