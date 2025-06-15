@@ -146,6 +146,9 @@ Introduce the key config parameterts, including pre-setting some that only apply
     gitautopush record, so is not recommended in class.
 ````
 
+* We add some content to a file and observe that, where no repo has been initialised, operations like 'git status' don't do very much.
+* We follow this with a git init.  It is important to be sure that all participants are actuall in the correct directory when they do this.
+
 ``` shell
     pwd
     ls
@@ -186,6 +189,8 @@ too deeply at this point.
 ### 1.2.1 Tracking Changes with the Index
 **[10 min]**
 
+* In this section, we observe that a file in the working directory that has not been explicitly added to the repo is observed by git status, but not yet tracked.  So we introduce the git add command and, alongside it, git diff.
+
 ```shell
     git status 
     git add lines.txt
@@ -217,6 +222,7 @@ The output of the *git diff* command should resemble the following. Use this opp
     +third line
 ```
 
+* We see that new additions to tracked file still need to be added to the index.  The instructor may want to explain cases where this is relevant and useful.
 
 ```shell
     git status 
@@ -256,6 +262,9 @@ Exercise 1 --- Tracking changes with the Index
     git status 
     touch directory/emptyfile.txt
 ```
+
+* git status should not 'notice' the empty directory
+
 ```shell
     ls -R
     ls -RF
@@ -263,13 +272,26 @@ Exercise 1 --- Tracking changes with the Index
     git status -u
     git help status
 ```
+
+* git status should report the untracked filename
+  
 ```shell
     git add directory
     git status
 ```
 
+* git status here should report emptyfile.txt as staged but not committed
+
 ### 1.2.2 Not Tracking and Stop Tracking
 **[10 min]**
+
+````{admonition} Instructor's Note
+    In this section, we introduce the .gitignore mechanism. It is worth taking a few minutes to talk about the kinds
+    of files associated with a project that you might not want to track, such as IDE configurations, Apple .DS_Store
+    files, log files, test run outputs etc. We don't want these cluttering up our git status output, or accidentally
+    messing up our coleagues' work environments.
+````
+* First, we generate a random log file of the kind we don't want to track.
 
 ```shell
     history
@@ -278,6 +300,10 @@ Exercise 1 --- Tracking changes with the Index
     cat history.log 
     git status
 ```
+
+* git status reports the new, untracked file
+* Next, we will add a glob that matches the file to .gitignore.
+
 ```shell
     echo '*.log'
     echo '*.log' >.gitignore
@@ -285,6 +311,9 @@ Exercise 1 --- Tracking changes with the Index
     ls -a
     ls -aF
 ```
+
+* git status should no longer report the file at all, although it is still present in the working directory
+
 ```shell
     git add .gitignore
     git status 
@@ -301,6 +330,8 @@ Exercise 1 --- Tracking changes with the Index
     git add .gitignore 
     git status 
 ```
+* .gitignore is a regular file and will be tracked unless listed in .gitignore. Whether or not this is a good idea for a particular project is up to the collaborators.
+
 #### Ignore Untracked Directories
 **[10 min]**
 
@@ -366,7 +397,8 @@ Exercise 2 --- Stop tracking Changes in a File
 **[10 min]**
 
 ```{admonition} Instructor's Note
-    The central idea here is the use of git restore to 'undo' changes to tracked files in the working directory
+    The central idea here is the use of git restore to 'undo' changes to tracked files in the working directory from
+    the index, not from the commit history, as we haven't introduced that yet.
 ```
 
 ```shell
@@ -465,6 +497,12 @@ Exercise 3 --- Renaming Tracked Files
 
 ## Episode 3: Organizing Tracked Changes in a History
 **[ca 75 min + 10 min break]**
+
+```{admonition} Instructor's Note
+    This is a critical moment in the lesson. We have introduced the index, as a representation of the project
+    at a point in time. Now we begin to develop the idea of the repository as a sequence of such staged changes over
+    time that culminate in the current state of the project (or branch, but we haven't touched that yet), HEAD.
+```
 
 ### 1.3.1 Commiting Changes with a Configured Identify and a Message
 **[10 min]**
