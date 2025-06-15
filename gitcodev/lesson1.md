@@ -680,7 +680,8 @@ Exercise 7 --- Explore the changes recorded in the history
 ### 1.3.3 Undoing Changes with the History
 **[10 min]**
 
-```{admonition}
+```{admonition} Instructor's Note
+
 This topic involves using `git restore`.
 We have introduced the HEAD~x notation in the exercises above, and we will introduce both the short form commit ID and the tag mechanism shortly.  Here we see that using the -s flag we can specify a source (commit) from which to restore a specified file. 
 ```
@@ -797,6 +798,7 @@ Exercise 9 --- Add lightweight tags to the history
 Give a short wrap up about what has been learned. Encourage questions and perhaps give a 'teaser trailer' for day 2.
 ```
 
-```{admonition}
+```{admonition} Instructor's Note
+
 Remember to coordinate with the trainer for day 2 to ensure that they have a repository that begins day 2 with the same state as the learners, either by their rerunning the command log, or by physically copying your repo in a ZIP or tarfile.
 ```
