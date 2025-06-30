@@ -22,14 +22,10 @@ This contains general information about the lesson and illustrations for suppori
 ## Learning Objectives
 
 :::{card}
-* Understand the need for version control, especially in collaborative projects
-* Create a new  git repository
-* Check on changes between the repository index and the working directory
-* Understand the relationship between the working directory, the staging area and the repository
-* Know how to add, delete and rename files and resources within the repository
-* Know how to ignore files and resources that should not be tracked
-* Know how to commit changes in order to create a sequential history of the project
-* Be able to restore the project to a previous state
+- To understand the basic operations of version control using Git. (*understand*)
+- To use Git to create repositories and commit changes. (*apply*)
+- To apply Git operations to track, reverse and delete changes in working documents. (*apply*)
+- To organise tracked changes in the Git history. (*understand*)
 :::
 
 ## Key Topics
