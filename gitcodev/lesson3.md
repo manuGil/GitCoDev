@@ -358,7 +358,7 @@ A short explanation on the forking and branching workflow for managing contribut
 Ask participants if they have Questions.
 :::
 
-## Lesson Summary
+## {octicon}`log` Lesson Summary
 {octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`5 min`
 
 
