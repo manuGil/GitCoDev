@@ -75,14 +75,14 @@ Time estimates for each section, subsection or exercise should be included to in
 
 ````md
 
-## Section/Exercise Title
+### Section/Exercise Title
 {octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`5 min`
 
 ````
 
 Rendered as:
 
-## Section Title
+### Section Title
 {octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`5 min`
 
 
