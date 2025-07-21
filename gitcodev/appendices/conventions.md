@@ -22,7 +22,7 @@ Use a `card` at the beginning of each lesson to state the learning objectives:
 * Objective 2
 
 +++
-Materials:
+**Materials:**
 
 * A list of additional materials related to the lesson for the instructor. 
 * For example: slides.

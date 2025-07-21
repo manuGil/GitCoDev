@@ -11,7 +11,7 @@ Lecture notes for the lesson on an introduction to collaborative software develo
 - To create contributions to software projects using one of the Git repository platforms such as GitHub. 
 
 +++
-Materials:
+**Materials:**
 
 * [Collaborative software development](https://docs.google.com/presentation/d/1yBy_4r9aHhsUH9AH1s7zLWIQ_h20xNKVYM1somPnz1Q/edit?usp=sharing): a presentation with general information about the lesson and illustrations for supporing the explanations of some of the concepts, and exercises.
 * [Username form](https://forms.gle/asj6dAhTh6vcyUhV9): a Google form to collect users-names of the collaborative platform that participants will use during the lesson. This serves as an example. 
@@ -22,8 +22,8 @@ Materials:
 
 :::{admonition} Instructor's Note 
 :class: tip
-* The instructor must collect particiapant's user names for GitHub/Gitlab the day before, so that they can be invited to collaborative repositories. The **username form** above could be use for that.
-* The instructor must create a repository for [](check-in) using this [respository tempalte](https://github.com/manuGil/check-in-template).
+* The instructor must collect particiapant's user names for GitHub/Gitlab beforehand, so that they can be invited to collaborative repositories. The **username form** serves as an example of how this could be done.
+* The instructor must create a repository for [](check-in) using this [respository tempalte](https://github.com/WorkshopGitcodev/check-in-template).
 :::
 
 
@@ -177,7 +177,7 @@ Mention GitLab at TU Delft as an alternative for a collaborative platform: https
 ### 3.1.3. Collaborating 
 **[5 min]**
 
-Participants are invited as collaborators to the **check-in** repository. A template to create a new repository is available in the [check-in template](https://github.com/manuGil/check-in-template).
+Participants are invited as collaborators to the **check-in** repository. A template to create a new repository is available in the [check-in template](https://github.com/WorkshopGitcodev/check-in-template).
  Participants must have permission to merge pull requets.
 
 1. Demo on how to invite collaborators using the **check-in** repository.
