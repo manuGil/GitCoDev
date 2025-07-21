@@ -787,7 +787,7 @@ We have introduced the HEAD~x notation in the exercises above, and we will intro
     true
 ```
 
-## {octicon}`log` Wrap Up
+## {octicon}`log` Lesson Summary
 {octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`10 min`
 
 
