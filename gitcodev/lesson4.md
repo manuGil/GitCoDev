@@ -148,7 +148,7 @@ Demonstrate how to create a software release in the collaborative platform used 
 
 Explain and discuss the role and importance of [keeping a changelog](https://keepachangelog.com/en/1.0.0/) file in the software repository. A changelog file is a file that contains a list of changes made to the software, such as bug fixes, new features, and improvements. It is important to keep a changelog file up to date so that users can see what has changes between releases, and how those changes may affect them.
 
-## Lesson Summary
+## {octicon}`log` Lesson Summary
 **[5 mins]**
 
 - Code reviews a essential to produce high quality software.
