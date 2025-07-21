@@ -5,10 +5,10 @@ Lecture notes on the fundamental operations with Git. A hands-on lesson for intr
 
 :::{card} Learning Objectives:
 
-* To understand the basic operations of version control using Git. (*understand*)
-* To use Git to create repositories and commit changes. (*apply*)
-* To apply Git operations to track, reverse and delete changes in working documents. (*apply*)
-* To organise tracked changes in the Git history. (*understand*)
+* To understand the basic operations of version control using Git. 
+* To use Git to create repositories and commit changes. 
+* To apply Git operations to track, reverse and delete changes in working documents. 
+* To organise tracked changes in the Git history. 
 
 **Topics:**
 
