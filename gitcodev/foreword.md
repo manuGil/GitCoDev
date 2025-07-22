@@ -54,6 +54,15 @@ Second, we are enthusiastic about helping researchers adopt best practices in co
 *Research Software Engineer* <br>
 *Delft University of Technology*
 
+
+## Acknowledgements
+The original materials for this course were developed by the authors. 
+Since then, many people have contributed to improving of the course materials.
+We would like to thank the following people for their contributions.
+
+```{include} contributors.md
+```
+
 ## Content
 
 ```{tableofcontents}
