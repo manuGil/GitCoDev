@@ -36,8 +36,9 @@ Lecture notes on the fundamental operations with Git. A hands-on lesson for intr
 
 :::{admonition} {octicon}`mortar-board` Instructor's Note 
 :class: tip
-* The instructor must deliver the lesson in an environment containing the latest [stable version of Git](https://git-scm.com/downloads).
+* The instructor must deliver the lesson in an environment containing the latest [stable version of Git](https://git-scm.com/downloads). Participants should also have the latest version of Git installed on their machines.
 * The instructor must remove any custom configurations from the environment (i.e., Git and the shell terminal).  Personal configuation may interfere with the lesson.
+* Adjust the code examples in this lesson to reflect any changes intruduced in the latest version of Git. 
 :::
 
 
