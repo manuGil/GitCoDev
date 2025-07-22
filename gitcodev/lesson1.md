@@ -164,9 +164,6 @@ At this point, we have an empty repository, plus a single file in a working dire
 Students have had a brief view (via *ls -af .git*) of the inner contents of the repository proper, but should not be encouraged to dig
 too deeply at this point.
 
-### {octicon}`stopwatch` Break
-{octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`10 min`
-
 
 ## {octicon}`repo` Episode 2: Tracking Changes in Working Documents
 {octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`ca 75 min`
@@ -381,10 +378,6 @@ This section illustrates three points:
 
 ```
 ````
-
-### {octicon}`stopwatch` Break
-{octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`20 min`
-
 
 ### 1.2.3 Undoing Changes with the Index
 {octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`10 min`
