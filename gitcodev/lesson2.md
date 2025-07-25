@@ -1,6 +1,14 @@
-# LESSON 2: Branching and remote operations
+# {octicon}`milestone` LESSON 2: Branching and remote operations
 
 TODO: add a short description of the lesson
+
+
+This lesson is taught using presentations (to illustrate concepts), type-along demostrations and exercises (to practice the concepts).
+The code examples in the lessons often indicate tasks that participant should do along with the instructor.
+
+The code examples in the lessons often indicate tasks that participant should do along with the instructor.
+Times under each section are indicative. They can be used as a guide to plan the lesson and may be adjusted to suit different teaching styles; however follow the recommendations given in the [schedule](sec:schedule).
+
 
 <!-- This is a summary of the lecture notes for this lesson.
 The original list of commands has been edited and decorated with headings corresponding to the [lessons in the curriculum](course-units) more clearly. 

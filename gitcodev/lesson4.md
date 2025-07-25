@@ -1,7 +1,14 @@
-# LESSON 4: Managing Collaboration and Best Practices
+# {octicon}`milestone` LESSON 4: Managing Collaboration and Best Practices
 
 Lecture notes for the lesson on managing collaboration and best practices. 
 Most of the content in this lesson aims to present some best-practices for developing research software and lead an open discussion about when to apply them. 
+
+This lesson is taught using presentations (to illustrate concepts), type-along demostrations and exercises (to practice the concepts).
+The code examples in the lessons often indicate tasks that participant should do along with the instructor.
+
+
+Times under each section are indicative. They can be used as a guide to plan the lesson and may be adjusted to suit different teaching styles; however follow the recommendations given in the [schedule](sec:schedule).
+
 
 :::{card} Learning Objectives:
 
