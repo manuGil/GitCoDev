@@ -1,8 +1,11 @@
 (sec:lesson1)=
-# LESSON 1: Fundamental Operations with Git
+# {octicon}`milestone` LESSON 1: Fundamental Operations with Git
 
 Lecture notes on the fundamental operations with Git. A hands-on lesson for introducing version control, tracking changes, and the tracking history. 
+This lesson is taught using presentations (to illustrate concepts), type-along demostrations and exercises (to practice the concepts).
+The code examples in the lessons often indicate tasks that participant should do along with the instructor.
 
+Times under each section are indicative. They can be used as a guide to plan the lesson and may be adjusted to suit different teaching styles; however follow the recommendations given in the [schedule](sec:schedule).
 
 :::{card} Learning Objectives:
 
@@ -13,17 +16,19 @@ Lecture notes on the fundamental operations with Git. A hands-on lesson for intr
 
 **Topics:**
 
-{bdg-dark}`git syntax`
+{bdg-dark}`git`
 {bdg-dark}`version control`
-{bdg-dark}`repositories`
+{bdg-dark}`command syntax`
+{bdg-dark}`getting help`
+{bdg-dark}`creating repositories`
 {bdg-dark}`tracking changes`
 {bdg-dark}`untracking files`
-{bdg-dark}`gitignore`
+{bdg-dark}`stopping tracking`
 {bdg-dark}`undoing changes`
 {bdg-dark}`deleting and renaming files`
 {bdg-dark}`committing changes`
 {bdg-dark}`inspecting changes`
-{bdg-dark}`tags`
+{bdg-dark}`tagging`
 
 +++
 **Materials:**
@@ -42,19 +47,18 @@ Lecture notes on the fundamental operations with Git. A hands-on lesson for intr
 :::
 
 
-## {octicon}`repo` Episode 1: Git repositories for version control
-{octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`ca 50 min total`
+## {octicon}`repo` Episode 1: Git repositories for version control 
+{octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`ca 50 min`
 
 
-### 1.1.0 Welcome slides
+### 1.1.0 Course Introduction
 {octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`10 min`
 
+Provide an introduction to the course. The introduction should include the following topics:
 
-Introduce:
 * Trainers
-* Code of conduct
 * Course outline
-* Today's schedule
+* Schedule
 * The need for and goals of version control
 * The role of git as a software solution supporting these goals
 
@@ -69,8 +73,8 @@ Students are assumed to have at least basic awareness of working from the comman
 but help them if necessary.
 :::
 
-In the first section, we create the directory that will house the project. Note that depending on the environment setup,
-the Desktop may or may not actually be under the participants' home directory so instructor and  helpers should be ready to help learners locate it.
+In the first part, we create a directory that will house the lessons. Note that depending on the environment setup,
+the `Desktop` may or may not actually be under the participants' home directory so the instructors should be ready to help learners locate it.
 
 ```shell
     cd ~/Desktop/
@@ -91,8 +95,7 @@ the Desktop may or may not actually be under the participants' home directory so
     echo
 ```
 
-* Check installed version of Git
-* (This will be the participants' first interaction with git, so any installation or PATH problems should show up here)
+* Check installed version of Git (this will be the participants' first interaction with git, so any installation or PATH problems should show up here)
 
 ``` shell
     git
@@ -100,6 +103,8 @@ the Desktop may or may not actually be under the participants' home directory so
     git version
 ```
 
+
+<!-- TODO: COTINUE review here -->
 ### 1.1.2 Git Command Syntax and Getting Help
 {octicon}`clock;1em;sd-text-warning` {bdg-warning-line}`10 min`
 
